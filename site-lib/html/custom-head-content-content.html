@@ -1,0 +1,27 @@
+<style>
+.tree-snippet-label {
+  font-size: var(--font-smallest);
+  color: var(--text-muted);
+  width: 100%;
+  text-decoration-line: none;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 1px 0;
+  line-height: 1.6;
+}
+.tree-snippet-label mark {
+  background-color: var(--text-highlight-bg, rgba(255, 208, 0, 0.4));
+  color: var(--text-normal);
+  padding: 0 1px;
+  border-radius: 2px;
+}
+</style>
+<script>
+(function() {
+  var s = document.createElement("script");
+  s.src = (document.querySelector("base")?.getAttribute("href") || ".") + "/site-lib/scripts/search-snippets.js";
+  s.defer = true;
+  document.head.appendChild(s);
+})();
+</script>

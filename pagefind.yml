@@ -1,0 +1,10 @@
+site: .
+force_language: cs
+exclude_selectors:
+  - "h1.page-title"
+  - ".header"
+  - ".footer"
+  - ".data-bar"
+  - "#left-sidebar"
+  - "#right-sidebar"
+  - "#navbar"
