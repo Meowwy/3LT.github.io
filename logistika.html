@@ -1,0 +1,312 @@
+<!DOCTYPE html> <html lang="cs"><head>
+<title>logistika</title>
+<base href=".">
+<meta name="pathname" content="logistika.html">
+<meta name="description" content="Logistika - logistika">
+<meta property="og:title" content="logistika">
+<meta property="og:description" content="Logistika - logistika">
+<meta property="og:type" content="website">
+<meta property="og:url" content="logistika.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="Logistika"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="site-lib/rss.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="stylesheet" href="site-lib/styles/theme.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager styled-scrollbars show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"><link itemprop="include" href="site-lib/html/custom-head-content-content.html"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="site-lib/html/file-tree-content.html"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="logistika_0">logistika</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-p"><p dir="auto">Tagy: <a href="?query=tag:logistika" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#logistika">#logistika</a></p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto">rozdíl mezi supply chain a demand chain ;; supply chain je od dodavatele k zákazníkovi a demand chain je od zákazníka k dodavateli</p></div><div></div><div class="el-p"><p dir="auto">6 pravidel logistiky, co se musí správně dodržet? ;; místo, čas, množství, kvalita, cena, správný adresát</p></div><div></div><div class="el-p"><p dir="auto">na jaké subsystémy je možné logistiku dekomponovat? (teoretické dělení)<br>
+?<br>
+statický - dopravní infrastruktura<br>
+mobilní - dopravní prostředky<br>
+řídící - pracovníci, signalizační zařízení (návěstidla, služby řízení letového provozu)</p></div><div></div><div class="el-p"><p dir="auto">praktické dělení (subsystémy) logistiky a co to představuje<br>
+?<br>
+technická základna - dopravní cesty (hrany grafu), logistická centra, gateways, terminály (vrcholy grafu), přepravní prostředky, dopravní prosttředy, prostředky při přenos dat atp.<br>
+lidé; firmy<br>
+technologie<br>
+vědní aparát</p></div><div></div><div class="el-p"><p dir="auto">prvky logistiky - rozdělení<br>
+?<br>
+aktivní - dopravní prostředky, IT<br>
+aktivní prvky zajišťují pohyb pasivních prvků<br>
+pasivní - zboží, obalové materiály, kontejnery</p></div><div></div><div class="el-p"><p dir="auto">jaké jsou různé pozice logistických manažerů a náplň jejich práce<br>
+?<br>
+logistický manažer - operativní řizení lidí v oblasti dopravy a skladování<br>
+manažer distribuce - operativa, řízení distribuce<br>
+projektový manažer - více strategická role, integrace logistických řetězců atp.</p></div><div></div><div class="el-p"><p dir="auto">jaké jsou tři vědní přístupy k řešení problémů?<br>
+?<br>
+empiricko-intuitivní - založený na zkušenostech a intuici, težko se prokazuje správnost řešení<br>
+algoritmický - založený na matematických metodách, systémové přemýšlení o problému, přesnost, objektivnost, transparentnost výsledku<br>
+heuristický - využívání heuristických metod s definovaným algoritmem, využívá matematický základ, ale cílem není najít optimum, nýbrž suboptimum, přesnost lze zvýšit pomocí modelování (simulování)</p></div><div></div><div class="el-p"><p dir="auto">Jaké můžeme vybrat metody pro řešení logistického problému za jistoty, tedy když víme, co řešíme a máme data<br>
+?<br>
+operační výzkum - použití výpočetní techniky a matematiky pro výpočty a tvorbu matematických modelů, které umožňují rozhodování ve složitých ekonomických otázkách, součástí toho je lineární programování, teorie grafů atd.</p></div><div></div><div class="el-p"><p dir="auto">Jaké můžeme vybrat metody pro řešení logistického problému za jistoty, tedy když nevíme, s čím máme co dočinění<br>
+?<br>
+metody tvořivého myšlení - brainstorming atp.</p></div><div></div><div class="el-p"><p dir="auto">Jaké můžeme v logistice dostat certifikace / možnosti vzdělání?<br>
+?<br>
+vzdělání buď vysokoškolské, nebo MBA<br>
+certifikují společnosti ELA a FIATA<br>
+ELA vytvořila evropský systém certifikace logistických odborníků ECBL, v ČR toto zajišťuje ČLA - česká logistická asociace<br>
+ELA má mezinárodně uznávané certifikáty na úrovních junior a senior</p></div><div></div><div class="el-p"><p dir="auto">Jaké známe logistické technologie a konkrétní příklady? Co se logistickou technologií myslí<br>
+?<br>
+je to soubor metod a prostředků, které firma využívá pro uskutečnění přepravy (vstupuje tam nějaké know-how, které ta firma musí mít, to je součástí každé logistické technologie)<br>
+klasické - tvorba manipulačních skupin (sdružování) a intermodální přeprava<br>
+telematické - sledování, co se kde nachází a v jakém je to stavu (automatické načtení zboží po průjezdu bránou, vzdálená datová komunikace kamionu s centrálou, EDI - posílání dodacích listů elektronicky)<br>
+virtuální - simulace, grafická vizualizace (např. simulace skladu)<br>
+komplexní - např. kanban (způsob JIT dodávání do výroby)</p></div><div></div><div class="el-p"><p dir="auto">Jaké dva subsystémy má infrastruktura?<br>
+?<br>
+uzlový subsystém - konkrétní místa - např. distribuční sklad, železniční stanice, přístav, cross-dock<br>
+liniový subsystém - dopravní cesty - železnice, silnice</p></div><div></div><div class="el-p"><p dir="auto">infrastruktura vs. suprastruktura a projekty PPP<br>
+?<br>
+infrastruktura je typycky vlastněná státem, pokud je vlastněna soukromými subjekty, je to suprastruktura<br>
+PPP jsou projekty, na kterých spolupracuje veřejný a soukromý sektor</p></div><div></div><div class="el-p"><p dir="auto">Jaké máme řády přepravních prostředků?<br>
+?<br>
+je to podle hmotnosti a způsobu manipulace<br>
+0&nbsp;- lahev<br>
+1&nbsp;- max 15kg&nbsp;- krabice<br>
+2&nbsp;- max 1000 kg&nbsp;- palety<br>
+3&nbsp;- kontejnery (ISO) ULD (unit load containery) letadlové cargo</p></div><div></div><div class="el-p"><p dir="auto">Jaké znáte manipulační zařízení, co to je a kde se vyskytují?<br>
+?<br>
+jsou v překládacích a skladovacích uzlech<br>
+vysokozdvižné vozíky<br>
+rudly<br>
+čelní překladače<br>
+portálové jeřáby<br>
+RTG - na kolech<br>
+RMG - na kolejích<br>
+STS - ship-to-shore - přemisťování kontejnerů na kontejnerové lodě<br>
+také můžou být v dopravních prostředcích, např. hydraulické čelo (výtah na náklaďáku), hydraulické rameno, rampy na plavidlech, válečkové dráhy v letadlech</p></div><div></div><div class="el-p"><p dir="auto">Jak rozdělujeme přípojná vozidla (i podle užitné hmotnosti) a jakým písmenem se označují?<br>
+?<br>
+písmeno O<br>
+dělí se na návěsy (připojují se za tahač, nemá přední nápravu) a přívěsy (připojují se za vozidlo, mají i přední nápravu)<br>
+podle užitné hmotnosti:<br>
+O1 do 0,75t<br>
+O2 do 3,5t<br>
+O3 do 10t<br>
+O4 nad 10t</p></div><div></div><div class="el-p"><p dir="auto">Jak se dělí nákladní železniční vozy a příklady? Jakým subjektem je toto rozdělení určeno?<br>
+?<br>
+určeno UIC - mezinárodní železniční unií<br>
+podle konstrukce - tzv. řady, řady jsou označené kombinací velkého písmena a jednoho nebo více malých písmen<br>
+velká písmena - od E (A-D jsou osobní vozy)<br>
+E, F - otevřené vozy, suché hromadné substráty<br>
+L -&nbsp; vlak na auta<br>
+S - intermodální přeprava - kontejnerové vagony - pouze podvozek, nakládá se na to kontejner<br>
+T - s otevíratelnou střechou<br>
+U - práškové, volně ložené zboží<br>
+Z - cisterny<br>
+G, H - pevná střecha<br>
+Malá písmena:<br>
+s - rychlost<br>
+ss do 120<br>
+s do 100<br>
+bez s - méně než 100<br>
+a  - počet náprav - čtyř-nápravový vůz (bez a je to 2 nápravový)<br>
+f - vhodný pro převoz do Velké Británie<br>
+n - vysoká únosnost<br>
+d - vybaven gravitačním vyprazdňováním</p></div><div></div><div class="el-p"><p dir="auto">Jaké rozlišujeme dopravní prostředky ve vodní dopravě?<br>
+?<br>
+pro vnitrozemskou vodní dopravu:<br>
+motorové nákladní lodě<br>
+remorkéry + nákladní čluny (remorkér za sebou táhne samostatný člun s nákladem)<br>
+námořní nákladní lodě:<br>
+kontejnerové lodě - pro suché náklady (všeobecný náklad)<br>
+tankery - pro kapalné náklady (ropa, LPG)</p></div><div></div><div class="el-p"><p dir="auto">Co víte o nákladních letounech? Typové značení? Typy motorů?<br>
+?<br>
+anglicky freighter<br>
+v typovém označení je to F<br>
+proudové a turbovrtulové motory</p></div><div></div><div class="el-p"><p dir="auto">Jaké známe typy palet podle konstrukce?<br>
+?<br>
+prostá<br>
+sloupková<br>
+ohradová<br>
+stříňová<br>
+nádržková</p></div><div></div><div class="el-p"><p dir="auto">Jak se dělí kontejnery podle toho, kde se používají?<br>
+?<br>
+námořní deep sea (ISO kontejnery)<br>
+vnitrozemské short sea (po Evropě) - wood kontejnery, rock kontejnery, pallet-wide kontejnery<br>
+letecké kontejnery ULD</p></div><div></div><div class="el-p"><p dir="auto">Jaké známe základní typy ISO kontejnerů podle toho, co převáží?<br>
+?<br>
+dry van - standardní<br>
+reefer - temperovaný<br>
+tank kontejner - ocelová cisterna zasazena do rámu pro ISO kontejner, pro kapaliny a plyny<br>
+bulk - pro suché hromacné zboží<br>
+flat rack / open top - bez bočních stěn nebo bez střechy</p></div><div></div><div class="el-p"><p dir="auto">Jak rozlišujeme kontejnery podle jejich délky? Co to je TEU? Jaká je šířka a výška kontejnerů?<br>
+?<br>
+písmena A-E - A je nejkratší<br>
+TEU = twenty-feet equvalent unit - tímto se počítá kapacita lodi - kolik TEU se do ní vejde; 1 TEU je kontejner C = 20 stop dlouhý<br>
+všechny kontejnery mají šířku 8 stop<br>
+standardní výška je 8 stop 6 palců; high cube mají 9 stop 6 palců (přesně o jednu stopu (cca 30cm) více)</p></div><div></div><div class="el-p"><p dir="auto">Jak dělíme hmotnost kontejneru?<br>
+?<br>
+tara - hmotnost vlastního kontejneru<br>
+netto - hmotnost nákladu<br>
+brutto - tara + netto</p></div><div></div><div class="el-p"><p dir="auto">Co to jsou RFC a k čemu jsou dobré? Které města u nás a ve světě jsou na některém z koridorů?<br>
+?<br>
+rail freight corridors<br>
+zjednodušují železniční nákladní dopravu, dopravce nebo operátor, který chce vypravit vlak z Hamburku do Prahy nemusí žádat o přidělení traťové kapacity zvlášť jednotlivé správce železnic, tzv. One-Stop Shop - stačí jedna žádost a centrální místo mu vyřídí průjezd všemi státy<br>
+existuje několik takových koridorů, ČR protínají 4 z nich<br>
+Prahu protíná RFC-7, který vede z Německa na Balkán; také výchozí bod pro RFC-9<br>
+Ostrava leží na RFC-5 (od Baltu do Rakouska a Itálie)<br>
+Brno - RFC-7<br>
+Děčín - hlavní vstupní brána pro vlaky na koridoru RFC-7</p></div><div></div><div class="el-p"><p dir="auto">Jaké jsou třídy tratí?<br>
+?<br>
+A-E - E je pro nejtěžší náklad - 25 tun na nápravu - pouze nějaké důlní tratě, není jich mnoho</p></div><div></div><div class="el-p"><p dir="auto">Jaké známe typy letových tratí (tratě ve vzduchu) - v pořadí v jaké je letadlo využije?<br>
+?<br>
+SID - standard instrument departure - Postup/trasa, po které letadlo stoupá po vzletu (takeoff)<br>
+AIRWAY - dopravní koridor (dráha v oblacích)<br>
+STAR - standard terminal arrival route - Příletová trať z AIRWAY na letiště</p></div><div></div><div class="el-p"><p dir="auto">Jaké má letiště různé plochy, které využívají letadla?<br>
+?<br>
+RWY - runway<br>
+TWY - pojezdové dráhy<br>
+APRON - parkoviště pro letadla</p></div><div></div><div class="el-p"><p dir="auto">Jak jsou značeny třídy vodních cest? Které z nich jsou mezinárodního významu?<br>
+?<br>
+římskými číslicemi<br>
+nejvyšší je VII<br>
+IV a vyšší jsou cesty mezinárodního významu</p></div><div></div><div class="el-p"><p dir="auto">důležité evropské kanály? A u nás v ČR?<br>
+?<br>
+MLK - (mittellandkanal) středoněmecký kanál - protíná Německo na severu od západu k východu a spojuje Rýn, Vezeru a Labe<br>
+rýn&nbsp;mohan&nbsp;dunaj&nbsp;průplav - Kanál v blízkosti Norimberku, který spojuje řeky Mohan a Dunaj – umožňuje tak plavbu ze Severního moře do Černého moře<br>
+Kýlský&nbsp;průplav - zkratka mezi baltským a severním mořem<br>
+německý postranní kanál<br>
+kanál spojující Labe a Vltavu</p></div><div></div><div class="el-p"><p dir="auto">Důležité evropské řeky<br>
+?<br>
+nejdůležitější je Rýn, teče od švýcarských hranic do Rotterdamu a do Severního moře<br>
+Dunaj - Vídeň, Bratislava, Budapešť a vlévá se do Černého moře<br>
+Seina - důležitá řeka ve Francii, protéká Paříží</p></div><div></div><div class="el-p"><p dir="auto">Námořní průlivy<br>
+?<br>
+Gibraltarský - Atlantský oceán a Středozemní moře<br>
+Lamanšský průliv - Odděluje Anglii od Francie<br>
+Bospor a Dardanely - Turecké průlivy, cesta ven z Černého moře do Středozemního moře</p></div><div></div><div class="el-p"><p dir="auto">Námořní průplavy<br>
+?<br>
+Suez – u Egypta<br>
+Panama – Panama (střední Amerika) - spojuje Tichý a Atlantský oceán</p></div><div></div><div class="el-p"><p dir="auto">Jak jsou označeny RWY na letištích?<br>
+?<br>
+podle azymutů - desetina stupně od severu<br>
+dráha směrem přímo na sever má 36, přímo na jih 18<br>
+pokud jsou na letišti rovnoběžné dráhy, pak se dají rozlišit na L, C, R</p></div><div></div><div class="el-p"><p dir="auto">Jak kategorizujeme sklady?<br>
+?<br>
+A - alespoň 10 metrů vysoké, temperované<br>
+B - nestandardní výška, nestandardní podlaha<br>
+C - jen hala</p></div><div></div><div class="el-p"><p dir="auto">Jaké se používají technologie a způsoby skladování ve skladech?<br>
+?<br>
+skladování v bloku - palety jsou na sobě; vhodné, pokud máme hodně stejných palet<br>
+paletový regál - palety jsou v regálech<br>
+pojízdný regál - několik regálových řas za sebou, ty, které jsou u uličky se prohazují; typické u mraženého zboží<br>
+drive-in shuttle regály<br>
+spádový regál - stejné výrobky za sebou v regálu<br>
+konzolový regál - pro dlouhé věci, jako jsou tyče</p></div><div></div><div class="el-p"><p dir="auto">jaký je rozdíl v pojmech multimodální, intermodální a kombinovaná přeprava?<br>
+?<br>
+multimodální - použití více oborů přepravy<br>
+intermodální - použití více oborů přepravy a použití jedné standardizované přepravní jednotky (intermodal loading unit - ILU) napříč těmi obory<br>
+kombinovaná - jako intermodální, ale většina přepravy musí být provedena jinak než po silnici</p></div><div></div><div class="el-p"><p dir="auto">Co to je BIBO loď?<br>
+?<br>
+nakládka volně loženého zboží, vykládka už v nějaké manipulační jednotce, třeba v pytlích (typicky to tak je se solí)</p></div><div></div><div class="el-p"><p dir="auto">Co to je AVI LOG?<br>
+?<br>
+kontejner se zkosenými stranami</p></div><div></div><div class="el-p"><p dir="auto">Kategorizace nákladních vozidel podle jejich maximální přípustné hmotnosti<br>
+?<br>
+N1 do 3,5t - dodávky<br>
+N2 do 12t - nákladní auta<br>
+N3 nad 12t - tahač a přívěs</p></div><div></div><div class="el-p"><p dir="auto">Označení lokomotiv podle typu pohonu<br>
+?<br>
+1 - stejnosměrný<br>
+2 - střídavý<br>
+3 - více-systémová lokomotiva<br>
+7 - motorová lokomotiva</p></div><div></div><div class="el-p"><p dir="auto">Jaké známe různé typy nákladních lodí v námořní dopravě podle způsobu manipulace s nákladem a typu převáženého nákladu?<br>
+?<br>
+podle způsobu manipulace:<br>
+Ro-Ro - roll on roll of - auta, co má kola nebo pásy<br>
+Lo-Lo - lift on lift of<br>
+Flo-flo - float in - float out<br>
+podle toho, co převážejí:<br>
+PCC - pure car carrier (osobní auta)<br>
+PCTC - pure car truck carrier (nákladní auta)<br>
+con-ro - hybrid - container a roll on - na palubu kontejnery, pod palubu auta<br>
+kontejnerové lodě<br>
+break bulk carrier - pro kusové zboží - již se moc nepoužívají</p></div><div></div><div class="el-p"><p dir="auto">Vysvětli parametry nákladních lodí DWT, NT a GT<br>
+?<br>
+DWT - dead weight tonage - hmotnost nákladu + hmotnost paliva v lodi + hmotnost čisté vody pro posádku<br>
+NT - net tonage - objem nákladních prostor lodi<br>
+GT - gross tonage - celkový objem všech prostor lodi</p></div><div></div><div class="el-p"><p dir="auto">Co to je geared vessel?<br>
+?<br>
+loď s jeřábem</p></div><div></div><div class="el-p"><p dir="auto">Co to je OSV v vnitrozemské vodní dopravě<br>
+?<br>
+off-shore support vessel - převáží náklad z námořských přístavů do vnitrozemí</p></div><div></div><div class="el-p"><p dir="auto">Jak velké kontejnery se vejdou do podpalubí kontejnerové lodi?<br>
+?<br>
+20, 40, i high-cube verze<br>
+kontejnerové lodě mají vodicí lišty a tak se tam typicky dají převážet pouze 1 TEU a 2 TEU (FEU) kontejnery, high-cube jsou jen vyšší verze, takže to nečiní problém při stackování na sebe</p></div><div></div><div class="el-p"><p dir="auto">Co je v drážní dopravě myšleno speciální dráhou?<br>
+?<br>
+dráha pro zajištění dopravní obslužnosti obce - metro</p></div><div></div><div class="el-p"><p dir="auto">šířka výměnné nástavby a její výhody<br>
+?<br>
+2,5 metru<br>
+oproti klasickému návěsu umí stát sama o sobě a jednoduše se nasazuje na tahač, tedy tahač může okamžitě odjet s naloženou nástavbou a tím se eliminují prostoje<br>
+výměnné nástavby samy o sobě nemají nápravy, proto při přepravě musí být umístěn na přívěsové soupravě nebo na tahači, co má odpovídající šasí</p></div><div></div><div class="el-p"><p dir="auto">Co to je konvertovaný freighter a jak ho poznáme?<br>
+?<br>
+je to nákladní letadlo konvertované z osobního letadla<br>
+lze ho poznat, podle toho, že má okna, které jsou ale zevnitř skryta<br>
+jinak podle označení, např. B 757SF (Special freighter) nebo B 757 BCF (Boeing converted freighter)</p></div><div></div><div class="el-p"><p dir="auto">Jaké jsou maximální povolené rozměry nákladních vozidel samostatných, s návěsem a přívěsovou soustavou?<br>
+?<br>
+návěsová souprava max 18,75 metru dlouhá<br>
+kamion max 16,5 metru<br>
+samostatné nákladní auto 12 metrů<br>
+maximální délka návěsu: 13,6<br>
+maximální šířka návěsu 2,55 metru (chladírenské vozy max 2,6)<br>
+max výška je 4 metry</p></div><div></div><div class="el-p"><p dir="auto">Maximální hmotnost nákladních vozidel a maximální užitná hmotnost nákladu<br>
+?<br>
+v čr je maximální cesková hmotnost nákladního auta 48 tun, ale pouze na 5 nebo více nápravách (tedy platí pro tahač s návěsem, protože návěs má většinou 3 nápravy)<br>
+jinak je to max 40 tun<br>
+maximální užitná hmotnost nákladu je 26 tun</p></div><div></div><div class="el-p"><p dir="auto">Jaké máme toky v logistice?<br>
+?<br>
+tok zboží<br>
+tok informací<br>
+tok financí</p></div><div></div><div class="el-p"><p dir="auto">Pro přepravu nadgabaritního zboží byste použili:<br>
+?<br>
+vozy typu Ua</p></div><div></div><div class="el-p"><p dir="auto">Co to je MTW, MTTW a MDW v letecké dopravě?<br>
+?<br>
+MTW - maximum departure weight<br>
+MTTW - maximum taxing weight<br>
+MDW - maximum departure weight</p></div><div></div><div class="el-p"><p dir="auto">Co lze považovat za ILU (intermodální přepravní jednotku)?<br>
+?<br>
+kontejner<br>
+výměnná nástavba<br>
+návěs</p></div><div></div><div class="el-p"><p dir="auto">Jaké známe kategorie pozemních komunikací? Čím jsou charakteristické a kdo je vlastník?<br>
+?<br>
+dálnice - bez úrovňových křížení - stát<br>
+silnice - pro dopravu mezi městy/vesnicemi - pro 1. třídu kraj; 2. a 3. třída obce s rozšířenou působností<br>
+místní komunikace - pro dopravu uvnitř města/vesnice - obec<br>
+účelové komunikace - pro spojení nemovitostí pro potřeby vlastníků nebo ke spojení soukromého pozemku s jinou komunikací - soukromý vlastník: fyzická nebo právnická osoba</p></div><div></div><div class="el-p"><p dir="auto">Jaké jsou třídy silnic?<br>
+?</p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">třída - dálková doprava</li>
+<li data-line="1" dir="auto">třída - mezi okresy</li>
+<li data-line="2" dir="auto">spojení obcí
+
+</li>
+</ol></div><div class="el-p"><p dir="auto">Jak se označují mezinárodní silniční tahy a kolik jich vede přes ČR?<br>
+?<br>
+např. E49, E442<br>
+přes ČR jich vede 13</p></div><div></div><div class="el-p"><p dir="auto">Jak klasifikujeme (rozlišujeme) vnitrozemské vodní cesty podle toho, kdo na nich může plout?<br>
+?<br>
+splavné (přirozeně splavné x splavněné) x nesplavné<br>
+sledované (dopravně významné x účelové) x nesledované<br>
+sledované se rozdělují do zón (1-4) podle výšky vln<br>
+využívané x využitelné</p></div><div></div><div class="el-p"><p dir="auto">Od jakých bodů je pro vodní nákladní dopravu použitelné Labe a Vltava?<br>
+?<br>
+Labe - od Chvaletic po Hřensko<br>
+Vltava - od Třebenice po soutok s Labem</p></div><div></div><div class="el-p"><p dir="auto">Co to je FIR a FL v letecké dopravě? Jaké prostory jsou v rámci FIR? Jaké prostory jsou definované ve vztahu k letišti?<br>
+?<br>
+FIR - flight information region; Česko má FIR Praha; některé státy mají více FIR<br>
+FL - flight level; např. FL 660 znamená let ve výšce 66 000 stop, děleno třemi to dává 22 000 metrů<br>
+V rámci FIR jsou dílčí oblasti (CTA - control area)<br>
+ve vztahu k letišti jsou definovány tyto prostory:<br>
+CTR - control zone - řízený okrsek - u řízených letišť<br>
+TMA - terminal control area - koncová řízená oblast - u řízených letišť<br>
+ATZ - aerodrome traffic zone - letištní provozní zóna - u neřízených letišť</p></div><div></div><div class="el-p"><p dir="auto">Jak se podle ICAO rozděluje vzdušný prostor?<br>
+?<br>
+do tříd písmeny A-G; ve FIR Praha máme C, D, E, G</p></div><div></div><div class="el-p"><p dir="auto">Jaké služby nabízí služba řízení letového provozu a Přibližovací služba řízení letového provozu?<br>
+?<br>
+Služba řízení letového provozu:<br>
+letištní řídící věž - povoluje vzlety, přistání, pojíždění a vstup letadel na RWY (může zastávat také ground a nebo delivery)<br>
+služba ground - určení a sdělení, které TWY použít na a z RWY<br>
+služba delivery - uděluje povolení k letu<br>
+Přibližovací služba:<br>
+approach arrival - navádí letadla na přiblížení, potom je předá na TWR<br>
+approach departure - na velkých letištích přebírá povolování některých odletů od TWR</p></div><div></div><div class="el-p"><p dir="auto">Jaké jsou tři složky letových provozních služeb?<br>
+?<br>
+služby řízení letového provozu<br>
+letová informační služba<br>
+pohotovostní služba</p></div><div></div><div class="el-p"></div><div></div><div class="el-p"></div><div></div><div class="el-p"></div><div></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="logistika.html#logistika_0" data-path="#logistika_0"><div class="tree-item-inner heading-link" heading-name="logistika">logistika</div></a><div class="tree-item-children"></div></div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></div></body></html>

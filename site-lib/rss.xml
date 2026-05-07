@@ -1,23 +1,515 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logistika]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Logistika</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 31 Mar 2026 16:38:50 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 31 Mar 2026 16:38:45 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Náložní list - konosament]]></title><description><![CDATA[bře 04, 2026
-Spojení: Náložní list, mezinárodně označovaný jako konosament (z anglického Bill of Landing, zkratka B/L), je klíčovým dokumentem primárně využívaným v námořní přepravě.Jedná se o obchodovatelný cenný papír.Předání/převedení&nbsp;náložního&nbsp;listu je stejné, jako kdybychom předali zboží.Stejně jako nákladní list, tak i náložní list není přepravní smlouvou, ale je hlavním důkazem, že taková smlouva existuje.Konosament přímo reprezentuje přepravované zboží. Jeho právoplatné vlastnictví (držení originálu) znamená také právní vlastnictví samotného zboží, což umožňuje se zbožím obchodovat ještě během jeho samotné přepravy.Konosament v praxi často vystavuje zasílatel naloďovatele a podepisuje ho agent rejdaře, případně rejdař nebo kapitán lodi.Typy konosamentů, které určují jeho převoditelnost
-Na řád - nejčastější typ, převod lze pomocí rubopisu&nbsp;
-Na jméno - není možné&nbsp;běžn&nbsp;ěpřevést, je to na konkrétního člověka&nbsp;
-Na doručitele - vlastníkem nákladu je ten, kdo má originál&nbsp;náložního&nbsp;listu
-Co to je konosament? Jak se mu ještě říká?
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logistika]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Logistika</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 07 May 2026 13:02:34 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 07 May 2026 13:02:30 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[logistika]]></title><description><![CDATA[Tagy: <a href=".?query=tag:logistika" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#logistika">#logistika</a>rozdíl mezi supply chain a demand chain ;; supply chain je od dodavatele k zákazníkovi a demand chain je od zákazníka k dodavateli6 pravidel logistiky, co se musí správně dodržet? ;; místo, čas, množství, kvalita, cena, správný adresátna jaké subsystémy je možné logistiku dekomponovat? (teoretické dělení)
+?
+statický - dopravní infrastruktura
+mobilní - dopravní prostředky
+řídící - pracovníci, signalizační zařízení (návěstidla, služby řízení letového provozu)praktické dělení (subsystémy) logistiky a co to představuje
+?
+technická základna - dopravní cesty (hrany grafu), logistická centra, gateways, terminály (vrcholy grafu), přepravní prostředky, dopravní prosttředy, prostředky při přenos dat atp.
+lidé; firmy
+technologie
+vědní aparátprvky logistiky - rozdělení
+?
+aktivní - dopravní prostředky, IT
+aktivní prvky zajišťují pohyb pasivních prvků
+pasivní - zboží, obalové materiály, kontejneryjaké jsou různé pozice logistických manažerů a náplň jejich práce
+?
+logistický manažer - operativní řizení lidí v oblasti dopravy a skladování
+manažer distribuce - operativa, řízení distribuce
+projektový manažer - více strategická role, integrace logistických řetězců atp.jaké jsou tři vědní přístupy k řešení problémů?
+?
+empiricko-intuitivní - založený na zkušenostech a intuici, težko se prokazuje správnost řešení
+algoritmický - založený na matematických metodách, systémové přemýšlení o problému, přesnost, objektivnost, transparentnost výsledku
+heuristický - využívání heuristických metod s definovaným algoritmem, využívá matematický základ, ale cílem není najít optimum, nýbrž suboptimum, přesnost lze zvýšit pomocí modelování (simulování)Jaké můžeme vybrat metody pro řešení logistického problému za jistoty, tedy když víme, co řešíme a máme data
+?
+operační výzkum - použití výpočetní techniky a matematiky pro výpočty a tvorbu matematických modelů, které umožňují rozhodování ve složitých ekonomických otázkách, součástí toho je lineární programování, teorie grafů atd.Jaké můžeme vybrat metody pro řešení logistického problému za jistoty, tedy když nevíme, s čím máme co dočinění
+?
+metody tvořivého myšlení - brainstorming atp.Jaké můžeme v logistice dostat certifikace / možnosti vzdělání?
+?
+vzdělání buď vysokoškolské, nebo MBA
+certifikují společnosti ELA a FIATA
+ELA vytvořila evropský systém certifikace logistických odborníků ECBL, v ČR toto zajišťuje ČLA - česká logistická asociace
+ELA má mezinárodně uznávané certifikáty na úrovních junior a seniorJaké známe logistické technologie a konkrétní příklady? Co se logistickou technologií myslí
+?
+je to soubor metod a prostředků, které firma využívá pro uskutečnění přepravy (vstupuje tam nějaké know-how, které ta firma musí mít, to je součástí každé logistické technologie)
+klasické - tvorba manipulačních skupin (sdružování) a intermodální přeprava
+telematické - sledování, co se kde nachází a v jakém je to stavu (automatické načtení zboží po průjezdu bránou, vzdálená datová komunikace kamionu s centrálou, EDI - posílání dodacích listů elektronicky)
+virtuální - simulace, grafická vizualizace (např. simulace skladu)
+komplexní - např. kanban (způsob JIT dodávání do výroby)Jaké dva subsystémy má infrastruktura?
+?
+uzlový subsystém - konkrétní místa - např. distribuční sklad, železniční stanice, přístav, cross-dock
+liniový subsystém - dopravní cesty - železnice, silniceinfrastruktura vs. suprastruktura a projekty PPP
+?
+infrastruktura je typycky vlastněná státem, pokud je vlastněna soukromými subjekty, je to suprastruktura
+PPP jsou projekty, na kterých spolupracuje veřejný a soukromý sektorJaké máme řády přepravních prostředků?
+?
+je to podle hmotnosti a způsobu manipulace
+0&nbsp;- lahev
+1&nbsp;- max 15kg&nbsp;- krabice
+2&nbsp;- max 1000 kg&nbsp;- palety
+3&nbsp;- kontejnery (ISO) ULD (unit load containery) letadlové cargoJaké znáte manipulační zařízení, co to je a kde se vyskytují?
+?
+jsou v překládacích a skladovacích uzlech
+vysokozdvižné vozíky
+rudly
+čelní překladače
+portálové jeřáby
+RTG - na kolech
+RMG - na kolejích
+STS - ship-to-shore - přemisťování kontejnerů na kontejnerové lodě
+také můžou být v dopravních prostředcích, např. hydraulické čelo (výtah na náklaďáku), hydraulické rameno, rampy na plavidlech, válečkové dráhy v letadlechJak rozdělujeme přípojná vozidla (i podle užitné hmotnosti) a jakým písmenem se označují?
+?
+písmeno O
+dělí se na návěsy (připojují se za tahač, nemá přední nápravu) a přívěsy (připojují se za vozidlo, mají i přední nápravu)
+podle užitné hmotnosti:
+O1 do 0,75t
+O2 do 3,5t
+O3 do 10t
+O4 nad 10tJak se dělí nákladní železniční vozy a příklady? Jakým subjektem je toto rozdělení určeno?
+?
+určeno UIC - mezinárodní železniční unií
+podle konstrukce - tzv. řady, řady jsou označené kombinací velkého písmena a jednoho nebo více malých písmen
+velká písmena - od E (A-D jsou osobní vozy)
+E, F - otevřené vozy, suché hromadné substráty
+L -&nbsp; vlak na auta
+S - intermodální přeprava - kontejnerové vagony - pouze podvozek, nakládá se na to kontejner
+T - s otevíratelnou střechou
+U - práškové, volně ložené zboží
+Z - cisterny
+G, H - pevná střecha
+Malá písmena:
+s - rychlost
+ss do 120
+s do 100
+bez s - méně než 100
+a - počet náprav - čtyř-nápravový vůz (bez a je to 2 nápravový)
+f - vhodný pro převoz do Velké Británie
+n - vysoká únosnost
+d - vybaven gravitačním vyprazdňovánímJaké rozlišujeme dopravní prostředky ve vodní dopravě?
+?
+pro vnitrozemskou vodní dopravu:
+motorové nákladní lodě
+remorkéry + nákladní čluny (remorkér za sebou táhne samostatný člun s nákladem)
+námořní nákladní lodě:
+kontejnerové lodě - pro suché náklady (všeobecný náklad)
+tankery - pro kapalné náklady (ropa, LPG)Co víte o nákladních letounech? Typové značení? Typy motorů?
+?
+anglicky freighter
+v typovém označení je to F
+proudové a turbovrtulové motoryJaké známe typy palet podle konstrukce?
+?
+prostá
+sloupková
+ohradová
+stříňová
+nádržkováJak se dělí kontejnery podle toho, kde se používají?
+?
+námořní deep sea (ISO kontejnery)
+vnitrozemské short sea (po Evropě) - wood kontejnery, rock kontejnery, pallet-wide kontejnery
+letecké kontejnery ULDJaké známe základní typy ISO kontejnerů podle toho, co převáží?
+?
+dry van - standardní
+reefer - temperovaný
+tank kontejner - ocelová cisterna zasazena do rámu pro ISO kontejner, pro kapaliny a plyny
+bulk - pro suché hromacné zboží
+flat rack / open top - bez bočních stěn nebo bez střechyJak rozlišujeme kontejnery podle jejich délky? Co to je TEU? Jaká je šířka a výška kontejnerů?
+?
+písmena A-E - A je nejkratší
+TEU = twenty-feet equvalent unit - tímto se počítá kapacita lodi - kolik TEU se do ní vejde; 1 TEU je kontejner C = 20 stop dlouhý
+všechny kontejnery mají šířku 8 stop
+standardní výška je 8 stop 6 palců; high cube mají 9 stop 6 palců (přesně o jednu stopu (cca 30cm) více)Jak dělíme hmotnost kontejneru?
+?
+tara - hmotnost vlastního kontejneru
+netto - hmotnost nákladu
+brutto - tara + nettoCo to jsou RFC a k čemu jsou dobré? Které města u nás a ve světě jsou na některém z koridorů?
+?
+rail freight corridors
+zjednodušují železniční nákladní dopravu, dopravce nebo operátor, který chce vypravit vlak z Hamburku do Prahy nemusí žádat o přidělení traťové kapacity zvlášť jednotlivé správce železnic, tzv. One-Stop Shop - stačí jedna žádost a centrální místo mu vyřídí průjezd všemi státy
+existuje několik takových koridorů, ČR protínají 4 z nich
+Prahu protíná RFC-7, který vede z Německa na Balkán; také výchozí bod pro RFC-9
+Ostrava leží na RFC-5 (od Baltu do Rakouska a Itálie)
+Brno - RFC-7
+Děčín - hlavní vstupní brána pro vlaky na koridoru RFC-7Jaké jsou třídy tratí?
+?
+A-E - E je pro nejtěžší náklad - 25 tun na nápravu - pouze nějaké důlní tratě, není jich mnohoJaké známe typy letových tratí (tratě ve vzduchu) - v pořadí v jaké je letadlo využije?
+?
+SID - standard instrument departure - Postup/trasa, po které letadlo stoupá po vzletu (takeoff)
+AIRWAY - dopravní koridor (dráha v oblacích)
+STAR - standard terminal arrival route - Příletová trať z AIRWAY na letištěJaké má letiště různé plochy, které využívají letadla?
+?
+RWY - runway
+TWY - pojezdové dráhy
+APRON - parkoviště pro letadlaJak jsou značeny třídy vodních cest? Které z nich jsou mezinárodního významu?
+?
+římskými číslicemi
+nejvyšší je VII
+IV a vyšší jsou cesty mezinárodního významudůležité evropské kanály? A u nás v ČR?
+?
+MLK - (mittellandkanal) středoněmecký kanál - protíná Německo na severu od západu k východu a spojuje Rýn, Vezeru a Labe
+rýn&nbsp;mohan&nbsp;dunaj&nbsp;průplav - Kanál v blízkosti Norimberku, který spojuje řeky Mohan a Dunaj – umožňuje tak plavbu ze Severního moře do Černého moře
+Kýlský&nbsp;průplav - zkratka mezi baltským a severním mořem
+německý postranní kanál
+kanál spojující Labe a VltavuDůležité evropské řeky
+?
+nejdůležitější je Rýn, teče od švýcarských hranic do Rotterdamu a do Severního moře
+Dunaj - Vídeň, Bratislava, Budapešť a vlévá se do Černého moře
+Seina - důležitá řeka ve Francii, protéká PařížíNámořní průlivy
+?
+Gibraltarský - Atlantský oceán a Středozemní moře
+Lamanšský průliv - Odděluje Anglii od Francie
+Bospor a Dardanely - Turecké průlivy, cesta ven z Černého moře do Středozemního mořeNámořní průplavy
+?
+Suez – u Egypta
+Panama – Panama (střední Amerika) - spojuje Tichý a Atlantský oceánJak jsou označeny RWY na letištích?
+?
+podle azymutů - desetina stupně od severu
+dráha směrem přímo na sever má 36, přímo na jih 18
+pokud jsou na letišti rovnoběžné dráhy, pak se dají rozlišit na L, C, RJak kategorizujeme sklady?
+?
+A - alespoň 10 metrů vysoké, temperované
+B - nestandardní výška, nestandardní podlaha
+C - jen halaJaké se používají technologie a způsoby skladování ve skladech?
+?
+skladování v bloku - palety jsou na sobě; vhodné, pokud máme hodně stejných palet
+paletový regál - palety jsou v regálech
+pojízdný regál - několik regálových řas za sebou, ty, které jsou u uličky se prohazují; typické u mraženého zboží
+drive-in shuttle regály
+spádový regál - stejné výrobky za sebou v regálu
+konzolový regál - pro dlouhé věci, jako jsou tyčejaký je rozdíl v pojmech multimodální, intermodální a kombinovaná přeprava?
+?
+multimodální - použití více oborů přepravy
+intermodální - použití více oborů přepravy a použití jedné standardizované přepravní jednotky (intermodal loading unit - ILU) napříč těmi obory
+kombinovaná - jako intermodální, ale většina přepravy musí být provedena jinak než po silniciCo to je BIBO loď?
+?
+nakládka volně loženého zboží, vykládka už v nějaké manipulační jednotce, třeba v pytlích (typicky to tak je se solí)Co to je AVI LOG?
+?
+kontejner se zkosenými stranamiKategorizace nákladních vozidel podle jejich maximální přípustné hmotnosti
+?
+N1 do 3,5t - dodávky
+N2 do 12t - nákladní auta
+N3 nad 12t - tahač a přívěsOznačení lokomotiv podle typu pohonu
+?
+1 - stejnosměrný
+2 - střídavý
+3 - více-systémová lokomotiva
+7 - motorová lokomotivaJaké známe různé typy nákladních lodí v námořní dopravě podle způsobu manipulace s nákladem a typu převáženého nákladu?
+?
+podle způsobu manipulace:
+Ro-Ro - roll on roll of - auta, co má kola nebo pásy
+Lo-Lo - lift on lift of
+Flo-flo - float in - float out
+podle toho, co převážejí:
+PCC - pure car carrier (osobní auta)
+PCTC - pure car truck carrier (nákladní auta)
+con-ro - hybrid - container a roll on - na palubu kontejnery, pod palubu auta
+kontejnerové lodě
+break bulk carrier - pro kusové zboží - již se moc nepoužívajíVysvětli parametry nákladních lodí DWT, NT a GT
+?
+DWT - dead weight tonage - hmotnost nákladu + hmotnost paliva v lodi + hmotnost čisté vody pro posádku
+NT - net tonage - objem nákladních prostor lodi
+GT - gross tonage - celkový objem všech prostor lodiCo to je geared vessel?
+?
+loď s jeřábemCo to je OSV v vnitrozemské vodní dopravě
+?
+off-shore support vessel - převáží náklad z námořských přístavů do vnitrozemíJak velké kontejnery se vejdou do podpalubí kontejnerové lodi?
+?
+20, 40, i high-cube verze
+kontejnerové lodě mají vodicí lišty a tak se tam typicky dají převážet pouze 1 TEU a 2 TEU (FEU) kontejnery, high-cube jsou jen vyšší verze, takže to nečiní problém při stackování na sebeCo je v drážní dopravě myšleno speciální dráhou?
+?
+dráha pro zajištění dopravní obslužnosti obce - metrošířka výměnné nástavby a její výhody
+?
+2,5 metru
+oproti klasickému návěsu umí stát sama o sobě a jednoduše se nasazuje na tahač, tedy tahač může okamžitě odjet s naloženou nástavbou a tím se eliminují prostoje
+výměnné nástavby samy o sobě nemají nápravy, proto při přepravě musí být umístěn na přívěsové soupravě nebo na tahači, co má odpovídající šasíCo to je konvertovaný freighter a jak ho poznáme?
+?
+je to nákladní letadlo konvertované z osobního letadla
+lze ho poznat, podle toho, že má okna, které jsou ale zevnitř skryta
+jinak podle označení, např. B 757SF (Special freighter) nebo B 757 BCF (Boeing converted freighter)Jaké jsou maximální povolené rozměry nákladních vozidel samostatných, s návěsem a přívěsovou soustavou?
+?
+návěsová souprava max 18,75 metru dlouhá
+kamion max 16,5 metru
+samostatné nákladní auto 12 metrů
+maximální délka návěsu: 13,6
+maximální šířka návěsu 2,55 metru (chladírenské vozy max 2,6)
+max výška je 4 metryMaximální hmotnost nákladních vozidel a maximální užitná hmotnost nákladu
+?
+v čr je maximální cesková hmotnost nákladního auta 48 tun, ale pouze na 5 nebo více nápravách (tedy platí pro tahač s návěsem, protože návěs má většinou 3 nápravy)
+jinak je to max 40 tun
+maximální užitná hmotnost nákladu je 26 tunJaké máme toky v logistice?
+?
+tok zboží
+tok informací
+tok financíPro přepravu nadgabaritního zboží byste použili:
+?
+vozy typu UaCo to je MTW, MTTW a MDW v letecké dopravě?
+?
+MTW - maximum departure weight
+MTTW - maximum taxing weight
+MDW - maximum departure weightCo lze považovat za ILU (intermodální přepravní jednotku)?
+?
+kontejner
+výměnná nástavba
+návěsJaké známe kategorie pozemních komunikací? Čím jsou charakteristické a kdo je vlastník?
+?
+dálnice - bez úrovňových křížení - stát
+silnice - pro dopravu mezi městy/vesnicemi - pro 1. třídu kraj; 2. a 3. třída obce s rozšířenou působností
+místní komunikace - pro dopravu uvnitř města/vesnice - obec
+účelové komunikace - pro spojení nemovitostí pro potřeby vlastníků nebo ke spojení soukromého pozemku s jinou komunikací - soukromý vlastník: fyzická nebo právnická osobaJaké jsou třídy silnic?
+?
+třída - dálková doprava
+třída - mezi okresy
+spojení obcí Jak se označují mezinárodní silniční tahy a kolik jich vede přes ČR?
+?
+např. E49, E442
+přes ČR jich vede 13Jak klasifikujeme (rozlišujeme) vnitrozemské vodní cesty podle toho, kdo na nich může plout?
+?
+splavné (přirozeně splavné x splavněné) x nesplavné
+sledované (dopravně významné x účelové) x nesledované
+sledované se rozdělují do zón (1-4) podle výšky vln
+využívané x využitelnéOd jakých bodů je pro vodní nákladní dopravu použitelné Labe a Vltava?
+?
+Labe - od Chvaletic po Hřensko
+Vltava - od Třebenice po soutok s LabemCo to je FIR a FL v letecké dopravě? Jaké prostory jsou v rámci FIR? Jaké prostory jsou definované ve vztahu k letišti?
+?
+FIR - flight information region; Česko má FIR Praha; některé státy mají více FIR
+FL - flight level; např. FL 660 znamená let ve výšce 66 000 stop, děleno třemi to dává 22 000 metrů
+V rámci FIR jsou dílčí oblasti (CTA - control area)
+ve vztahu k letišti jsou definovány tyto prostory:
+CTR - control zone - řízený okrsek - u řízených letišť
+TMA - terminal control area - koncová řízená oblast - u řízených letišť
+ATZ - aerodrome traffic zone - letištní provozní zóna - u neřízených letišťJak se podle ICAO rozděluje vzdušný prostor?
+?
+do tříd písmeny A-G; ve FIR Praha máme C, D, E, GJaké služby nabízí služba řízení letového provozu a Přibližovací služba řízení letového provozu?
+?
+Služba řízení letového provozu:
+letištní řídící věž - povoluje vzlety, přistání, pojíždění a vstup letadel na RWY (může zastávat také ground a nebo delivery)
+služba ground - určení a sdělení, které TWY použít na a z RWY
+služba delivery - uděluje povolení k letu
+Přibližovací služba:
+approach arrival - navádí letadla na přiblížení, potom je předá na TWR
+approach departure - na velkých letištích přebírá povolování některých odletů od TWRJaké jsou tři složky letových provozních služeb?
+?
+služby řízení letového provozu
+letová informační služba
+pohotovostní služba]]></description><link>logistika.html</link><guid isPermaLink="false">logistika.md</guid><pubDate>Thu, 07 May 2026 12:50:11 GMT</pubDate></item><item><title><![CDATA[Zabezpečovací systém ETCS]]></title><description><![CDATA[Tagy: <a href=".?query=tag:železnice" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#železnice">#železnice</a> <a href=".?query=tag:technologie" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#technologie">#technologie</a> <a href=".?query=tag:interoperabilita" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#interoperabilita">#interoperabilita</a> <a href=".?query=tag:mpz_žel" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz_žel">#mpz_žel</a>ETCS (European Train Control System) je jednotný evropský vlakový zabezpečovací systém. Spojuje řízení a zabezpečení jízdy vlaků a umožňuje určitou míru autonomie palubního zařízení drážních vozidel.<br>V EU existuje více než 20 různých typů národních vlakových zabezpečovačů. Tato fragmentace výrazně brání <a data-tooltip-position="top" aria-label="Technické specifika železnice" data-href="Technické specifika železnice" href="technické-specifika-železnice.html" class="internal-link" target="_self" rel="noopener nofollow">interoperabilitě</a> železniční dopravy -- vlak musí být vybaven zabezpečovačem kompatibilním s danou tratí, jinak na ni nemůže vjet.ETCS postupně nahradí všechny národní systémy a zajistí tak plnou interoperabilitu v rámci evropského železničního systému.
+Staniční -- zabezpečení v železničních stanicích
+Traťová -- zabezpečení na otevřené trati
+Vlaková -- zabezpečovací zařízení na palubě vlaku
+Přejezdová -- zabezpečení železničních přejezdů
+Systém se skládá ze dvou základních částí:
+Mobilní (palubní) část -- namontována přímo na drážní vozidlo; zahrnuje displej strojvedoucího, anténu pro příjem signálu od dispečera a čtečku eurobalíz
+Traťová (infrastrukturní) část -- instalována podél tratí; zahrnuje eurobalízy (traťové body ETCS), dispečink a vysílací zařízení Od ledna 2025 -- výhradní provoz ETCS na koridorových tratích (Praha -- Pardubice -- Olomouc/Ostrava -- Břeclav)
+Výhled 2040 -- pokrytí celé české železniční sítě systémem ETCS (úroveň 2 na hlavních tratích, ETCS pro regionální tratě na vedlejších linkách)
+Na trati Kopidlno -- Dolní Bousov byl od roku 2025 zahájen provoz autonomního vlaku (strojvedoucí je stále přítomen na palubě jako dozor).Co je ETCS? ;; European Train Control System -- jednotný evropský vlakový zabezpečovací systém, který nahrazuje cca 20 různých národních systémů a zajišťuje interoperabilituZe kterých dvou částí se skládá ETCS? ;; Mobilní (palubní) část na vozidlech a traťová (infrastrukturní) část podél tratíKolik různých národních vlakových zabezpečovačů existuje v EU? ;; Více než 20Na kterých tratích v ČR je ETCS ve výhradním provozu od ledna 2025? ;; Koridorové tratě (máme 4 koridory) Praha -- Pardubice -- Olomouc/Ostrava -- BřeclavDruhy zabezpečovacích zařízení na železnici (4)?
+?
+Staniční
+Traťová
+Vlaková
+Přejezdová ]]></description><link>zabezpečovací-systém-etcs.html</link><guid isPermaLink="false">Zabezpečovací systém ETCS.md</guid><pubDate>Wed, 06 May 2026 15:07:40 GMT</pubDate></item><item><title><![CDATA[Technické specifika železnice]]></title><description><![CDATA[Tagy: <a href=".?query=tag:železnice" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#železnice">#železnice</a> <a href=".?query=tag:technika" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#technika">#technika</a> <a href=".?query=tag:interoperabilita" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#interoperabilita">#interoperabilita</a> <a href=".?query=tag:mpz_žel" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz_žel">#mpz_žel</a>Rozchod kolejí je vzdálenost (mezera) mezi vnitřními hranami kolejnic.
+Normální rozchod: 1435 mm (používaný v ČR a většině Evropy)
+Široké rozchody: 1520 mm a 1524 mm (bývalé státy SSSR a Finsko), 1600 mm (irský), 1668 mm (iberský), 1676 mm
+Střední rozchody: 1000 mm (metrový), 1067 mm (kapský)
+Úzké rozchody: 800 mm (švýcarský), 760 mm (bosenský), 750 mm (saský), 600 mm aj.
+<br>Různorodost rozchodů kolejí po celém světě představuje jednu z hlavních překážek <a data-tooltip-position="top" aria-label="Zabezpečovací systém ETCS" data-href="Zabezpečovací systém ETCS" href="zabezpečovací-systém-etcs.html" class="internal-link" target="_self" rel="noopener nofollow">interoperability</a> železniční dopravy.
+Závislá trakce -- pohon vozidel je závislý na dopravní cestě; zdroj trakční síly je součástí dopravní cesty (elektrická trakce -- trolejové vedení)
+Nezávislá trakce -- pohon vozidel je nezávislý na dopravní cestě (motorová; parní -- v ČR zrušena 1980)
+Koleje mají oblouky, nikoli zatáčky.Česká železnice je poměrně specifická, protože se u náís kombinují 2 různé proudové soustavy: střídavá a stejnosměrná. Do budoucna je plán převést celou síť pod střídavé napětí, které je pro provoz ekonomičtější.
+Vrchní trolejové vedení -- nejrozšířenější způsob
+Třetí proudová kolejnice -- typicky metro a příměstské dráhy
+Akumulátor -- bateriový provoz Stejnosměrné - sever Česka (i Praha)
+Střídavé jednofázové - jih Česka
+Střídavé trojfázové (např. Jungfraubahn ve Švýcarsku) 3000 V -- ČD, ŽSR (Slovensko), PKP (Polsko), FS (Itálie), RENFE (Španělsko)
+1500 V -- SNCF (Francie), NS (Nizozemsko) 25000 V 50 Hz -- ČD, ŽSR, VR (Finsko), MÁV (Maďarsko)
+15000 V 16,7 Hz -- DB (Německo), SBB (Švýcarsko), ÖBB (Rakousko)
+Směrnice EU o interoperabilitě železničního systému č. 2008/57/ES definuje interoperabilitu jako schopnost železničního systému umožnit bezpečný a nepřerušovaný provoz vlaků dosahujících stanovených úrovní výkonnosti na tratích tohoto systému.Jedná se o sjednocení hlavních parametrů a výměnu informací všech zúčastněných zařízení (systémů) mezi sebou, tedy o schopnost umožnit bezpečný a nepřerušovaný pohyb drážního vozidla na dráhách evropského železničního systému.Hlavními překážkami interoperability jsou:
+Různé rozchody kolejí
+Různé proudové soustavy
+<br>Různé zabezpečovací systémy (řešení: <a data-href="Zabezpečovací systém ETCS" href="zabezpečovací-systém-etcs.html" class="internal-link" target="_self" rel="noopener nofollow">Zabezpečovací systém ETCS</a>)
+Jaký je normální rozchod kolejí? ;; 1435 mmJaké dva typy trakce existují na železnici? ;; Závislá (elektrická -- zdroj trakční síly je součástí dopravní cesty) a nezávislá (motorová, dříve parní)Jaké proudové soustavy se používají v ČR? ;; Stejnosměrná 3000 V a střídavá 25000 V 50 HzCo je interoperabilita v železniční dopravě? ;; Schopnost železničního systému umožnit bezpečný a nepřerušovaný provoz vlaků na tratích evropského železničního systému (směrnice EU 2008/57/ES)Hlavní překážky interoperability na železnici (3)?
+?
+Různé rozchody kolejí
+Různé proudové soustavy
+Různé zabezpečovací systémy (řeší ETCS) Tři způsoby přenosu elektrické energie na železnici?
+?
+Vrchní trolejové vedení
+Třetí proudová kolejnice
+Akumulátor ]]></description><link>technické-specifika-železnice.html</link><guid isPermaLink="false">Technické specifika železnice.md</guid><pubDate>Wed, 06 May 2026 15:06:28 GMT</pubDate></item><item><title><![CDATA[Rozměry a specifikace nákladních vozidel]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz">#mpz</a>
+Maximální celková délka: 16,5 metru (pro nákladní auto s návěsem). Maximální celková délka nákladního auta: 12 metrů.
+Maximální celková délka soupravy: 18,75 metru Maximální délka návěsu: 13,6 metru.
+Maximální šířka návěsu: 2,55 metru. mrazáky jsou 2,6 metru Maximální výška: Pro zboží v návěsu: 2,7 metry (v low-deck 3 metry)
+Celková výška nákladního auta: 4 metry. Objem návěsu: 100 metrů krychlových (pro low deck).
+Hmotnostní limity: Maximální celková hmotnost: 40 tun. v Česku ve vnitrozemské je to 48 tun, ale na 5 nápravách Maximální užitná hmotnost nákladu: 26 tun. Návěsy mají běžně 3 nápravy.
+Europaleta: Standardizovaná dřevěná paleta o rozměrech 800 x 1200 mm (šířka x délka); 24kg.
+Kapacita návěsu: Typický maximální počet europalet, který lze naskládat na jednu úroveň standardního návěsu, je 33 palet.
+Jaká je maximální celková délka nákladního auta? ;; 16,5 metruJaká je maximální dálka nápravy? ;; 13,6 metruJaká je maximální šířka běžné nápravy ;; 2,55 metruJaká je maximální výška pro zboží v nápravě a velkový výška nákladního auta?;; 3 metry pro zboží a 4 metry celkemJaký je objem návěsu? ;; 100m krychlovýchJaké jsou rozměry europalety? ;; šířka a délka 800 x 1200 mmJaký je typický maximální počet europalet, který lze naskládat na jednu úroveň návěsu? ;; 33 paletJaký je limit hmotnosti nákladního vozidla (celková a max hmotnost nákladu)? ;; celková 40t a náklad 26t]]></description><link>rozměry-a-specifikace-nákladních-vozidel.html</link><guid isPermaLink="false">Rozměry a specifikace nákladních vozidel.md</guid><pubDate>Sun, 03 May 2026 12:51:26 GMT</pubDate></item><item><title><![CDATA[Historie letecké dopravy]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz_let" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz_let">#mpz_let</a>Kdo uskutečnil první let a kdo byl průkopníkem v ČR? Přesné roky?
+?
+první let&nbsp;- 1903; Bratři Wrightovi&nbsp;- let trval 12s do vzdálenosti 37 metrů
+průkopník v&nbsp;ČR&nbsp;byl Jan Kašpar; 1910&nbsp;- let do vzdálenosti 2kmPrvní přelétnutí oceánu a první pravidelné linky přes oceány? Roky?
+?
+1919 - první přelet Atlantského oceánu
+1935 - první pravidelná linka přes Pacifik
+1939 - první pravidelná linka přes Atlantik
+ale veřejná letecká doprava byla již od roku 1920První zkušenosti s proudovými motory?
+?
+První let v roce 1949 a na pravidelných linkách 1952Jaká je historie českých aerolinií?
+?
+1923 - vznik československých earolinií (po rozdělení ČR =&gt; České aerolinie) - téhož roku první let Praha - Bratislava
+1927 Československá letecká společnost (ČLS) - založena Škodovými závody - provozovala mezinárodní linky
+1930 - první zahraniční linka ČSA - Praha - Bratislava - Záhřeb
+Při covidu byly v úpadku a teď už žádné lety neprovozují
+z počátku se využívalo letiště ve Kbelích]]></description><link>historie-letecké-dopravy.html</link><guid isPermaLink="false">Historie letecké dopravy.md</guid><pubDate>Fri, 01 May 2026 08:14:01 GMT</pubDate></item><item><title><![CDATA[Letové právo, regulace, mezinárodní dohody]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz_let" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz_let">#mpz_let</a>Co to je Společný evropský letový prostor? Co to znamená? Kdo tam patří a kdo ne?
+?
+European Common Aviation Area (ECAA)
+členské země EU + další přidružené země, jako je Norsko atd.
+jednotný letecký trh, stejná práva pro cestující
+nepatří tam Švýcarsko a Velká Británie - mají bilaterální dohodu s EUKdo je v ČR hlavní regulátor? Co reguluje? Co dělá?
+?
+Úřad pro civilní letectví (ÚCL)
+licencování pilotů
+certifikace letadel (imatrikulace - poznávací značka letadla)
+bezpečnost provozu
+přístup dopravců k trhuJak vypadá imatrikulace letadla? Co to je?
+?
+je to něco jako SPZ pro letadla
+pro česko je to OK-ABCPopiš Pařížskou a Chicagskou multilaterální úmluvu; popište i výstupy z Chicagské konference, jako jsou dohoda o letecké dopravě a dohoda o tranzitu mezinárodních leteckých služeb
+?
+v roce 1919 byla Pařížská dohoda první mezinárodní mnohostrannou úmluvou, která sjednotila pravidla registrace vozidel a osvědčování pilotů
+podepsalo ji 38 států včetně ČSR
+v roce 1944 ji nahradila Chicagská úmluva (o mezinárodním civilním letectví):
+stanovila základy, jako např. o volném tranzitu přes státy, kdo má vyšetřovat nehody, výbava letadel atp.
+další výstupy Chicagské konference:
+dohoda o letecké dopravě (o svobodě vzduchu - je 5+4 základních svobod vzduchu, na jakých se státy domluví je na bilaterálních dohodách; 1. právo létat přes vzdušný prostor jiného státu, 2. lze přistát i z jiných než obchodních důvodů); v rámci EU jsou platné všechny svobody (tedy i včetně kabotáže)
+dohoda o tranzitu mezinárodních leteckých služeb (poskytnutí práva příletu);
+Chicagská úmluva již měla globální charakter, vytvořila globální standardyCo to je ICAO?
+?
+International Civil Aviation Organization - (mezi)vládní organizace pro civilní letectví, která sdružuje státy
+vznikla na základě rozhodnutí na Chicagské konferenci
+zaměřuje se na technické aspekty (narozdíl od Chicagské úmluvy)
+stanovuje obecně platné standardyCo to je IATA?
+?
+International Air Transport Asociation
+nevládní organizace
+hájí zájmy leteckých společností
+koordinace spolupráce mezi dopravci - zúčtování (proratování) pohledávek a závazků jednotlivých dopravců, pokud si navzájem prodávají lety - IATA clearing house (viz Hub and Spoke)
+řeší ekonomické otázkyCo to je A4E? Kolik členů a jací např.?
+?
+Největší lobbistické hnutí evropských leteckých dopravců
+17 členů
+např. Smartwings, Finnair, Ryanair, EasyJetPopište varšavskou a montreálskou úmluvu, co tyto úmluvy řeší?
+?
+varšavská z roku 1929; řeší odpovědnost provozovatele letecké dopravy vůči uživatelům za škodu, která jim je způsobena
+řeší problematiku přepravních dokladů
+tato úmluva se upravovala Haagskými a montreálskými protokoly, nakonec byl celý varšavský systém konsolidován do Montreálské úmluvy (v roce 1999)Jaké odpovědnosti má podle Montrealské úmluvy letecký dopravce vůči cestujícím nebo jiným svým zákazníkům?
+?
+odpovědnost za:
+smrt
+za zpoždění
+za odbavené zavazadlo
+zapožkození přepravovaného nákladu]]></description><link>letové-právo,-regulace,-mezinárodní-dohody.html</link><guid isPermaLink="false">Letové právo, regulace, mezinárodní dohody.md</guid><pubDate>Fri, 01 May 2026 08:11:43 GMT</pubDate></item><item><title><![CDATA[Organizace letecké dopravy, letečtí dopravci]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz_let" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz_let">#mpz_let</a>Jaké rozlišujeme modely sítě linek a co je pro ně typické? Uveďte příklady dopravců.
+?
+Hub and Spoke - cestující letí do hubu a pak jiným letadlem do cílové destinace - to v jedné letence; umožňuje to nabízet hodně různých možností
+typické pro běžné osobní dopravce - ti často spolupracují mezi sebou (vyplácí se to), tak můžeme letět na jednu letenku s dvěma dopravci, stačí si letenku koupit u jednoho dopravce, oni pak ty peníze dají do poolu a spravedlivě si je rozdělí
+např. KLM, Lufthansa
+Point to Point - zajišťují pouze dopravu z A do B, negarantují navazující lety
+typické pro nízkonákladovky a malé regionální dopravce
+vyplatí se pouze, když je v daných místech dostatečná poptávka
+např. RyanairČlenění dopravců dle geografickém rozsahu jejich působení
+?
+regionální - obsluhují menší letiště; mohou spolupracovat s většími leteckými společnostmi, kde plní úlohu feedera - přivážení/odvážení z/do sítě většího dopravce
+kontinentální - létají do významných metropolí daného kontinentu, huby na hlavních letíštích daných zemí; většina nízkonákladových dopravců
+dálkoví - mezikontinentální přeprava; např. Lufthansa, KLMVedle pravidelné (linkové) letecké dopravy a charterové letecké dopravy je i "všeobecné letectví" - co to je?
+?
+lety pro konkrétní účel, např. vyhlídkové lety, reklamní lety, parašutistické lety, vládní lety, vojenské lety, soukromé letyTypy leteckých dopravců podle toho, co převážejí
+?
+osobní - osobní linková a charterová doprava
+zbožoví - jen cargo letadla; např. Cargolux, Lufthansa Cargo
+zasílatelští - přeprava kusových zásilek v kombinované dopravě; např. Feredal Express, DHL, UPSTypické znaky Low Cost společností
+?
+provozování pouze Point to Point linek
+absence členství v leteckých aliancích
+preference tzv. sekundárních letišť
+poplatky za doplňkové služby
+absence nákladní letecké dopravyTypické znaky Full service společností
+?
+převážejí i cargo
+lze si vybrat z více typů sedadelJaké známe formy spolupráce osobních leteckých dopravců - bilaterální smlouvy (typicky jen FSC)
+?
+poolové smlouvy - dopravci si navzájem prodávají lety, čímž naplňují i svoje lety, tržby odevzdávají do poolu IATA clearing house, kde pak proběhne rozúčtování mezi těmi dopravci
+joint venture - užší forma spolupráce, sdílí výnosy, ale i nákladky na společných linkách, typické na mezikontinentálních linkách
+franchising - typický v USA, velký dopravce propůjčí své jméno jinému dopravci, který za něj létá do míst, kde by se to tomu velkému nevyplatiloCo to je code-share a příklad použití?
+?
+označení jedné linky více kódy různých dopravců, kteří se na té lince podílejí (většinou dva)
+uzavírají se na to code-share smlouvy
+např. u BA si můžeme koupit let Praha - Londýn - New York i když ten druhý úsek zajišťuje American Airlines - BA má na lince Londýn-New York umístěný svůj kódCo umožňuje dohoda MITA?
+?
+v jedné letence můžou být dva dopravciCo to jsou aliance leteckých dopravců, jaké existují (a kdo v nich je), proč se sdružovat do aliancí, má to i nevýhody?
+?
+FSC spatřují výhodu v organizaci do většího celku
+snaha naleznou ekonomické výhody na vysoce konkurenčním trhu, jež letecká doprava je, proto dává smysl být v alianci a spolupracovat
+vytvoření společného frequent flyer program
+využití code-share smluv pro spolupráci na letových linkách, tím se naplňují letadla
+pokud má jeden dopravce reputační problém, týká se to i ostatních dopravců z aliance
+Aliance:
+Star Alliance - největší - Lufthansa, Turkish airlines
+SkyTeam - Delta airlines, KLM
+OneWorld - Finnair, American airlines, British airlinesJaké existují letecké společnosti, které vlastní jiné společnosti, co z těchto fúzí a akvizic je?
+?
+týká se zejména FSC
+cílem se dosáhnout více synergických efektů
+odstranění duplicitních činností - např. jeden rezervační systém
+společný nákup letadel
+např. Lufthansa group; Air France-KLM group]]></description><link>organizace-letecké-dopravy,-letečtí-dopravci.html</link><guid isPermaLink="false">Organizace letecké dopravy, letečtí dopravci.md</guid><pubDate>Fri, 01 May 2026 08:08:09 GMT</pubDate></item><item><title><![CDATA[Deregulace letecké dopravy]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz_let" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz_let">#mpz_let</a>Popiš situaci před deregulací letecké dopravy
+?
+během 20. stolení se vytvořily státní letecké společnosti, které měly monopol
+byly bilaterální dohody mezi státy
+stát určoval všechno - jak budou vypadat linky, ceny, kapacitu, jak&nbsp;často
+aerolinie dostávaly dotace, pokud by měli ztrátu
+značné bariéry pro vstup do odvětvíKdy došlo k deregulaci letecké dopravy (v USA a v Evropě), co to znamená?
+?
+1978&nbsp;- v USA podepsán zákon o deregulaci letecké dopravy
+aerolinky si sami určují linky, ceny atd.
+snižovaly se náklady a ceny za dopravu
+už&nbsp;nedostávali dotace, museli si na sebe vydělat sami
+1987&nbsp;- deregulace začala v západní Evropě&nbsp;- až&nbsp;do cca 1997
+dopravce se sídlem v EU může létat odkudkoli kamkoli
+padly bariéry pro vstup do odvětví
+deregulace proběhla na ekonomické stránce
+po technické stránce velmi regulovaná]]></description><link>deregulace-letecké-dopravy.html</link><guid isPermaLink="false">Deregulace letecké dopravy.md</guid><pubDate>Thu, 30 Apr 2026 13:17:19 GMT</pubDate></item><item><title><![CDATA[Náložní list - konosament]]></title><description><![CDATA[bře 04, 2026
+Spojení: Náložní list, mezinárodně označovaný jako konosament (z anglického Bill of Landing, zkratka B/L), je klíčovým dokumentem využívaným v námořní přepravě.Jedná se o obchodovatelný cenný papír.Předání/převedení&nbsp;náložního&nbsp;listu je stejné, jako kdybychom předali zboží.Stejně jako nákladní list, tak i náložní list není přepravní smlouvou, ale je hlavním důkazem, že taková smlouva existuje.Konosament přímo reprezentuje přepravované zboží. Jeho právoplatné vlastnictví (držení originálu) znamená také právní vlastnictví samotného zboží, což umožňuje se zbožím obchodovat ještě během jeho samotné přepravy.Konosament v praxi často vystavuje zasílatel naloďovatele a podepisuje ho agent rejdaře, případně rejdař nebo kapitán lodi.Typy konosamentů, které určují jeho převoditelnost
+Na řád - nejčastější typ, převod lze pomocí rubopisu náklad bude vydán každému, kdo prokáže, že jej nabyl jeho koupí
+je nedigitalizovatelný, musí ho podeprat obě strany Na jméno - není možné&nbsp;běžně převést, je to na konkrétního člověka&nbsp;
+Na doručitele - vlastníkem nákladu je ten, kdo má originál&nbsp;náložního&nbsp;listu nepoužívá se
+zboží je vydáno komukoli, kdo jej má Co to je konosament? Jak se mu ještě říká?
 ?
 tzv. Bill of landing; náložní list
 používá se v námořní přepravě
 je to obchodovatelný cenný papír, který představuje to zboží
-jeho právoplatné vlastnictví znamená také vlastnictví zboží]]></description><link>náložní-list-konosament.html</link><guid isPermaLink="false">Náložní list - konosament.md</guid><pubDate>Tue, 31 Mar 2026 13:08:53 GMT</pubDate></item><item><title><![CDATA[Rozměry a specifikace nákladních vozidel]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz">#mpz</a>
-Maximální celková délka: 16,5 metru (pro nákladní auto).
-Maximální délka návěsu: 13,6 metru.
-Maximální šířka návěsu: 2,55 metru.
-Maximální výška: Pro zboží v návěsu: 3 metry.
-Celková výška nákladního auta: 4 metry. Objem návěsu: 100 metrů krychlových.
-Hmotnostní limity: Maximální celková hmotnost: 40 tun.
-Maximální užitná hmotnost nákladu: 26 tun. Europaleta: Standardizovaná dřevěná paleta o rozměrech 800 x 1200 mm (šířka x délka); 24kg.
-Kapacita návěsu: Typický maximální počet europalet, který lze naskládat na jednu úroveň standardního návěsu, je 34 palet.
-Jaká je maximální celková délka nákladního auta? ;; 16,5 metruJaká je maximální dálka nápravy? ;; 13,6 metruJaká je maximální šířka nápravy ;; 2,55 metruJaká je maximální výška pro zboží v nápravě a velkový výška nákladního auta?;; 3 metry pro zboží a 4 metry celkemJaký je objem návěsu? ;; 100m krychlovýchJaké jsou rozměry europalety? ;; šířka a délka 800 x 1200 mmJaký je typický maximální počet europalet, který lze naskládat na jednu úroveň návěsu? ;; 34 paletJaký je limit hmotnosti nákladního vozidla (celková a max hmotnost nákladu)? ;; celková 40t a náklad 26t]]></description><link>rozměry-a-specifikace-nákladních-vozidel.html</link><guid isPermaLink="false">Rozměry a specifikace nákladních vozidel.md</guid><pubDate>Tue, 31 Mar 2026 12:52:49 GMT</pubDate></item><item><title><![CDATA[P_ Nákladní silniční doprava]]></title><description><![CDATA[<a href=".?query=tag:přehledováPoznámka" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#přehledováPoznámka">#přehledováPoznámka</a>Silniční doprava je nejflexibilnější druh pozemní dopravy. Umožňuje přepravu z domu do domu a je vhodná i pro malé zásilky. V osobní dopravě zahrnuje jak autobusovou dopravu, tak taxislužbu a individuální automobilovou dopravu.Vztahy při mezinárodní silniční přepravě upravují mnohostranné úmluvy (dohody). Mnohostranné proto, že jsou uzavřeny mezi více subjekty (např. státy). V silniční dopravě máme tyto úmluvy:
+jeho právoplatné vlastnictví znamená také vlastnictví zboží]]></description><link>náložní-list-konosament.html</link><guid isPermaLink="false">Náložní list - konosament.md</guid><pubDate>Thu, 30 Apr 2026 07:42:58 GMT</pubDate></item><item><title><![CDATA[Kurz_ Logistika]]></title><description><![CDATA[<a data-href="logistika" href="logistika.html" class="internal-link" target="_self" rel="noopener nofollow">logistika</a>]]></description><link>kurz_-logistika.html</link><guid isPermaLink="false">Kurz_ Logistika.md</guid><pubDate>Wed, 29 Apr 2026 15:56:27 GMT</pubDate></item><item><title><![CDATA[INCOTERMS]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz">#mpz</a>Dodací doložky (neboli parity) INCOTERMS jsou nedílnou součástí kupní smlouvy. Slouží pro zahrnutí přepravních a logistických služeb v kupní smlouvě. Definují přechod rizik (odpovědnost) za převážené zboží, přechod nákladů mezi odesilatelem a příjemcem (subjekty kupní smlouvy).INCOTERMS neřeší přechod vlastnictví zboží.INCOTERMS tímto definuje hranice dodavatelského řetězce.Výběr konkrétního typu dodací doložky INCOTERMS určuje, jakým způsobem dojde k předání zboží od odesilatele příjemci (prostřednictvím dopravce).Co definuje INCOTERMS a kde se uplatňuje ;; je to doložka do kupní smlouvy (musí tam povinně být), definuje přechod odpovědnosti za převážené zboží]]></description><link>incoterms.html</link><guid isPermaLink="false">INCOTERMS.md</guid><pubDate>Wed, 29 Apr 2026 15:56:07 GMT</pubDate></item><item><title><![CDATA[P_ Letecká osobní doprava]]></title><description><![CDATA[<a href=".?query=tag:přehledováPoznámka" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#přehledováPoznámka">#přehledováPoznámka</a><br><a data-href="Historie letecké dopravy" href="historie-letecké-dopravy.html" class="internal-link" target="_self" rel="noopener nofollow">Historie letecké dopravy</a><br><a data-href="Deregulace letecké dopravy" href="deregulace-letecké-dopravy.html" class="internal-link" target="_self" rel="noopener nofollow">Deregulace letecké dopravy</a><br><a data-href="Letové právo, regulace, mezinárodní dohody" href="letové-právo,-regulace,-mezinárodní-dohody.html" class="internal-link" target="_self" rel="noopener nofollow">Letové právo, regulace, mezinárodní dohody</a><br><a data-href="Organizace letecké dopravy, letečtí dopravci" href="organizace-letecké-dopravy,-letečtí-dopravci.html" class="internal-link" target="_self" rel="noopener nofollow">Organizace letecké dopravy, letečtí dopravci</a>]]></description><link>p_-letecká-osobní-doprava.html</link><guid isPermaLink="false">P_ Letecká osobní doprava.md</guid><pubDate>Sun, 26 Apr 2026 08:13:16 GMT</pubDate></item><item><title><![CDATA[Limity odpovědnosti dopravce]]></title><description><![CDATA[bře 04, 2026
+Spojení: Odpovědnost dopravce za přepravovanou podléhá pevně stanoveným limitům odpovědnosti, které jsou definovány v <a data-tooltip-position="top" aria-label="Mezinárodní přepravní úmluvy" data-href="Mezinárodní přepravní úmluvy" href="mezinárodní-přepravní-úmluvy.html" class="internal-link" target="_self" rel="noopener nofollow">mnohostranných přepravních úmluvách</a>. Logikou limitů je kompromis mezi zájmy dopravců a přepravců (zákazníků) a snaha o rozložení rizik.<br>Limity se udávají ve speciální měnové jednotkce <a data-href="SDR" href="sdr.html" class="internal-link" target="_self" rel="noopener nofollow">SDR</a>.Limity platí pouze, pokud ke poškození nebo zničení nákladu dojde neúmyslně.V případě poškození nebo znišení přepravovaného nákladu se výše odškodnění odesilateli počítá následovně:
+Příklad: zničení nákladu za 10 milionů SDR = 30 Kč zjistíme kurz SDR z jakékoli banky hrubá hmotnost nákladu koeficient kolik SDR na 1 kg nákladu je maximální odpovědnost Ztráta nebo poškození zásilky: Odškodnění se vypočítává paušální částkou za každý chybějící/poškozený kilogram hrubé hmotnosti zásilky, případně pevnou částkou za přepravní kus či jednotku. Zpoždění (pozdní dodání): Zde je náhrada škody obvykle vázána na výši dovozného (přepravného), respektive na jeho určitý násobek. Prolomení limitů: Dopravce ztrácí právo krýt se tímto limitem a musí hradit plnou výši škody v případě, že škodu způsobil úmyslně nebo z hrubé nedbalosti. Zvýšení ručení: Pokud chce odesílatel krýt vyšší hodnotu zboží nad daný limit, má možnost u dopravce výslovně deklarovat v přepravní smlouvě vyšší hodnotu zásilky (či tzv. zvláštní zájem na dodání), což je obvykle spojeno s příplatkem k přepravnému. Pokud to neudělá, musí si zásilku individuálně připojistit. Jednotlivé dopravní obory mají limity nastaveny odlišně na základě specifik dané dopravy:1. Letecká doprava (Montrealská úmluva) Letecká doprava je velmi specifická, protože aktuální Montrealská úmluva z roku 1999 zakotvuje absolutní odpovědnost dopravce.
+Limit pro zničení, ztrátu nebo poškození je 22 SDR/ZPČ za 1 kg hrubé hmotnosti.
+Hlavní rozdíl: V letectví se tento limit (22 SDR za kg) aplikuje i pro případy zpoždění. Je to výjimka, protože v ostatních druzích dopravy se odškodnění za zpoždění nepočítá z váhy, ale váže se na výši ceny za přepravu.
+2. Železniční doprava (Úmluva COTIF / CIM)
+Při ztrátě či poškození je dopravce povinen uhradit škodu maximálně do výše 17 SDR/ZPČ za každý chybějící kilogram hrubé hmotnosti.
+Při překročení dodací lhůty (zpoždění) dopravce hradí škodu nejvýše do částky čtyřnásobku dovozného (přepravného).
+3. Silniční doprava (Úmluva CMR)
+Při ztrátě a poškození činí limit 8,33 SDR/ZPČ za 1 kg hrubé hmotnosti.
+Při překročení dodací lhůty a zpoždění dodání hradí dopravce prokazatelnou škodu maximálně do výše dovozného (přepravného) - tedy když dorazí pozdě, nedostane za přepravu zaplaceno.
+4. Vnitrozemská vodní a říční doprava (Budapešťská úmluva CMNI)
+Dopravce ručí částkou 2 SDR/ZPČ za 1 kg hrubé hmotnosti, nebo 666,67 SDR/ZPČ za balení či nákladovou jednotku (podle toho, která částka vyjde vyšší). V kontejnerové přepravě je limit 1 500 SDR za prázdný kontejner (TEU) a 25 000 SDR za zboží uložené v jednom TEU.
+Při pozdním dodání je odpovědnost omezena do výše přepravného (dovozného).
+5. Námořní doprava U námořní dopravy je odpovědnost založena na principu presumovaného zavinění a limity se liší podle použité mezinárodní úmluvy:
+Hamburská pravidla (1978): Limit 835 SDR/ZPČ za kus/jednotku nebo 2,5 SDR/ZPČ za kilogram (platí vyšší částka). Za opožděné dodání se platí 2,5násobek námořního přepravného.
+Rotterdamská pravidla: Novější úprava limity mírně zvýšila na 875 SDR za jednotku nebo 3 SDR za kilogram. Odpovědnost za zpoždění zůstala na 2,5násobku přepravného.
+]]></description><link>limity-odpovědnosti-dopravce.html</link><guid isPermaLink="false">Limity odpovědnosti dopravce.md</guid><pubDate>Sat, 25 Apr 2026 14:47:53 GMT</pubDate></item><item><title><![CDATA[Hraniční přechody]]></title><description><![CDATA[Tagy: Rozvadov-dálnice
+Folmava
+Strážný Břeclav
+Mikulov
+Dolní Dvořiště Valtice Děčín jediný elektrifikovaný přechod Cheb
+Železná Ruda Břeclav
+]]></description><link>hraniční-přechody.html</link><guid isPermaLink="false">Hraniční přechody.md</guid><pubDate>Thu, 26 Mar 2026 07:36:55 GMT</pubDate></item><item><title><![CDATA[Zástavní právo zasílatele]]></title><description><![CDATA[Tagy: Občanský zákoník určuje, že pokud příjemce věděl nebo musel vědět o pohledávce, kterou zasílatel má vůči příkazci, stává se ručitelem za toto pohledávku. Zástavní právo se vztahuje i na situace, kdy má zboží u sebe třetí strana jménem zasílatele (dopravce).Předmět zástavy je samotné zboží a konosament, pokud je vydaný. Zástava slouží k zajištění dluhu příkazce vůči zasílateli, který při nesplacení dluhu může zásilku zpeněžit.V praxi může na jedné zásilce vzniknout i více zástavních práv. V takovém případě mají zástavní práva toto pořadí: skladovatel, dopravce, zasílatel.]]></description><link>zástavní-právo-zasílatele.html</link><guid isPermaLink="false">Zástavní právo zasílatele.md</guid><pubDate>Thu, 26 Mar 2026 07:22:26 GMT</pubDate></item><item><title><![CDATA[Odpovědnost zasílatele]]></title><description><![CDATA[Tagy: Zasílatel nese odpovědnost za řádné obstarání (zorganizování) přepravy zboží.Narozdíl od <a data-tooltip-position="top" aria-label="Smlouva o přepravě věci (přepravní smlouva)" data-href="Smlouva o přepravě věci (přepravní smlouva)" href="smlouva-o-přepravě-věci-(přepravní-smlouva).html" class="internal-link" target="_self" rel="noopener nofollow">přepravní smlouvy</a> neexistuje pro <a data-tooltip-position="top" aria-label="Zasílatelská smlouva" data-href="Zasílatelská smlouva" href="zasílatelská-smlouva.html" class="internal-link" target="_self" rel="noopener nofollow">zasílatelskou smlouvu</a> žádná mezinárodně platná úmluva. Zasílatelská smlouva, stejně jako odpovědnost zasílatele, vychází v národního práva, v Česku z Občanské zákoníka. Výše odpovědnosti se řídí Všeobecnými zasílatelskými podmínkami, které jsou definovány <a data-tooltip-position="top" aria-label="Svaz spedice a logistiky ČR (SSL)" data-href="Svaz spedice a logistiky ČR (SSL)" href="svaz-spedice-a-logistiky-čr-(ssl).html" class="internal-link" target="_self" rel="noopener nofollow">Svazem spedice a logistiky (SSL)</a>.Limity náhrad:
+<br>Při ztrátě, zničení nebo poškození zásilky během obstarávání přepravy (případně pokud má zasílatel zásilku fyzicky ve své péči) je jeho odpovědnost omezena částkou 8,33 SDR za jeden kilogram hrubé hmotnosti zásilky, <a data-tooltip-position="top" aria-label="Limity odpovědnosti dopravce" data-href="Limity odpovědnosti dopravce" href="limity-odpovědnosti-dopravce.html" class="internal-link" target="_self" rel="noopener nofollow">stejně jako dopravce v silniční přepravě</a>.
+V případě zpoždění (pozdního dodání zásilky) ručí zasílatel pouze do výše své odměny, kterou mu hradí příkazce. Zasílatel rovněž nehradí žádné nepřímé škody ani ušlý zisk. Tyto omezující limity ovšem zasílatel nemůže uplatnit, pokud škodu způsobí úmyslně nebo s vědomím, že škoda vznikne.
+]]></description><link>odpovědnost-zasílatele.html</link><guid isPermaLink="false">Odpovědnost zasílatele.md</guid><pubDate>Wed, 25 Mar 2026 10:44:45 GMT</pubDate></item><item><title><![CDATA[Komplementární služby obchodu]]></title><description><![CDATA[Tagy: Komplementární služby obchodu jsou služby bezprostředně spjaté a podmiňující prodej hmotného zboží, bez kterých by prodej hmotného zboží nebyl možný.Označují se jako tzv. neviditelný obchod.Nejvýznamnější komplementární službou pro obchod s hmotným zbožím jsou přepravní služby, dalšími jsou pak např. balení, skladování, nebo pojištění nákladu.Nekomplementární služby jsou ostatní služby, např. kadeřnictví a také např. pojištění budovy, protože přímo nesouvisí s uskutečněním obchodu.]]></description><link>komplementární-služby-obchodu.html</link><guid isPermaLink="false">Komplementární služby obchodu.md</guid><pubDate>Tue, 24 Mar 2026 17:58:40 GMT</pubDate></item><item><title><![CDATA[P_ Nákladní silniční doprava]]></title><description><![CDATA[<a href=".?query=tag:přehledováPoznámka" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#přehledováPoznámka">#přehledováPoznámka</a>Silniční doprava je nejflexibilnější druh pozemní dopravy. Umožňuje přepravu z domu do domu a je vhodná i pro malé zásilky. V osobní dopravě zahrnuje jak autobusovou dopravu, tak taxislužbu a individuální automobilovou dopravu.Vztahy při mezinárodní silniční přepravě upravují mnohostranné úmluvy (dohody). Mnohostranné proto, že jsou uzavřeny mezi více subjekty (např. státy). V silniční dopravě máme tyto úmluvy:
 <br>
 <a data-href="Úmluva CMR" href="úmluva-cmr.html" class="internal-link" target="_self" rel="noopener nofollow">Úmluva CMR</a> -- mezinárodní silniční nákladní přeprava <br>
 <a data-href="Úmluva TIR" href="úmluva-tir.html" class="internal-link" target="_self" rel="noopener nofollow">Úmluva TIR</a> -- celní problematika pro dopravu mimo EU <br>
@@ -71,37 +563,7 @@ závodová doprava - doprava, kterou provozuje sám podnik pro vlastní potřebu
 veřejná doprava - nabízí služby přepravy zboží na komerční báziTypy dopravy podle pravidelnosti
 ?
 liniová - prováděná pravidelně mezi několika body, podle zveřejněného jízdního řádu za stanovenou cenu
-charterová (trampová doprava) - prováděna nepravidelně, operativně podle aktuální potřeby zákazníka (příkazce) na objednávku]]></description><link>druhy-(nákladní)-dopravy.html</link><guid isPermaLink="false">Druhy (nákladní) dopravy.md</guid><pubDate>Tue, 31 Mar 2026 05:43:44 GMT</pubDate></item><item><title><![CDATA[Technické specifika železnice]]></title><description><![CDATA[Tagy: <a href=".?query=tag:železnice" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#železnice">#železnice</a> <a href=".?query=tag:technika" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#technika">#technika</a> <a href=".?query=tag:interoperabilita" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#interoperabilita">#interoperabilita</a> <a href=".?query=tag:mpz" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz">#mpz</a>Rozchod kolejí je vzdálenost (mezera) mezi vnitřními hranami kolejnic.
-Normální rozchod: 1435 mm (používaný v ČR a většině Evropy)
-Široké rozchody: 1520 mm a 1524 mm (bývalé státy SSSR a Finsko), 1600 mm (irský), 1668 mm (iberský), 1676 mm
-Střední rozchody: 1000 mm (metrový), 1067 mm (kapský)
-Úzké rozchody: 800 mm (švýcarský), 760 mm (bosenský), 750 mm (saský), 600 mm aj.
-<br>Různorodost rozchodů kolejí po celém světě představuje jednu z hlavních překážek <a data-tooltip-position="top" aria-label="Zabezpečovací systém ETCS" data-href="Zabezpečovací systém ETCS" href="zabezpečovací-systém-etcs.html" class="internal-link" target="_self" rel="noopener nofollow">interoperability</a> železniční dopravy.
-Závislá trakce -- pohon vozidel je závislý na dopravní cestě; zdroj trakční síly je součástí dopravní cesty (elektrická trakce -- trolejové vedení)
-Nezávislá trakce -- pohon vozidel je nezávislý na dopravní cestě (motorová; parní -- v ČR zrušena 1980)
-Koleje mají oblouky, nikoli zatáčky.Česká železnice je poměrně specifická, protože se u náís kombinují 2 různé proudové soustavy: střídavá a stejnosměrná. Do budoucna je plán převést celou síť pod střídavé napětí, které je pro provoz ekonomičtější.
-Vrchní trolejové vedení -- nejrozšířenější způsob
-Třetí proudová kolejnice -- typicky metro a příměstské dráhy
-Akumulátor -- bateriový provoz Stejnosměrné - sever Česka (i Praha)
-Střídavé jednofázové - jih Česka
-Střídavé trojfázové (např. Jungfraubahn ve Švýcarsku) 3000 V -- ČD, ŽSR (Slovensko), PKP (Polsko), FS (Itálie), RENFE (Španělsko)
-1500 V -- SNCF (Francie), NS (Nizozemsko) 25000 V 50 Hz -- ČD, ŽSR, VR (Finsko), MÁV (Maďarsko)
-15000 V 16,7 Hz -- DB (Německo), SBB (Švýcarsko), ÖBB (Rakousko)
-Směrnice EU o interoperabilitě železničního systému č. 2008/57/ES definuje interoperabilitu jako schopnost železničního systému umožnit bezpečný a nepřerušovaný provoz vlaků dosahujících stanovených úrovní výkonnosti na tratích tohoto systému.Jedná se o sjednocení hlavních parametrů a výměnu informací všech zúčastněných zařízení (systémů) mezi sebou, tedy o schopnost umožnit bezpečný a nepřerušovaný pohyb drážního vozidla na dráhách evropského železničního systému.Hlavními překážkami interoperability jsou:
-Různé rozchody kolejí
-Různé proudové soustavy
-<br>Různé zabezpečovací systémy (řešení: <a data-href="Zabezpečovací systém ETCS" href="zabezpečovací-systém-etcs.html" class="internal-link" target="_self" rel="noopener nofollow">Zabezpečovací systém ETCS</a>)
-Jaký je normální rozchod kolejí? ;; 1435 mmJaké dva typy trakce existují na železnici? ;; Závislá (elektrická -- zdroj trakční síly je součástí dopravní cesty) a nezávislá (motorová, dříve parní)Jaké proudové soustavy se používají v ČR? ;; Stejnosměrná 3000 V a střídavá 25000 V 50 HzJaké napětí používá DB (Německo) na železnici? ;; 15000 V 16,7 Hz (střídavá soustava)Co je interoperabilita v železniční dopravě? ;; Schopnost železničního systému umožnit bezpečný a nepřerušovaný provoz vlaků na tratích evropského železničního systému (směrnice EU 2008/57/ES)Hlavní překážky interoperability na železnici (3)?
-?
-Různé rozchody kolejí
-Různé proudové soustavy
-Různé zabezpečovací systémy (řeší ETCS)
-Tři způsoby přenosu elektrické energie na železnici?
-?
-Vrchní trolejové vedení
-Třetí proudová kolejnice
-Akumulátor
-]]></description><link>technické-specifika-železnice.html</link><guid isPermaLink="false">Technické specifika železnice.md</guid><pubDate>Tue, 31 Mar 2026 05:40:48 GMT</pubDate></item><item><title><![CDATA[Nákladní list camrák (CMR)]]></title><description><![CDATA[Tag: <a href=".?query=tag:mpz" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz">#mpz</a><br>Nákladní list CMR, slangově označovaný jako "camrák", je nejvýznamnějším a nejrozšířenějším přepravním dokumentem v mezinárodní silniční nákladní dopravě podle <a data-tooltip-position="top" aria-label="Úmluva CMR" data-href="Úmluva CMR" href="úmluva-cmr.html" class="internal-link" target="_self" rel="noopener nofollow">úmluvy CMR</a>. Fyzicky cestuje společně s přepravovaným zbožím.
+charterová (trampová doprava) - prováděna nepravidelně, operativně podle aktuální potřeby zákazníka (příkazce) na objednávku]]></description><link>druhy-(nákladní)-dopravy.html</link><guid isPermaLink="false">Druhy (nákladní) dopravy.md</guid><pubDate>Tue, 31 Mar 2026 05:43:44 GMT</pubDate></item><item><title><![CDATA[Nákladní list camrák (CMR)]]></title><description><![CDATA[Tag: <a href=".?query=tag:mpz" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz">#mpz</a><br>Nákladní list CMR, slangově označovaný jako "camrák", je nejvýznamnějším a nejrozšířenějším přepravním dokumentem v mezinárodní silniční nákladní dopravě podle <a data-tooltip-position="top" aria-label="Úmluva CMR" data-href="Úmluva CMR" href="úmluva-cmr.html" class="internal-link" target="_self" rel="noopener nofollow">úmluvy CMR</a>. Fyzicky cestuje společně s přepravovaným zbožím.
 <br>Slouží primárně jako důkaz o existenci <a data-tooltip-position="top" aria-label="Smlouva o přepravě věci (přepravní smlouva)" data-href="Smlouva o přepravě věci (přepravní smlouva)" href="smlouva-o-přepravě-věci-(přepravní-smlouva).html" class="internal-link" target="_self" rel="noopener nofollow">přepravní smlouvy</a> a jako důkaz o převzetí zboží dopravcem.
 Také slouží jako podklad pro fakturaci: "Fakturujeme vám přepravu na základně nákladního listu č. 123...".
 Píší se do něj všechny přílohy a další dokumenty, které jsou pro dopravu potřeba: dodáky
@@ -320,24 +782,7 @@ organizovat a optimalizovat přepravu zboží s maximální efektivností vynalo
 napomáhat příkazci v řešení všech přepravních otázek
 zajišťovat volbu optimální trasy a volbu správných dopravních prostředků a módů dopravy
 pomáhat příkazce v platebním řízení
-Před samotným provedením přepravy je nejdůležitější činností volba a sjednání způsobu a podmínek přepravy a následně zvolení vhodného dopravce. Zejména smluvní příprava těchto operací.]]></description><link>činnost-zasilatele.html</link><guid isPermaLink="false">Činnost zasilatele.md</guid><pubDate>Wed, 25 Mar 2026 08:01:14 GMT</pubDate></item><item><title><![CDATA[Limity odpovědnosti dopravce]]></title><description><![CDATA[bře 04, 2026
-Spojení: Odpovědnost dopravce za přepravovanou podléhá pevně stanoveným limitům odpovědnosti, které jsou definovány v <a data-tooltip-position="top" aria-label="Mezinárodní přepravní úmluvy" data-href="Mezinárodní přepravní úmluvy" href="mezinárodní-přepravní-úmluvy.html" class="internal-link" target="_self" rel="noopener nofollow">mnohostranných přepravních úmluvách</a>. Logikou limitů je kompromis mezi zájmy dopravců a přepravců (zákazníků) a snaha o rozložení rizik.<br>Limity se udávají ve speciální měnové jednotkce <a data-href="SDR" href="sdr.html" class="internal-link" target="_self" rel="noopener nofollow">SDR</a>.Limity platí pouze, pokud ke poškození nebo zničení nákladu dojde neúmyslně.V případě poškození nebo znišení přepravovaného nákladu se výše odškodnění odesilateli počítá následovně:
-Příklad: zničení nákladu za 10 milionů SRD = 30 Kč zjistíme kurz SDR z jakékoli banky hrubá hmotnost nákladu koeficient kolik SDR na 1 kg nákladu je maximální odpovědnost Ztráta nebo poškození zásilky: Odškodnění se vypočítává paušální částkou za každý chybějící/poškozený kilogram hrubé hmotnosti zásilky, případně pevnou částkou za přepravní kus či jednotku. Zpoždění (pozdní dodání): Zde je náhrada škody obvykle vázána na výši dovozného (přepravného), respektive na jeho určitý násobek. Prolomení limitů: Dopravce ztrácí právo krýt se tímto limitem a musí hradit plnou výši škody v případě, že škodu způsobil úmyslně nebo z hrubé nedbalosti. Zvýšení ručení: Pokud chce odesílatel krýt vyšší hodnotu zboží nad daný limit, má možnost u dopravce výslovně deklarovat v přepravní smlouvě vyšší hodnotu zásilky (či tzv. zvláštní zájem na dodání), což je obvykle spojeno s příplatkem k přepravnému. Pokud to neudělá, musí si zásilku individuálně připojistit. Jednotlivé dopravní obory mají limity nastaveny odlišně na základě specifik dané dopravy:1. Letecká doprava (Montrealská úmluva) Letecká doprava je velmi specifická, protože aktuální Montrealská úmluva z roku 1999 zakotvuje absolutní odpovědnost dopravce.
-Limit pro zničení, ztrátu nebo poškození je 22 SDR/ZPČ za 1 kg hrubé hmotnosti.
-Hlavní rozdíl: V letectví se tento limit (22 SDR za kg) aplikuje i pro případy zpoždění. Je to výjimka, protože v ostatních druzích dopravy se odškodnění za zpoždění nepočítá z váhy, ale váže se na výši ceny za přepravu.
-2. Železniční doprava (Úmluva COTIF / CIM)
-Při ztrátě či poškození je dopravce povinen uhradit škodu maximálně do výše 17 SDR/ZPČ za každý chybějící kilogram hrubé hmotnosti.
-Při překročení dodací lhůty (zpoždění) dopravce hradí škodu nejvýše do částky čtyřnásobku dovozného (přepravného).
-3. Silniční doprava (Úmluva CMR)
-Při ztrátě a poškození činí limit 8,33 SDR/ZPČ za 1 kg hrubé hmotnosti.
-Při překročení dodací lhůty a zpoždění dodání hradí dopravce prokazatelnou škodu maximálně do výše dovozného (přepravného) - tedy když dorazí pozdě, nedostane za přepravu zaplaceno.
-4. Vnitrozemská vodní a říční doprava (Budapešťská úmluva CMNI)
-Dopravce ručí částkou 2 SDR/ZPČ za 1 kg hrubé hmotnosti, nebo 666,67 SDR/ZPČ za balení či nákladovou jednotku (podle toho, která částka vyjde vyšší). V kontejnerové přepravě je limit 1 500 SDR za prázdný kontejner (TEU) a 25 000 SDR za zboží uložené v jednom TEU.
-Při pozdním dodání je odpovědnost omezena do výše přepravného (dovozného).
-5. Námořní doprava U námořní dopravy je odpovědnost založena na principu presumovaného zavinění a limity se liší podle použité mezinárodní úmluvy:
-Hamburská pravidla (1978): Limit 835 SDR/ZPČ za kus/jednotku nebo 2,5 SDR/ZPČ za kilogram (platí vyšší částka). Za opožděné dodání se platí 2,5násobek námořního přepravného.
-Rotterdamská pravidla: Novější úprava limity mírně zvýšila na 875 SDR za jednotku nebo 3 SDR za kilogram. Odpovědnost za zpoždění zůstala na 2,5násobku přepravného.
-]]></description><link>limity-odpovědnosti-dopravce.html</link><guid isPermaLink="false">Limity odpovědnosti dopravce.md</guid><pubDate>Wed, 25 Mar 2026 07:46:20 GMT</pubDate></item><item><title><![CDATA[Rámcová smlouva v dopravě]]></title><description><![CDATA[Tagy: <a data-href="Rámcová smlouva v dopravě" href="rámcová-smlouva-v-dopravě.html" class="internal-link" target="_self" rel="noopener nofollow">Rámcová smlouva v dopravě</a> je specifický typ obchodní dohody, která nastavuje dlouhodobé a obecné podmínky spolupráce mezi odesílatelem a dopravcem (nebo speditérem). Sama o sobě nezavazuje k provedení konkrétní přepravy.
+Před samotným provedením přepravy je nejdůležitější činností volba a sjednání způsobu a podmínek přepravy a následně zvolení vhodného dopravce. Zejména smluvní příprava těchto operací.]]></description><link>činnost-zasilatele.html</link><guid isPermaLink="false">Činnost zasilatele.md</guid><pubDate>Wed, 25 Mar 2026 08:01:14 GMT</pubDate></item><item><title><![CDATA[Rámcová smlouva v dopravě]]></title><description><![CDATA[Tagy: <a data-href="Rámcová smlouva v dopravě" href="rámcová-smlouva-v-dopravě.html" class="internal-link" target="_self" rel="noopener nofollow">Rámcová smlouva v dopravě</a> je specifický typ obchodní dohody, která nastavuje dlouhodobé a obecné podmínky spolupráce mezi odesílatelem a dopravcem (nebo speditérem). Sama o sobě nezavazuje k provedení konkrétní přepravy.
 Obsah smlouvy: Definuje obecná pravidla, ceníky, pojistné podmínky, odpovědnostní rámce a další standardy, kterými se budou řídit budoucí přepravní úkony.
 <br>Realizace přepravy: K samotné přepravě dochází až na základě dílčích objednávek, které na rámcovou smlouvu odkazují (např. <a data-href="Smlouva o přepravě věci (přepravní smlouva)" href="smlouva-o-přepravě-věci-(přepravní-smlouva).html" class="internal-link" target="_self" rel="noopener nofollow">Smlouva o přepravě věci (přepravní smlouva)</a>).
 Platnost a účinnost: Platnost: Smlouva nabývá platnosti od data jejího formálního uzavření (podpisu).
@@ -500,22 +945,7 @@ Pojištění odpovědnosti (min. 50 mil. Kč)
 Přidělení kapacity dopravní cesty (žádost min. 8 měsíců předem)
 Sjednání ceny za použití dopravní cesty
 Smlouva o provozování
-Proč soukromí dopravci (RegioJet, Leo Express) provozují ztrátové osobní linky? ;; Slouží jako reference pro veřejné zakázky -- dopravci musí prokázat praxi a schopnost zajistit přepravu, aby se kvalifikovali do tendrů]]></description><link>provozování-železniční-dopravy.html</link><guid isPermaLink="false">Provozování železniční dopravy.md</guid><pubDate>Tue, 17 Mar 2026 19:04:41 GMT</pubDate></item><item><title><![CDATA[Zabezpečovací systém ETCS]]></title><description><![CDATA[Tagy: <a href=".?query=tag:železnice" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#železnice">#železnice</a> <a href=".?query=tag:technologie" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#technologie">#technologie</a> <a href=".?query=tag:interoperabilita" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#interoperabilita">#interoperabilita</a>ETCS (European Train Control System) je jednotný evropský vlakový zabezpečovací systém. Spojuje řízení a zabezpečení jízdy vlaků a umožňuje určitou míru autonomie palubního zařízení drážních vozidel.<br>V EU existuje více než 20 různých typů národních vlakových zabezpečovačů. Tato fragmentace výrazně brání <a data-tooltip-position="top" aria-label="Technické specifika železnice" data-href="Technické specifika železnice" href="technické-specifika-železnice.html" class="internal-link" target="_self" rel="noopener nofollow">interoperabilitě</a> železniční dopravy -- vlak musí být vybaven zabezpečovačem kompatibilním s danou tratí, jinak na ni nemůže vjet.ETCS postupně nahradí všechny národní systémy a zajistí tak plnou interoperabilitu v rámci evropského železničního systému.
-Staniční -- zabezpečení v železničních stanicích
-Traťová -- zabezpečení na otevřené trati
-Vlaková -- zabezpečovací zařízení na palubě vlaku
-Přejezdová -- zabezpečení železničních přejezdů
-Systém se skládá ze dvou základních částí:
-Mobilní (palubní) část -- namontována přímo na drážní vozidlo; zahrnuje displej strojvedoucího, anténu pro příjem signálu od dispečera a čtečku eurobalíz
-Traťová (infrastrukturní) část -- instalována podél tratí; zahrnuje eurobalízy (traťové body ETCS), dispečink a vysílací zařízení Od ledna 2025 -- výhradní provoz ETCS na koridorových tratích (Praha -- Pardubice -- Olomouc/Ostrava -- Břeclav)
-Výhled 2040 -- pokrytí celé české železniční sítě systémem ETCS (úroveň 2 na hlavních tratích, ETCS pro regionální tratě na vedlejších linkách)
-Na trati Kopidlno -- Dolní Bousov byl od roku 2025 zahájen provoz autonomního vlaku (strojvedoucí je stále přítomen na palubě jako dozor).Co je ETCS? ;; European Train Control System -- jednotný evropský vlakový zabezpečovací systém, který nahrazuje cca 20 různých národních systémů a zajišťuje interoperabilituZe kterých dvou částí se skládá ETCS? ;; Mobilní (palubní) část na vozidlech a traťová (infrastrukturní) část podél tratíKolik různých národních vlakových zabezpečovačů existuje v EU? ;; Více než 20Na kterých tratích v ČR je ETCS ve výhradním provozu od ledna 2025? ;; Koridorové tratě Praha -- Pardubice -- Olomouc/Ostrava -- BřeclavDruhy zabezpečovacích zařízení na železnici (4)?
-?
-Staniční
-Traťová
-Vlaková
-Přejezdová
-]]></description><link>zabezpečovací-systém-etcs.html</link><guid isPermaLink="false">Zabezpečovací systém ETCS.md</guid><pubDate>Tue, 17 Mar 2026 19:04:15 GMT</pubDate></item><item><title><![CDATA[Stádia vývoje železniční dopravy]]></title><description><![CDATA[Tagy: <a href=".?query=tag:železnice" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#železnice">#železnice</a> <a href=".?query=tag:historie" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#historie">#historie</a>Vývoj železniční dopravy prošel čtyřmi základními stádii, která popisují postupný rozvoj a následnou transformaci železniční sítě.
+Proč soukromí dopravci (RegioJet, Leo Express) provozují ztrátové osobní linky? ;; Slouží jako reference pro veřejné zakázky -- dopravci musí prokázat praxi a schopnost zajistit přepravu, aby se kvalifikovali do tendrů]]></description><link>provozování-železniční-dopravy.html</link><guid isPermaLink="false">Provozování železniční dopravy.md</guid><pubDate>Tue, 17 Mar 2026 19:04:41 GMT</pubDate></item><item><title><![CDATA[Stádia vývoje železniční dopravy]]></title><description><![CDATA[Tagy: <a href=".?query=tag:železnice" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#železnice">#železnice</a> <a href=".?query=tag:historie" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#historie">#historie</a>Vývoj železniční dopravy prošel čtyřmi základními stádii, která popisují postupný rozvoj a následnou transformaci železniční sítě.
 Vznik prvních izolovaných železničních tratí spojujících jednotlivá města nebo průmyslová centra
 Tratě vznikaly nezávisle na sobě, bez vzájemného propojení Postupné propojování jednotlivých tratí do ucelené sítě
 Vytváření uzlových stanic a přestupních bodů Železniční síť je již dostatečně propletená a dokáže plnohodnotně obsluhovat území
