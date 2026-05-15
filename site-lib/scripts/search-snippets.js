@@ -86,21 +86,26 @@
     const pf = await initPagefind();
     if (!pf) return;
 
-    const search = await pf.search(searchTerm);
+    const search = await pf.search(searchTerm.toLowerCase());
     if (!search || !search.results || search.results.length === 0) return;
 
     // Load data for top results (limit to 20 for performance)
     const resultsToLoad = search.results.slice(0, 20);
     const loaded = await Promise.all(resultsToLoad.map(r => r.data()));
 
-    // Build a map from URL path to snippets
+    // Build a map keyed by fully-resolved absolute URL. Pagefind returns
+    // server-root-absolute paths (e.g. "/3LT.github.io/foo.html" on GitHub
+    // Pages, "/foo.html" locally), so we resolve them against the document
+    // origin and compare with link.href (also fully resolved).
     const snippetMap = new Map();
     for (const result of loaded) {
       if (!result) continue;
-      // Normalize the URL to match the tree's href format
-      let url = result.url;
-      // Remove leading slash and any base path
-      url = url.replace(/^\//, "");
+      let url;
+      try {
+        url = new URL(result.url, document.baseURI).href;
+      } catch {
+        continue;
+      }
 
       const snippets = [];
 
@@ -142,11 +147,10 @@
     const fileLinks = fileTree.querySelectorAll(".nav-file-title");
 
     for (const link of fileLinks) {
-      const href = link.getAttribute("href");
-      if (!href) continue;
+      const resolved = link.href;
+      if (!resolved) continue;
 
-      // Try to match against the snippet map
-      const snippets = snippetMap.get(href) || snippetMap.get(decodeURIComponent(href));
+      const snippets = snippetMap.get(resolved) || snippetMap.get(decodeURI(resolved));
       if (!snippets) continue;
 
       // Find the parent tree-item element
