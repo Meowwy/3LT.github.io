@@ -1,0 +1,39 @@
+kam umístit DC, abychom zajistili určitou kvalitu logistických služeb 
+
+ 
+
+Kroky: 
+
+Definice logistických služeb - dodací lhůta, frekvence dodávek, zda jednotlivé oblasti mají nějaké specifika, přepravní prostředky (paleta/volně ložené zboží), dopravní prostředky (jaký obor dopravy, jak velký může být), časová okna dodání 
+
+Definice rozdělení prodejů 
+
+kam a jak často to budu vozit 
+
+pomůže heat mapa 
+
+kde je gravity prodejů? 
+
+Definice kritérií, kde by měly ty DC být, podle čeho chci hodnotit, argumentace, každý faktor bude mít váhu 
+
+kvalifikační 
+
+max 10km od dálnice 
+
+nebude to blízko chráněné oblasti 
+
+rozhodovací (ohledně peněz) 
+
+Vyberu si lokality, které splňují kritéria a které budeme analyzovat 
+
+Sběr hodnot pro ty dané lokality 
+
+Vytvoření distribučního modelu 
+
+ten vybere dobré lokality 
+
+Studie proveditelnosti 
+
+zhodnotíme, zda lokalita navržená modelem je proveditelná z obchodního a praktického hlediska 
+
+Výběr jednoho řešení 

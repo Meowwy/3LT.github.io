@@ -1,0 +1,337 @@
+<!DOCTYPE html> <html lang="cs"><head>
+<title>Materiálové řízení</title>
+<base href=".">
+<meta name="pathname" content="materiálové-řízení.html">
+<meta name="description" content="Logistika - Materiálové řízení">
+<meta property="og:title" content="Materiálové řízení">
+<meta property="og:description" content="Logistika - Materiálové řízení">
+<meta property="og:type" content="website">
+<meta property="og:url" content="materiálové-řízení.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="Logistika"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="site-lib/rss.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="stylesheet" href="site-lib/styles/theme.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager styled-scrollbars show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"><link itemprop="include" href="site-lib/html/custom-head-content-content.html"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="site-lib/html/file-tree-content.html"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles">mjx-msqrt{display:inline-block;text-align:left}mjx-root{display:inline-block;white-space:nowrap}mjx-surd{display:inline-block;vertical-align:top}mjx-sqrt{display:inline-block;padding-top:.07em}mjx-sqrt>mjx-box{border-top:.07em solid}mjx-sqrt.mjx-tall>mjx-box{padding-left:.3em;margin-left:-.3em}mjx-c.mjx-c1D444.TEX-I::before{padding:.704em .791em .194em 0;content:"Q"}mjx-c.mjx-c2217::before{padding:.465em .5em 0 0;content:"∗"}mjx-c.mjx-c221A.TEX-S4::before{padding:1.75em 1.02em 1.25em 0;content:"√"}mjx-c.mjx-c1D45C.TEX-I::before{padding:.441em .485em .011em 0;content:"o"}mjx-c.mjx-c1D447.TEX-I::before{padding:.677em .704em 0 0;content:"T"}mjx-container[jax=CHTML]{line-height:0}mjx-container [space="1"]{margin-left:.111em}mjx-container [space="2"]{margin-left:.167em}mjx-container [space="3"]{margin-left:.222em}mjx-container [space="4"]{margin-left:.278em}mjx-container [space="5"]{margin-left:.333em}mjx-container [rspace="1"]{margin-right:.111em}mjx-container [rspace="2"]{margin-right:.167em}mjx-container [rspace="3"]{margin-right:.222em}mjx-container [rspace="4"]{margin-right:.278em}mjx-container [rspace="5"]{margin-right:.333em}mjx-container [size="s"]{font-size:70.7%}mjx-container [size=ss]{font-size:50%}mjx-container [size=Tn]{font-size:60%}mjx-container [size=sm]{font-size:85%}mjx-container [size=lg]{font-size:120%}mjx-container [size=Lg]{font-size:144%}mjx-container [size=LG]{font-size:173%}mjx-container [size=hg]{font-size:207%}mjx-container [size=HG]{font-size:249%}mjx-container [width=full]{width:100%}mjx-box{display:inline-block}mjx-block{display:block}mjx-itable{display:inline-table}mjx-row{display:table-row}mjx-row>*{display:table-cell}mjx-mtext{display:inline-block;text-align:left}mjx-mstyle{display:inline-block}mjx-merror{display:inline-block;color:red;background-color:#ff0}mjx-mphantom{visibility:hidden}mjx-assistive-mml{top:0;left:0;clip:rect(1px,1px,1px,1px);user-select:none;position:absolute!important;padding:1px 0 0!important;border:0!important;display:block!important;width:auto!important;overflow:hidden!important}mjx-assistive-mml[display=block]{width:100%!important}mjx-math{display:inline-block;text-align:left;line-height:0;text-indent:0;font-style:normal;font-weight:400;font-size:100%;letter-spacing:normal;border-collapse:collapse;overflow-wrap:normal;word-spacing:normal;white-space:nowrap;direction:ltr;padding:1px 0}mjx-container[jax=CHTML][display=true]{display:block;text-align:center;margin:1em 0}mjx-container[jax=CHTML][display=true][width=full]{display:flex}mjx-container[jax=CHTML][display=true] mjx-math{padding:0}mjx-container[jax=CHTML][justify=left]{text-align:left}mjx-container[jax=CHTML][justify=right]{text-align:right}mjx-mi{display:inline-block;text-align:left}mjx-c{display:inline-block}mjx-utext{display:inline-block;padding:.75em 0 .2em}mjx-mo{display:inline-block;text-align:left}mjx-stretchy-h{display:inline-table;width:100%}mjx-stretchy-h>*{display:table-cell;width:0}mjx-stretchy-h>*>mjx-c{display:inline-block;transform:scaleX(1)}mjx-stretchy-h>*>mjx-c::before{display:inline-block;width:initial}mjx-stretchy-h>mjx-ext{overflow:clip visible;width:100%}mjx-stretchy-h>mjx-ext>mjx-c::before{transform:scaleX(500)}mjx-stretchy-h>mjx-ext>mjx-c{width:0}mjx-stretchy-h>mjx-beg>mjx-c{margin-right:-.1em}mjx-stretchy-h>mjx-end>mjx-c{margin-left:-.1em}mjx-stretchy-v{display:inline-block}mjx-stretchy-v>*{display:block}mjx-stretchy-v>mjx-beg{height:0}mjx-stretchy-v>mjx-end>mjx-c{display:block}mjx-stretchy-v>*>mjx-c{transform:scaleY(1);transform-origin:left center;overflow:hidden}mjx-stretchy-v>mjx-ext{display:block;height:100%;box-sizing:border-box;border:0 solid transparent;overflow:visible clip}mjx-stretchy-v>mjx-ext>mjx-c::before{width:initial;box-sizing:border-box}mjx-stretchy-v>mjx-ext>mjx-c{transform:scaleY(500) translateY(.075em);overflow:visible}mjx-mark{display:inline-block;height:0}mjx-msup{display:inline-block;text-align:left}mjx-mrow{display:inline-block;text-align:left}mjx-mfrac{display:inline-block;text-align:left}mjx-frac{display:inline-block;vertical-align:.17em;padding:0 .22em}mjx-frac[type="d"]{vertical-align:.04em}mjx-frac[delims]{padding:0 .1em}mjx-frac[atop]{padding:0 .12em}mjx-frac[atop][delims]{padding:0}mjx-dtable{display:inline-table;width:100%}mjx-dtable>*{font-size:2000%}mjx-dbox{display:block;font-size:5%}mjx-num{display:block;text-align:center}mjx-den{display:block;text-align:center}mjx-mfrac[bevelled]>mjx-num{display:inline-block}mjx-mfrac[bevelled]>mjx-den{display:inline-block}mjx-den[align=right],mjx-num[align=right]{text-align:right}mjx-den[align=left],mjx-num[align=left]{text-align:left}mjx-nstrut{display:inline-block;height:.054em;width:0;vertical-align:-.054em}mjx-nstrut[type="d"]{height:.217em;vertical-align:-.217em}mjx-dstrut{display:inline-block;height:.505em;width:0}mjx-dstrut[type="d"]{height:.726em}mjx-line{display:block;box-sizing:border-box;min-height:1px;height:.06em;border-top:.06em solid;margin:.06em -.1em;overflow:hidden}mjx-line[type="d"]{margin:.18em -.1em}mjx-mn{display:inline-block;text-align:left}mjx-msub{display:inline-block;text-align:left}mjx-texatom{display:inline-block;text-align:left}mjx-c::before{display:block;width:0}.MJX-TEX{font-family:MJXZERO,MJXTEX}.TEX-B{font-family:MJXZERO,MJXTEX-B}.TEX-I{font-family:MJXZERO,MJXTEX-I}.TEX-MI{font-family:MJXZERO,MJXTEX-MI}.TEX-BI{font-family:MJXZERO,MJXTEX-BI}.TEX-S1{font-family:MJXZERO,MJXTEX-S1}.TEX-S2{font-family:MJXZERO,MJXTEX-S2}.TEX-S3{font-family:MJXZERO,MJXTEX-S3}.TEX-S4{font-family:MJXZERO,MJXTEX-S4}.TEX-A{font-family:MJXZERO,MJXTEX-A}.TEX-C{font-family:MJXZERO,MJXTEX-C}.TEX-CB{font-family:MJXZERO,MJXTEX-CB}.TEX-FR{font-family:MJXZERO,MJXTEX-FR}.TEX-FRB{font-family:MJXZERO,MJXTEX-FRB}.TEX-SS{font-family:MJXZERO,MJXTEX-SS}.TEX-SSB{font-family:MJXZERO,MJXTEX-SSB}.TEX-SSI{font-family:MJXZERO,MJXTEX-SSI}.TEX-SC{font-family:MJXZERO,MJXTEX-SC}.TEX-T{font-family:MJXZERO,MJXTEX-T}.TEX-V{font-family:MJXZERO,MJXTEX-V}.TEX-VB{font-family:MJXZERO,MJXTEX-VB}mjx-stretchy-h mjx-c,mjx-stretchy-v mjx-c{font-family:MJXZERO,MJXTEX-S1,MJXTEX-S4,MJXTEX,MJXTEX-A!important}@font-face{font-family:MJXZERO;src:url("site-lib/fonts/mathjax_zero.woff") format("woff")}@font-face{font-family:MJXTEX;src:url("site-lib/fonts/mathjax_main-regular.woff") format("woff")}@font-face{font-family:MJXTEX-B;src:url("site-lib/fonts/mathjax_main-bold.woff") format("woff")}@font-face{font-family:MJXTEX-I;src:url("site-lib/fonts/mathjax_math-italic.woff") format("woff")}@font-face{font-family:MJXTEX-MI;src:url("site-lib/fonts/mathjax_main-italic.woff") format("woff")}@font-face{font-family:MJXTEX-BI;src:url("site-lib/fonts/mathjax_math-bolditalic.woff") format("woff")}@font-face{font-family:MJXTEX-S1;src:url("site-lib/fonts/mathjax_size1-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S2;src:url("site-lib/fonts/mathjax_size2-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S3;src:url("site-lib/fonts/mathjax_size3-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S4;src:url("site-lib/fonts/mathjax_size4-regular.woff") format("woff")}@font-face{font-family:MJXTEX-A;src:url("site-lib/fonts/mathjax_ams-regular.woff") format("woff")}@font-face{font-family:MJXTEX-C;src:url("site-lib/fonts/mathjax_calligraphic-regular.woff") format("woff")}@font-face{font-family:MJXTEX-CB;src:url("site-lib/fonts/mathjax_calligraphic-bold.woff") format("woff")}@font-face{font-family:MJXTEX-FR;src:url("site-lib/fonts/mathjax_fraktur-regular.woff") format("woff")}@font-face{font-family:MJXTEX-FRB;src:url("site-lib/fonts/mathjax_fraktur-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SS;src:url("site-lib/fonts/mathjax_sansserif-regular.woff") format("woff")}@font-face{font-family:MJXTEX-SSB;src:url("site-lib/fonts/mathjax_sansserif-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SSI;src:url("site-lib/fonts/mathjax_sansserif-italic.woff") format("woff")}@font-face{font-family:MJXTEX-SC;src:url("site-lib/fonts/mathjax_script-regular.woff") format("woff")}@font-face{font-family:MJXTEX-T;src:url("site-lib/fonts/mathjax_typewriter-regular.woff") format("woff")}@font-face{font-family:MJXTEX-V;src:url("site-lib/fonts/mathjax_vector-regular.woff") format("woff")}@font-face{font-family:MJXTEX-VB;src:url("site-lib/fonts/mathjax_vector-bold.woff") format("woff")}mjx-c.mjx-c1D45B.TEX-I::before{padding:.442em .6em .011em 0;content:"n"}mjx-c.mjx-c3D::before{padding:.583em .778em .082em 0;content:"="}mjx-c.mjx-c28.TEX-S3::before{padding:1.45em .736em .949em 0;content:"("}mjx-c.mjx-c32::before{padding:.666em .5em 0 0;content:"2"}mjx-c.mjx-c394::before{padding:.716em .833em 0 0;content:"Δ"}mjx-c.mjx-c29.TEX-S3::before{padding:1.45em .736em .949em 0;content:")"}mjx-c.mjx-cD7::before{padding:.491em .778em 0 0;content:"×"}mjx-c.mjx-c1D45D.TEX-I::before{padding:.442em .503em .194em 0;content:"p"}mjx-c.mjx-c28::before{padding:.75em .389em .25em 0;content:"("}mjx-c.mjx-c31::before{padding:.666em .5em 0 0;content:"1"}mjx-c.mjx-c2212::before{padding:.583em .778em .082em 0;content:"−"}mjx-c.mjx-c29::before{padding:.75em .389em .25em 0;content:")"}mjx-c.mjx-c1D436.TEX-I::before{padding:.705em .76em .022em 0;content:"C"}mjx-c.mjx-c1D448.TEX-I::before{padding:.683em .767em .022em 0;content:"U"}mjx-c.mjx-c1D446.TEX-I::before{padding:.705em .645em .022em 0;content:"S"}mjx-c.mjx-c1D43F.TEX-I::before{padding:.683em .681em 0 0;content:"L"}mjx-c.mjx-c54::before{padding:.677em .722em 0 0;content:"T"}mjx-c.mjx-c6F::before{padding:.448em .5em .01em 0;content:"o"}mjx-c.mjx-c6C::before{padding:.694em .278em 0 0;content:"l"}mjx-c.mjx-c65::before{padding:.448em .444em .011em 0;content:"e"}mjx-c.mjx-c72::before{padding:.442em .392em 0 0;content:"r"}mjx-c.mjx-c61::before{padding:.448em .5em .011em 0;content:"a"}mjx-c.mjx-c6E::before{padding:.442em .556em 0 0;content:"n"}mjx-c.mjx-c63::before{padding:.448em .444em .011em 0;content:"c"}mjx-c.mjx-c36::before{padding:.666em .5em .022em 0;content:"6"}mjx-c.mjx-c1D437.TEX-I::before{padding:.683em .828em 0 0;content:"D"}mjx-c.mjx-c1D450.TEX-I::before{padding:.442em .433em .011em 0;content:"c"}mjx-c.mjx-c50::before{padding:.683em .681em 0 0;content:"P"}mjx-c.mjx-c6D::before{padding:.442em .833em 0 0;content:"m"}mjx-c.mjx-c33::before{padding:.665em .5em .022em 0;content:"3"}mjx-c.mjx-c1D442.TEX-I::before{padding:.704em .763em .022em 0;content:"O"}mjx-c.mjx-c1D438.TEX-I::before{padding:.68em .764em 0 0;content:"E"}mjx-c.mjx-c44::before{padding:.683em .764em 0 0;content:"D"}mjx-c.mjx-c73::before{padding:.448em .394em .011em 0;content:"s"}mjx-c.mjx-c74::before{padding:.615em .389em .01em 0;content:"t"}mjx-c.mjx-c75::before{padding:.442em .556em .011em 0;content:"u"}mjx-c.mjx-c70::before{padding:.442em .556em .194em 0;content:"p"}mjx-c.mjx-c56::before{padding:.683em .75em .022em 0;content:"V"}mjx-c.mjx-c6B::before{padding:.694em .528em 0 0;content:"k"}mjx-c.mjx-c4B::before{padding:.683em .778em 0 0;content:"K"}mjx-c.mjx-c76::before{padding:.431em .528em .011em 0;content:"v"}mjx-c.mjx-c69::before{padding:.669em .278em 0 0;content:"i"}</style><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="Materiálové_řízení_0">Materiálové řízení</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-p"><p dir="auto">Tagy: <a href="?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Plánování a zásoby" href="p_-scm-plánování-a-zásoby.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Plánování a zásoby</a></p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto">Materiálové řízení zajišťuje, aby byl materiál na <strong>správném místě, ve správném množství a ve správný čas</strong>. Je klíčovou součástí fáze SOURCE v <a data-href="Základy SCM" href="základy-scm.html" class="internal-link" target="_self" rel="noopener nofollow">Základy SCM</a>.</p></div><div class="el-blockquote"><blockquote dir="auto">
+<p><em>„Materiálové řízení koordinuje a organizuje tok materiálu za účelem splnění požadavků zákazníků při maximalizaci využití podnikových zdrojů."</em></p>
+</blockquote></div><div class="el-h2"><h2 data-heading="Pyramidová struktura plánů" dir="auto" class="heading" id="Pyramidová_struktura_plánů_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Pyramidová struktura plánů</h2></div><div class="el-p"><p dir="auto">Plánování v SCM probíhá na čtyřech hierarchických úrovních s různými časovými horizonty:</p></div><div class="el-h3"><h3 data-heading="1. Business plán" dir="auto" class="heading" id="1._Business_plán_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>1. Business plán</h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Horizont:</strong> 3–5 let; <strong>Interval:</strong> roky</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>Obsah:</strong> Obrat, prodeje výrobkových řad, výrobní kapacity, logistika</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Plánuje se na úrovni <strong>výrobkových řad</strong> (ne jednotlivých SKU)</li>
+</ul></div><div class="el-h3"><h3 data-heading="2. Výrobní plán" dir="auto" class="heading" id="2._Výrobní_plán_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>2. Výrobní plán</h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Horizont:</strong> 1 rok; <strong>Interval:</strong> týdny / měsíce</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>Obsah:</strong> Objem výroby konkrétních SKU, zásoby</li>
+</ul></div><div class="el-h3"><h3 data-heading="3. MPS – Master Production Schedule (rozvrh výrobního plánu)" dir="auto" class="heading" id="3._MPS_–_Master_Production_Schedule_(rozvrh_výrobního_plánu)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>3. MPS – Master Production Schedule (rozvrh výrobního plánu)</h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Horizont:</strong> měsíc / kvartál; <strong>Interval:</strong> den / směny</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>Obsah:</strong> Detailní plán výroby a zásob na úrovni SKU</li>
+</ul></div><div class="el-h3"><h3 data-heading="4. MRP – Material Requirements Planning (plán potřeby materiálu)" dir="auto" class="heading" id="4._MRP_–_Material_Requirements_Planning_(plán_potřeby_materiálu)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>4. MRP – Material Requirements Planning (plán potřeby materiálu)</h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Rozpad výrobního plánu na <strong>jednotlivé komponenty</strong></li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Zohledňuje <strong>lead time</strong> – naplánuje nákup tak, aby materiál dorazil právě včas pro výrobu</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Vychází z <strong>kusovníku (BOM)</strong></li>
+</ul></div><div class="el-h2"><h2 data-heading="Kusovník (BOM – Bill of Materials)" dir="auto" class="heading" id="Kusovník_(BOM_–_Bill_of_Materials)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Kusovník (BOM – Bill of Materials)</h2></div><div class="el-p"><p dir="auto">Seznam všech součástek a komponent potřebných k výrobě jednoho produktu. Obsahuje ID a popis každého materiálu.</p></div><div class="el-h2"><h2 data-heading="Řízení zásob" dir="auto" class="heading" id="Řízení_zásob_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Řízení zásob</h2></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>Cílem je <strong>optimalizace a snížení zásob</strong> – peníze uvězněné v materiálu snižují likviditu firmy</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Hodnota zásob je klíčovým ukazatelem; bývá stanoven limit (případně rozdělený podle ABC analýzy)</li>
+</ul></div><div class="el-h2"><h2 data-heading="Klasifikace položek – ABC / XYZ / HML" dir="auto" class="heading" id="Klasifikace_položek_–_ABC_/_XYZ_/_HML_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Klasifikace položek – ABC / XYZ / HML</h2></div><div class="el-p"><p dir="auto">Vychází z <strong>Paretova zákona (80/20)</strong>: malá část položek tvoří velkou část spotřeby.</p></div><div class="el-h3"><h3 data-heading="ABC analýza – podle objemu spotřeby" dir="auto" class="heading" id="ABC_analýza_–_podle_objemu_spotřeby_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>ABC analýza – podle objemu spotřeby</h3></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Skupina</th>
+<th dir="ltr">% položek</th>
+<th dir="ltr">% celkové spotřeby</th>
+<th dir="ltr">Řízení</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>A</strong></td>
+<td dir="auto">5–20 %</td>
+<td dir="auto">60–80 %</td>
+<td dir="ltr">Přísné řízení, frequent review</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>B</strong></td>
+<td dir="auto">20–30 %</td>
+<td dir="auto">15–25 %</td>
+<td dir="ltr">Střední pozornost</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>C</strong></td>
+<td dir="auto">50–75 %</td>
+<td dir="auto">5–15 %</td>
+<td dir="ltr">Jednoduché řízení, pojistná zásoba</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>Postup výpočtu ABC:</strong></p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">Historická spotřeba → průměrné množství</li>
+<li data-line="1" dir="auto">Výpočet % podílu každé položky</li>
+<li data-line="2" dir="auto">Seřazení položek sestupně</li>
+<li data-line="3" dir="auto">Rozdělení do skupin dle % hranic</li>
+</ol></div><div class="el-h3"><h3 data-heading="XYZ analýza – podle stability poptávky" dir="auto" class="heading" id="XYZ_analýza_–_podle_stability_poptávky_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>XYZ analýza – podle stability poptávky</h3></div><div class="el-p"><p dir="auto">Hodnotí <strong>variabilitu poptávky</strong> pomocí variačního koeficientu (standardní odchylka / průměr):</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Skupina</th>
+<th dir="ltr">Variační koeficient</th>
+<th dir="ltr">Poptávka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>X</strong></td>
+<td dir="auto">&lt; 20 %</td>
+<td dir="ltr">Stabilní, předvídatelná</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Y</strong></td>
+<td dir="auto">20–100 %</td>
+<td dir="ltr">Středně variabilní</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Z</strong></td>
+<td dir="auto">&gt; 100 %</td>
+<td dir="ltr">Nepravidelná, obtížně předvídatelná</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>Postup:</strong> historická spotřeba → průměr → % podíl → standardní odchylka → variační koeficient → skupiny</p></div><div class="el-h3"><h3 data-heading="HML analýza – podle ziskovosti (marže)" dir="auto" class="heading" id="HML_analýza_–_podle_ziskovosti_(marže)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>HML analýza – podle ziskovosti (marže)</h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>H (High margin)</strong> – vysokomarž. produkty → zaměření na responsiveness</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>M (Medium margin)</strong> – průměrné</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>L (Low margin)</strong> – nízkomarž. produkty → zaměření na efektivitu (lean)</li>
+</ul></div><div class="el-h3"><h3 data-heading="Kombinace analýz" dir="auto" class="heading" id="Kombinace_analýz_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Kombinace analýz</h3></div><div class="el-p"><p dir="auto">Kombinací ABC × XYZ nebo ABC × HML lze produkty segmentovat přesněji a nastavit individuální logistické strategie (úrovně zásob, frekvenci objednávání atd.).</p></div><div class="el-h4"><h4 data-heading="ABC × XYZ – doporučené úrovně služeb (service level)" dir="auto" class="heading" id="ABC_×_XYZ_–_doporučené_úrovně_služeb_(service_level)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>ABC × XYZ – doporučené úrovně služeb (service level)</h4></div><div class="el-table" dir="auto" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="auto"></th>
+<th dir="ltr"><strong>X</strong> (stabilní)</th>
+<th dir="ltr"><strong>Y</strong> (střední)</th>
+<th dir="ltr"><strong>Z</strong> (nepravidelná)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>A</strong></td>
+<td dir="auto">98–99 %</td>
+<td dir="auto">95–97 %</td>
+<td dir="auto">90–95 %</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>B</strong></td>
+<td dir="auto">95–97 %</td>
+<td dir="auto">90–95 %</td>
+<td dir="auto">85–90 %</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>C</strong></td>
+<td dir="auto">90–95 %</td>
+<td dir="auto">85–90 %</td>
+<td dir="auto">80–85 %</td>
+</tr>
+</tbody>
+</table></div><div class="el-h4"><h4 data-heading="ABC × XYZ – strategie pojistné zásoby" dir="auto" class="heading" id="ABC_×_XYZ_–_strategie_pojistné_zásoby_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>ABC × XYZ – strategie pojistné zásoby</h4></div><div class="el-table" dir="auto" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="auto"></th>
+<th dir="ltr"><strong>X</strong></th>
+<th dir="ltr"><strong>Y</strong></th>
+<th dir="ltr"><strong>Z</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>A</strong></td>
+<td dir="ltr">Nízká (stabilní poptávka)</td>
+<td dir="ltr">Střední</td>
+<td dir="ltr">Vysoká</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>B</strong></td>
+<td dir="ltr">Nízká–střední</td>
+<td dir="ltr">Střední</td>
+<td dir="ltr">Vysoká</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>C</strong></td>
+<td dir="ltr">Střední</td>
+<td dir="ltr">Střední–vysoká</td>
+<td dir="ltr">Nejvyšší (nebo vyřadit)</td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="MPS – detail (Master Production Schedule)" dir="auto" class="heading" id="MPS_–_detail_(Master_Production_Schedule)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>MPS – detail (Master Production Schedule)</h2></div><div class="el-p"><p dir="auto">MPS pracuje na úrovni SKU a řeší nejen co vyrobit, ale i <strong>kdy</strong> a <strong>kolik</strong>.</p></div><div class="el-h3"><h3 data-heading="Klíčové pojmy MPS" dir="auto" class="heading" id="Klíčové_pojmy_MPS_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Klíčové pojmy MPS</h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>PAB (Projected Available Balance)</strong> – předpokládaná zásoba na konci období:<br>
+<code>PAB = PAB_předchozí + MPS − poptávka</code></li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>ATP (Available to Promise)</strong> – kolik lze slíbit novým zákazníkům (nevázáno potvrzenou objednávkou):<br>
+<code>ATP = OH + MPS − potvrzené objednávky (do dalšího MPS)</code></li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>OH (On Hand)</strong> – aktuální fyzická zásoba na začátku plánování</li>
+<li data-line="5" dir="auto"><span class="list-bullet"></span><strong>OO (On Order)</strong> – objednáno, ale ještě nedodáno</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span><strong>CT2R (Cycle Time to Replenish)</strong> – dodací lhůta; parametr říkající, jak daleko dopředu musíme plánovat</li>
+</ul></div><div class="el-h3"><h3 data-heading="Horizont plánování" dir="auto" class="heading" id="Horizont_plánování_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Horizont plánování</h3></div><div class="el-p"><p dir="auto">Jak daleko dopředu plánovat zásoby závisí na <strong>kumulativním lead time</strong> – součtu všech dílčích lead timů v řetězci (nákup materiálu + výroba + distribuce). Čím delší kumulativní lead time, tím delší plánovací horizont je nezbytný.</p></div><div class="el-h3"><h3 data-heading="Push / Pull kombinace v MPS" dir="auto" class="heading" id="Push_/_Pull_kombinace_v_MPS_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Push / Pull kombinace v MPS</h3></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Kombinace</th>
+<th dir="ltr">Popis</th>
+<th dir="ltr">Kdy se používá</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>Push / Push</strong></td>
+<td dir="ltr">Výroba i zásobování plánováno dopředu dle forecastu</td>
+<td dir="ltr">Stabilní poptávka, dlouhý LT</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Push / Pull</strong></td>
+<td dir="ltr">Zásobování materiálu Push, montáž/výroba Pull (na základě CO)</td>
+<td dir="ltr">Hybridní výrobky, Make-to-order</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Pull / Pull</strong></td>
+<td dir="ltr">Vše spouštěno skutečnou objednávkou zákazníka</td>
+<td dir="ltr">Krátký LT, vysoká variabilita</td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Druhy zásob" dir="auto" class="heading" id="Druhy_zásob_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Druhy zásob</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Typ zásoby</th>
+<th dir="ltr">Definice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>On Hand</strong></td>
+<td dir="ltr">Fyzicky na skladě k dispozici</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Běžná (cyklická)</strong></td>
+<td dir="ltr">Pokrývá poptávku mezi dvěma dodávkami</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Pojistná (safety stock)</strong></td>
+<td dir="ltr">Buffer pro variabilitu poptávky nebo dodávky</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Pro předzásobení</strong></td>
+<td dir="ltr">Buduje se dopředu (sezóna, plánovaná odstávka)</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>On Order</strong></td>
+<td dir="ltr">Objednáno, ještě nedorazilo</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Dopravní (pipeline)</strong></td>
+<td dir="ltr">Zboží v přepravě mezi uzly</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Spekulační</strong></td>
+<td dir="ltr">Nákup za příznivou cenu s výhledem na zdražení</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Strategické</strong></td>
+<td dir="ltr">Ochrana před výpadkem dodávek (krizová zásoba)</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Hedge</strong></td>
+<td dir="ltr">Zajištění proti riziku (cena, dostupnost)</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>MRO</strong></td>
+<td dir="ltr">Maintenance, Repair &amp; Operations – spotřební materiál pro provoz</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Mrtvá</strong></td>
+<td dir="ltr">Neprodejná nebo zastaralá zásoba</td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Náklady zásob" dir="auto" class="heading" id="Náklady_zásob_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Náklady zásob</h2></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Typ nákladů</th>
+<th dir="ltr">Obsah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>Pořizovací</strong></td>
+<td dir="ltr">Cena zboží/materiálu (Purchase price)</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Objednací</strong></td>
+<td dir="ltr">Administrativa, doprava, příjem zboží, zpracování faktury</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Náklady držení (správy)</strong></td>
+<td dir="ltr">Skladování, pojištění, ztráty, kapitál vázaný v zásobách</td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Náklady vyčerpání</strong></td>
+<td dir="ltr">Ztracené tržby, backorder náklady, penále</td>
+</tr>
+</tbody>
+</table></div><div class="el-blockquote"><blockquote dir="auto">
+<p>Cílem je nalézt optimální rovnováhu: snížení objednacích nákladů (velké objednávky) vs. snížení nákladů držení (malé zásoby).</p>
+</blockquote></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="Materiálové plánování – postup" dir="auto" class="heading" id="Materiálové_plánování_–_postup_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Materiálové plánování – postup</h2></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><strong>Forecast</strong> → predikce prodejů per SKU</li>
+<li data-line="1" dir="auto"><strong>Potřeba SKU</strong> → kolik hotových výrobků vyrobit (MPS)</li>
+<li data-line="2" dir="auto"><strong>BOM rozpad</strong> → z MPS + kusovníku se vypočítá hrubá potřeba komponent</li>
+<li data-line="3" dir="auto"><strong>Hrubá potřeba</strong> – kolik komponent celkem potřebujeme</li>
+<li data-line="4" dir="auto"><strong>Čistá potřeba</strong> = Hrubá potřeba − Zásoby OH − OO</li>
+<li data-line="5" dir="auto"><strong>Plánovaná objednávka</strong> – na základě čisté potřeby a lead time</li>
+</ol></div><div class="el-h3"><h3 data-heading="BOM – struktura úrovní" dir="auto" class="heading" id="BOM_–_struktura_úrovní_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>BOM – struktura úrovní</h3></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Level</th>
+<th dir="ltr">Obsah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto"><strong>0</strong></td>
+<td dir="ltr">Hotový výrobek (FG – Finished Goods)</td>
+</tr>
+<tr>
+<td dir="auto"><strong>1</strong></td>
+<td dir="ltr">Přímé komponenty / subsestavy</td>
+</tr>
+<tr>
+<td dir="auto"><strong>2</strong></td>
+<td dir="ltr">Dílčí komponenty subsestavy</td>
+</tr>
+<tr>
+<td dir="auto"><strong>3</strong></td>
+<td dir="ltr">Suroviny, nakupované díly</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">BOM položky mohou být <strong>povinné</strong> (vždy součástí výrobku) nebo <strong>volitelné</strong> (varianty produktu).</p></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto">Popiš pyramidu plánů v materiálovém řízení<br>
+?</p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">Business plán (3–5 let) – výrobkové řady, kapacity</li>
+<li data-line="1" dir="auto">Výrobní plán (1 rok, týdny/měsíce) – konkrétní SKU, zásoby</li>
+<li data-line="2" dir="auto">MPS (měsíc/kvartál, den/směny) – detailní plán výroby na úrovni SKU</li>
+<li data-line="3" dir="auto">MRP – rozpad na komponenty podle lead time a kusovníku</li>
+</ol></div><div class="el-p"><p dir="auto">Co to je MRP? ;; Material Requirements Planning – plán potřeby materiálu; rozpad výroby na komponenty s ohledem na lead time a kusovník</p></div><div class="el-p"><p dir="auto">Co to je MPS? ;; Master Production Schedule – rozvrh výrobního plánu; horizont měsíc/kvartál, interval den/směny, úroveň SKU</p></div><div class="el-p"><p dir="auto">Co to je kusovník (BOM)? ;; Bill of Materials – seznam všech komponent potřebných k výrobě jednoho produktu</p></div><div class="el-p"><p dir="auto">Proč je důležité řídit zásoby? ;; Peníze uvězněné v materiálu snižují likviditu; cílem je optimalizace a snížení zásob</p></div><div class="el-p"><p dir="auto">Co je ABC analýza zásob? ;; Rozdělení produktů/materiálů dle objemu spotřeby: A (5–20 % položek = 60–80 % spotřeby), B, C – vychází z Paretova zákona</p></div><div class="el-p"><p dir="auto">Co je XYZ analýza zásob? ;; Klasifikace podle stability poptávky (variační koeficient): X = stabilní (&lt;20 %), Y = střední (20–100 %), Z = nepravidelná (&gt;100 %)</p></div><div class="el-p"><p dir="auto">Co je HML analýza? ;; Klasifikace podle marže: H (high), M (medium), L (low) – ovlivňuje volbu logistické strategie (H → responsiveness, L → efficiency)</p></div><div class="el-p"><p dir="auto">Jak se kombinují ABC a XYZ analýzy? ;; Kombinací vznikají segmenty (např. AX = vysoká spotřeba + stabilní poptávka → ideální pro JIT); každý segment dostane jinou logistickou strategii</p></div><div class="el-p"><p dir="auto">Co to je PAB v MPS? ;; Projected Available Balance – předpokládaná zásoba na konci období; PAB = PAB_předchozí + MPS − poptávka</p></div><div class="el-p"><p dir="auto">Co to je ATP v MPS? ;; Available to Promise – kolik lze slíbit novým zákazníkům; ATP = OH + MPS − potvrzené objednávky (do dalšího MPS)</p></div><div class="el-p"><p dir="auto">Co to je CT2R? ;; Cycle Time to Replenish – dodací lhůta; určuje, jak daleko dopředu musíme plánovat</p></div><div class="el-p"><p dir="auto">Proč závisí horizont plánování na kumulativním lead time? ;; Kumulativní LT = součet nákup + výroba + distribuce; musíme plánovat alespoň tak daleko dopředu, než trvá celý řetězec</p></div><div class="el-p"><p dir="auto">Jaké jsou 3 kombinace Push/Pull v MPS?<br>
+?<br>
+Push/Push – vše plánováno dopředu (stabilní poptávka, dlouhý LT)<br>
+Push/Pull – materiál Push, výroba spouštěna zákaznickou objednávkou<br>
+Pull/Pull – vše spouštěno zákaznickou objednávkou (krátký LT, vysoká variabilita)</p></div><div class="el-p"><p dir="auto">Vyjmenuj typy zásob<br>
+?<br>
+On Hand – fyzicky na skladě<br>
+Běžná – pokrývá poptávku mezi dodávkami<br>
+Pojistná – buffer pro variabilitu<br>
+Pro předzásobení – na sezónu nebo plánovaný výpadek<br>
+On Order – objednáno, nedodáno<br>
+Dopravní (pipeline) – v přepravě<br>
+Spekulační – nákup za příznivou cenu<br>
+Strategické – krizová zásoba<br>
+Hedge – zajištění rizik<br>
+MRO – provozní spotřební materiál<br>
+Mrtvá – neprodejná</p></div><div class="el-p"><p dir="auto">Jaké jsou 4 typy nákladů zásob? ;; Pořizovací (cena), objednací (administrativa, transport), náklady držení (skladování, kapitál), náklady vyčerpání (ztracené tržby, backorder)</p></div><div class="el-p"><p dir="auto">Popiš postup materiálového plánování<br>
+?</p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">Forecast → predikce prodejů</li>
+<li data-line="1" dir="auto">Potřeba SKU → MPS</li>
+<li data-line="2" dir="auto">BOM rozpad → hrubá potřeba komponent</li>
+<li data-line="3" dir="auto">Čistá potřeba = Hrubá − OH − OO</li>
+<li data-line="4" dir="auto">Plánovaná objednávka dle čisté potřeby a lead time</li>
+</ol></div><div class="el-p"><p dir="auto">Jaké jsou úrovně kusovníku (BOM)?<br>
+?<br>
+Level 0 – hotový výrobek<br>
+Level 1 – přímé komponenty<br>
+Level 2 – dílčí komponenty subsestavy<br>
+Level 3 – suroviny a nakupované díly</p></div><div class="el-h1"><h1 data-heading="Reference" dir="auto" class="heading" id="Reference_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Reference</h1></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable mod-collapsible" href="materiálové-řízení.html#Materiálové_řízení_0" data-path="#Materiálové_řízení_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Materiálové řízení">Materiálové řízení</div></a><div class="tree-item-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="materiálové-řízení.html#Pyramidová_struktura_plánů_0" data-path="#Pyramidová_struktura_plánů_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Pyramidová struktura plánů">Pyramidová struktura plánů</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#1._Business_plán_0" data-path="#1._Business_plán_0"><div class="tree-item-inner heading-link" heading-name="1. Business plán">1. Business plán</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#2._Výrobní_plán_0" data-path="#2._Výrobní_plán_0"><div class="tree-item-inner heading-link" heading-name="2. Výrobní plán">2. Výrobní plán</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#3._MPS_–_Master_Production_Schedule_(rozvrh_výrobního_plánu)_0" data-path="#3._MPS_–_Master_Production_Schedule_(rozvrh_výrobního_plánu)_0"><div class="tree-item-inner heading-link" heading-name="3. MPS – Master Production Schedule (rozvrh výrobního plánu)">3. MPS – Master Production Schedule (rozvrh výrobního plánu)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#4._MRP_–_Material_Requirements_Planning_(plán_potřeby_materiálu)_0" data-path="#4._MRP_–_Material_Requirements_Planning_(plán_potřeby_materiálu)_0"><div class="tree-item-inner heading-link" heading-name="4. MRP – Material Requirements Planning (plán potřeby materiálu)">4. MRP – Material Requirements Planning (plán potřeby materiálu)</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#Kusovník_(BOM_–_Bill_of_Materials)_0" data-path="#Kusovník_(BOM_–_Bill_of_Materials)_0"><div class="tree-item-inner heading-link" heading-name="Kusovník (BOM – Bill of Materials)">Kusovník (BOM – Bill of Materials)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#Řízení_zásob_0" data-path="#Řízení_zásob_0"><div class="tree-item-inner heading-link" heading-name="Řízení zásob">Řízení zásob</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="materiálové-řízení.html#Klasifikace_položek_–_ABC_/_XYZ_/_HML_0" data-path="#Klasifikace_položek_–_ABC_/_XYZ_/_HML_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Klasifikace položek – ABC / XYZ / HML">Klasifikace položek – ABC / XYZ / HML</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#ABC_analýza_–_podle_objemu_spotřeby_0" data-path="#ABC_analýza_–_podle_objemu_spotřeby_0"><div class="tree-item-inner heading-link" heading-name="ABC analýza – podle objemu spotřeby">ABC analýza – podle objemu spotřeby</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#XYZ_analýza_–_podle_stability_poptávky_0" data-path="#XYZ_analýza_–_podle_stability_poptávky_0"><div class="tree-item-inner heading-link" heading-name="XYZ analýza – podle stability poptávky">XYZ analýza – podle stability poptávky</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#HML_analýza_–_podle_ziskovosti_(marže)_0" data-path="#HML_analýza_–_podle_ziskovosti_(marže)_0"><div class="tree-item-inner heading-link" heading-name="HML analýza – podle ziskovosti (marže)">HML analýza – podle ziskovosti (marže)</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-item-self is-clickable mod-collapsible" href="materiálové-řízení.html#Kombinace_analýz_0" data-path="#Kombinace_analýz_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Kombinace analýz">Kombinace analýz</div></a><div class="tree-item-children"><div class="tree-item" data-depth="4"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#ABC_×_XYZ_–_doporučené_úrovně_služeb_(service_level)_0" data-path="#ABC_×_XYZ_–_doporučené_úrovně_služeb_(service_level)_0"><div class="tree-item-inner heading-link" heading-name="ABC × XYZ – doporučené úrovně služeb (service level)">ABC × XYZ – doporučené úrovně služeb (service level)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#ABC_×_XYZ_–_strategie_pojistné_zásoby_0" data-path="#ABC_×_XYZ_–_strategie_pojistné_zásoby_0"><div class="tree-item-inner heading-link" heading-name="ABC × XYZ – strategie pojistné zásoby">ABC × XYZ – strategie pojistné zásoby</div></a><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="materiálové-řízení.html#MPS_–_detail_(Master_Production_Schedule)_0" data-path="#MPS_–_detail_(Master_Production_Schedule)_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="MPS – detail (Master Production Schedule)">MPS – detail (Master Production Schedule)</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#Klíčové_pojmy_MPS_0" data-path="#Klíčové_pojmy_MPS_0"><div class="tree-item-inner heading-link" heading-name="Klíčové pojmy MPS">Klíčové pojmy MPS</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#Horizont_plánování_0" data-path="#Horizont_plánování_0"><div class="tree-item-inner heading-link" heading-name="Horizont plánování">Horizont plánování</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#Push_/_Pull_kombinace_v_MPS_0" data-path="#Push_/_Pull_kombinace_v_MPS_0"><div class="tree-item-inner heading-link" heading-name="Push / Pull kombinace v MPS">Push / Pull kombinace v MPS</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#Druhy_zásob_0" data-path="#Druhy_zásob_0"><div class="tree-item-inner heading-link" heading-name="Druhy zásob">Druhy zásob</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#Náklady_zásob_0" data-path="#Náklady_zásob_0"><div class="tree-item-inner heading-link" heading-name="Náklady zásob">Náklady zásob</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="materiálové-řízení.html#Materiálové_plánování_–_postup_0" data-path="#Materiálové_plánování_–_postup_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Materiálové plánování – postup">Materiálové plánování – postup</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#BOM_–_struktura_úrovní_0" data-path="#BOM_–_struktura_úrovní_0"><div class="tree-item-inner heading-link" heading-name="BOM – struktura úrovní">BOM – struktura úrovní</div></a><div class="tree-item-children"></div></div></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="materiálové-řízení.html#Reference_0" data-path="#Reference_0"><div class="tree-item-inner heading-link" heading-name="Reference">Reference</div></a><div class="tree-item-children"></div></div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></div></body></html>

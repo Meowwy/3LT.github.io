@@ -1,0 +1,244 @@
+S&OP proces (D&S integration) 
+
+sales and operations planning 
+
+proces který hlídá stav zásob na skladě 
+
+pro velké firmy, které má pobočky různě po světě, vyrábí hodně moc různých projektů a nemohou to jednoduše udržet pod kontrolou 
+
+slaďuje poptávku a nabídku 
+
+co zákazníci budou chtít 
+
+co zvládneme vyrobit 
+
+jak vyřešit rozdíl dvou předchozích 
+
+ 
+
+fáze 
+
+sběr dat 
+
+data o prodejích, prognózy do budoucna 
+
+předpověď poptávky prodeje 
+
+po měsících, kolik se prodá čeho 
+
+plán výroby podle očekávané poptávky 
+
+ 
+
+ 
+
+Cíle 
+
+optimalizace toku zboží 
+
+efektivita fungování společnosti 
+
+ 
+
+lokální pobočky mají vždy vlastní supply chain atd. 
+
+má lokální sklad (případně více skladů), ze kterého zásobují zákazníky v dané oblasti 
+
+do skladu se vozí z továren 
+
+pobočka komunikuje s továrnou přes: 
+
+napřímo 
+
+nepřímo - supply planning hub (SPH) 
+
+plánovači, co komunikujou s továrnama a se zákazníkama 
+
+ 
+
+základní pozice 
+
+demand planner 
+
+vytvoří forecast pro oblast dané pobočky 
+
+supply  planner 
+
+komunikuje se SPH nebo s továrnou 
+
+objedná zboží podle damand plánu 
+
+klíčová pozice, musí vědět co je na skladě, jaké hrozí výpadky nebo jaké výpadky máme 
+
+ 
+
+šarže 
+
+konkrétní skupinu produktů 
+
+výrobní dávka 
+
+jednu šarži můžeme sledovat, zda je ve výrobě nebo už v přepravě atd. 
+
+lead time 
+
+čas od objednávky do dodání 
+
+ 
+
+SW pro forecasty 
+
+je to součástí ERP systémů 
+
+statistický model 
+
+historické sell-in data potřeba pročistit, aby odpovídaly sezónnosti 
+
+používá čísla sell-in např. po SKU měsíčně v průběhu minulosti 
+
+ 
+demand planning 
+
+dvě role 
+
+demand planner 
+
+člen SCM týmu 
+
+optimální skladové zásoby, dodávky 
+
+vychází z reality 
+
+business planner 
+
+člen týmu Sales 
+
+forecasty z pohledu sales týmu 
+
+zkreslený pohled na focecast, protože mají nějaké business cíle 
+
+kolik toho sales chce prodat, aby plnili své cíle a KPI 
+
+forecasty po zákaznících 
+
+v levelu sub-brand (ne na úrovni SKU) 
+
+ 
+
+ 
+
+forecasty 
+
+baseline forecast 
+
+promo forecast 
+
+launch forecast 
+
+ 
+
+ 
+
+typy 
+
+normal 
+
+normální produkt, který prodáváme za peníze 
+
+vzorky (free of charge - FOC) 
+
+finální produkt, který se rozdá zdarma 
+
+hero produkty 
+
+hlavní produkty, co se nejvíc prodává 
+
+ 
+
+ 
+
+ 
+
+forecast accuracy 
+
+KPI co zhodnocuje přesnost 
+
+pro každou položku rozdíl za danou  
+
+delta / skutečnost = accuracy 
+
+0 až 100 
+
+pro každou položku 
+
+pak průměr 
+
+forecast se klouzavě mění každý měsíc 
+
+M-3 forecast accuracy 
+
+porovnání reality s plánem před třemi měsíci 
+
+M-1 forecast accuracy 
+
+porovnání reality s tím co jsme plánovali měsíc zpět 
+
+ 
+
+forecast není co budeme objednávat, ale je to odhad kolik se toho prodá daný měsíc 
+
+ 
+
+sell-in 
+
+co jsme prodali zákazníkům 
+
+sell out 
+
+od zákazníků ke spotřebitelům 
+
+zjišťuje se přes agentury, co sell out celkově na trhu zjišťují (jen asi 70% trhu) 
+
+má smysl ho porovnávat v čase, zda se mění 
+
+stock-in-trade 
+
+aktuální stav zásob v distribuci 
+
+ 
+
+ 
+
+ 
+
+ 
+
+příprava na meeting 
+
+podívat se na forecast a upravit ho, podle stock-in-trade nebo čehokoli, co  
+
+meeting 
+
+nasdílet salesu co máme a co musíme řešit 
+
+nasdílíme svůj forecast 
+
+hlavní focus na další 3 měsíce 
+
+říct jakým gapem se budeme zabývat 
+
+např bias +- 3 % 
+
+ 
+
+forecast valorizace 
+
+srovnání forecast v peněžní úrovni vs. předchozí rok 
+
+ 
+
+po forecastu je procurement 
+
+procurement 
+
+domluvení objednávek supply plannera 

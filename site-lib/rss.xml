@@ -1,4 +1,794 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logistika]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Logistika</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 14 May 2026 18:12:11 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 14 May 2026 18:11:55 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[INCOTERMS]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz_test" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz_test">#mpz_test</a>Dodací doložky (neboli parity) INCOTERMS jsou nedílnou součástí kupní smlouvy. Slouží pro zahrnutí přepravních a logistických služeb v kupní smlouvě. Definují přechod rizik (odpovědnost) za převážené zboží, přechod nákladů mezi odesilatelem a příjemcem (subjekty kupní smlouvy).INCOTERMS neřeší přechod vlastnictví zboží.INCOTERMS tímto definuje hranice dodavatelského řetězce.INCOTERMS jsou součástí kupní smlouvy a určují, kdo má povinnost uzavřít přepravní smlouvu. Výběr konkrétního typu dodací doložky INCOTERMS určuje, jakým způsobem dojde k předání zboží od odesilatele příjemci (prostřednictvím dopravce). Tedy, co se očekává od prodávajícího a kupujícího, kdo zařizuje a platí za přepravu, kdo má zboží kam dovézt.Co definuje INCOTERMS a kde se uplatňuje ;; je to doložka do kupní smlouvy (musí tam povinně být), definuje přechod odpovědnosti za převážené zbožíU jakých INCOTERMS je freight collect? Co to je?
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logistika]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Logistika</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 23 May 2026 15:59:09 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 23 May 2026 15:59:01 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[P_ SCM - Základy a procesy]]></title><description><![CDATA[<a href=".?query=tag:přehledováPoznámka" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#přehledováPoznámka">#přehledováPoznámka</a> <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a>Přehled základních konceptů Supply Chain Managementu – definice procesů, logistické modely a SC strategie.
+<br><a data-href="Základy SCM" href="základy-scm.html" class="internal-link" target="_self" rel="noopener nofollow">Základy SCM</a> – základní podprocesy (SOURCE, MAKE, DELIVER), toky materiálů (inbound/inplant/outbound), klíčové pojmy (SKU, FMCG, sell-in, sell-out)
+<br><a data-href="SCM Strategie" href="scm-strategie.html" class="internal-link" target="_self" rel="noopener nofollow">SCM Strategie</a> – modely 3PL/4PL/LLP, cross docking, OTIF, lead time, Efficient/Responsive/Hybrid strategie, PUSH/PULL, globální strategie
+<br><a data-href="Logistické služby SCM" href="logistické-služby-scm.html" class="internal-link" target="_self" rel="noopener nofollow">Logistické služby SCM</a> – fáze logistických služeb (předtransakční/transakční/posttransakční), OTIF výpočet, KPI ukazatele, COGS, náklady SCM
+]]></description><link>p_-scm-základy-a-procesy.html</link><guid isPermaLink="false">P_ SCM - Základy a procesy.md</guid><pubDate>Sat, 23 May 2026 15:58:14 GMT</pubDate></item><item><title><![CDATA[Základy SCM]]></title><description><![CDATA[bře 02, 2026
+Tagy: <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Základy a procesy" href="p_-scm-základy-a-procesy.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Základy a procesy</a>Supply Chain Management (SCM) je komplexní obor zabývající se řízením dodavatelských řetězců. Hranice SCM jsou definovány mimo jiné mezinárodními dodacími podmínkami INCOTERMS. Zaštiťující organizací v Evropě je Evropská logistická asociace (ELA), která definuje SCM jako:
+„Organization, planning, control and execution of the products flow from development and purchasing, through production and distribution, to the final customer in order to satisfy the requirements of the market cost-effectively."
+SCOR (Supply Chain Operations Reference) je standardní rámec procesů v SCM:
+PLAN (Plánování): Demand planning a supply planning – předpovídání poptávky, plánování výroby a zásobování.
+SOURCE (Zajišťování): Nákup a zásobování. Určuje, co, kdy, kolik a od koho nakoupit. Realizuje se prostřednictvím nákupních operací (PO - Purchase Operations).
+MAKE (Výroba): Samotný proces výroby produktu podle stanovených standardů. Výstupem je hotový produkt. Potřeba kusovníku.
+DELIVER (Dodání): Zajištění fyzické distribuce zboží k zákazníkovi – kompletace objednávek, expedice, doprava. Zákazní určuje správný čas, místo, počet. Výrobek musí splňovat požadavky kvality zákazníka.
+RETURN (Zpětná logistika): Zpětné toky – vrácené zboží, odpady, reklamace.
+SCOR se vztahuje přes celý řetězec: Supplier T2 → Supplier T1 → Focal company → Customer.PO - purchase operation řeší kolik je potřeba koupit v závislosti na stavu skladových zásob, od koho koupit, za kolik peněz a jaký máme budget.SCM se týká zejména těchto oddělení:
+Nákup - většinou přímo součástí SCM oddělení, ne pokud je to hodně kritické
+Logistika - pod SCM - dodání na MAKE, balení a doprava
+Sales - SCM je pro ně poradcem, říká, co je reálné dodat v určité kvalitě Inbound: Pohyb materiálů a surovin od dodavatelů k nám do podniku.
+Inplant (Intralogistika): Fyzický pohyb a manipulace v rámci samotné firmy či výrobního závodu.
+Outbound: Pohyb finálních výrobků od nás k našim přímým zákazníkům.
+Zákazník z dodavatelského řetězce odebírá logistické služby, jako je distribuce, skladování a správa zásob (inventory management) či reverzní logistika.
+Parametry služeb: Kvalita a dostupnost produktu/vstupů, kvalita komplementárních služeb, udržitelnost.
+Logistické náklady: Náklady spjaté s fyzickou dopravou, nájmem skladů, mzdami kurýrů, výrobou či zpětnou logistikou. Klíčovým ukazatelem je návratnost aktiv (ROA - Return on Asset).
+Logistický řetězec propojuje více úrovní subjektů:
+Dodavatelé T2 → Dodavatelé T1 → Podnik (Focal company) → Distributor → Maloobchod → Zákazník
+Reverzní řetězec – zajišťuje zpětné toky (vrácení zboží, sběr odpadu)
+Podpůrné subjekty: Logistický poskytovatel, Banky, IT služby, Státní správa / profesní sdružení
+V řetězci protékají čtyři typy toků:
+Zboží (dopředný tok)
+Zpětné toky (vrácení, reklamace)
+Finance
+Plánování / informace
+SCM přináší hodnotu ve čtyřech dimenzích (musí být v rovnováze):
+Efficiency – efektivnost (minimalizace nákladů)
+Effectiveness – účelnost (plnění cílů, spokojenost zákazníka)
+Agility – pružnost, schopnost reagovat na změny
+Sustainability – udržitelnost (ekologická i sociální odpovědnost)
+Produkt, který zákazník kupuje, má tři vrstvy:
+Výrobek – fyzický produkt (jádro)
+Doplňkové služby – doprovodné logistické služby (dodací podmínky, balení, reklamace)
+Produkt – celková zákaznická zkušenost
+SCM může být zdrojem konkurenční výhody – i když jsou výrobky totožné, lepší logistické služby rozhodují o výběru dodavatele.
+SKU (Stock Keeping Unit): Konkrétní typ produktu, který si zákazník může reálně koupit.
+OTK: Balení pro zákazníka
+FMCG (Fast Moving Consumer Goods): Rychloobrátkové zboží charakteristické krátkou dobou expirace, nízkou marží a obrovskými prodávanými objemy.
+Sell-in: Prodej přímým zákazníkům v B2B sektoru (např. dodání na pobočky, do lékáren).
+Sell-out: Koncový prodej samotným spotřebitelům.
+Jaké jsou základní pod-procesy v SCM, co se řeší v každé části?
+?
+SOURCE - PO = purchase operation, od koho koupit; je to demand planning - řekne co kupovat, kdy a kolik
+MAKE - výrova (standard - jak vyrábět), výstupem je produkt
+DELIVER - transport, dodává přesně to zboží, co si zákazník přeje v požadované kvalitě a v požadovaném časeCo to je SCM ELA ;; evropská logistická asociace, definuje co spadá do SCMCo to jsou logistické služby? Příklady? ;; to co od SCM zákazník odebírá; distribuce zásob (distribution), skladování a správa zásob (inventory management), reverzní logistikaJaké jsou parametry logistických služeb?
+?
+kvalita produktu
+dostupnost produktu
+kvalita komplementárních služeb
+udržitelnost
+dostupnost vstupůCo to jsou logistické náklady? Příklady? ;; náklady spjaté s logistikou; fyzická doprava, nájem skladů, vzdy kurýrům atp.Jaké jsou parametry logistických nákladů?
+?
+náklady komplementárních služeb
+náklady na výrobu
+náklady na zpětnou logistiku
+náklady na skladování
+ROA - return on assetpopiš fáze inbound, inplant a outbound
+?
+inbound - od dodavatelů k nám
+implant - pohyb v rámci firmy
+outbound - pohyb výrobků od nás k našim přímým zákazníkůmpopiš sell-in a sell-out
+?
+sell-in je prodej našim přímým zákazníkům v B2B, takže např. na pobočky, do lékaren atp.
+sell-out je prodej koncovým spotřebitelůmCo to je INCOTERMS? ;; definuje hranice SCMCo to je SCOR model a jaké má procesy?
+?
+Supply Chain Operations Reference – standardní rámec SCM procesů
+PLAN – plánování poptávky a zásobování
+SOURCE – nákup a zásobování
+MAKE – výroba
+DELIVER – expedice a doprava k zákazníkovi
+RETURN – zpětná logistikaJaké jsou 4 dimenze logistické hodnoty? ;; Efficiency, Effectiveness, Agility, SustainabilityJaké jsou 3 vrstvy produktu v kontextu konkurenční výhody SCM? ;; Výrobek (fyzické jádro), Doplňkové služby (logistické služby), Produkt (celková zákaznická zkušenost)Jaké jsou typy logistických řetězců podle toku?
+?
+SC s přetržitými toky – zásoby na vstupu i výstupu výrobce
+SC s kontinuálními toky – zásoba jen na výstupu, konsolidační centrum
+SC se synchronními toky – bez zásob, plně synchronizovaný tok (JIT)Jaké 4 typy toků procházejí logistickým řetězcem? ;; Zboží (dopředný), Zpětný (vrácení a reklamace), finance a plánování/informace]]></description><link>základy-scm.html</link><guid isPermaLink="false">Základy SCM.md</guid><pubDate>Sat, 23 May 2026 15:57:54 GMT</pubDate></item><item><title><![CDATA[index]]></title><description><![CDATA[Kopie mého Obsidian vaultu s poznámkami z vedlejšky logistiky.Základní témata:
+<a data-href="P_ Zasílatelství" href="p_-zasílatelství.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Zasílatelství</a><br>
+<a data-href="P_ Legislativa a smlouvy v logistice" href="p_-legislativa-a-smlouvy-v-logistice.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Legislativa a smlouvy v logistice</a><br>
+<a data-href="Zpoplatnění dopravní infrastruktury" href="zpoplatnění-dopravní-infrastruktury.html" class="internal-link" target="_self" rel="noopener nofollow">Zpoplatnění dopravní infrastruktury</a>Silniční doprava<br>
+<a data-href="P_ Nákladní silniční doprava" href="p_-nákladní-silniční-doprava.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Nákladní silniční doprava</a><br>
+<a data-href="P_ Osobní autobusová doprava" href="p_-osobní-autobusová-doprava.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Osobní autobusová doprava</a>Železniční doprava<br>
+<a data-href="P_ Železniční přeprava" href="p_-železniční-přeprava.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Železniční přeprava</a><br>
+<a data-href="P_ Subjekty v železniční dopravě" href="p_-subjekty-v-železniční-dopravě.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Subjekty v železniční dopravě</a>Letecká doprava<br>
+<a data-href="P_ Letecká osobní doprava" href="p_-letecká-osobní-doprava.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Letecká osobní doprava</a>Námořní:<br>
+<a data-href="Námořní nákladní doprava" href="námořní-nákladní-doprava.html" class="internal-link" target="_self" rel="noopener nofollow">Námořní nákladní doprava</a><br><a data-href="P_ SCM - Základy a procesy" href="p_-scm-základy-a-procesy.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Základy a procesy</a><br>
+<a data-href="P_ SCM - Plánování a zásoby" href="p_-scm-plánování-a-zásoby.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Plánování a zásoby</a><br>
+<a data-href="P_ SCM - Logistická strategie" href="p_-scm-logistická-strategie.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Logistická strategie</a><br>
+<a data-href="P_ SCM - Lean a VSM" href="p_-scm-lean-a-vsm.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Lean a VSM</a><br><a data-href="logistika" href="logistika.html" class="internal-link" target="_self" rel="noopener nofollow">logistika</a>]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Sat, 23 May 2026 15:43:35 GMT</pubDate></item><item><title><![CDATA[P_ SCM - Logistická strategie]]></title><description><![CDATA[<a href=".?query=tag:přehledováPoznámka" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#přehledováPoznámka">#přehledováPoznámka</a> <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a>Přehled logistické strategie v SCM – výběr lokalit distribučních center a optimalizace distribuční sítě.
+<br><a data-href="Logistická strategie SCM" href="logistická-strategie-scm.html" class="internal-link" target="_self" rel="noopener nofollow">Logistická strategie SCM</a> – hierarchie podniková → logistická strategie, postup SC designu (6 kroků), parametry logistických služeb, 6 skupin kritérií výběru objektu (Náklady/Makro/Pracovní trh/Infrastruktura/Prostředí/Trh), váhová matice lokalit, Gravity analýza (heat mapa), LPI index (World Bank), trh průmyslových nemovitostí (vacancy rate, nájemné)
+]]></description><link>p_-scm-logistická-strategie.html</link><guid isPermaLink="false">P_ SCM - Logistická strategie.md</guid><pubDate>Fri, 22 May 2026 18:33:01 GMT</pubDate></item><item><title><![CDATA[Logistická strategie SCM]]></title><description><![CDATA[Tagy: <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Logistická strategie" href="p_-scm-logistická-strategie.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Logistická strategie</a>Logistická strategie řeší, kam umístit distribuční centra (DC), aby byla zajištěna požadovaná kvalita logistických služeb za optimální náklady. Navazuje na obchodní strategii firmy a vychází z ní.Podnikové cíle / obchodní plán ↓
+Obchodní strategie ↓
+Strategie logistiky (SCM) → výkonnostní, finanční, zákaznické cíle ↓
+Logistické plány ← plány obchodu + zákaznické objednávky ↓
+Realizace logistických procesů → logistická služba + výkon ↓
+Logistický controlling → změna logistických procesů
+Složky logistické strategie: SC partneři, umístění a typ objektů, logistické procesy, technologie, znalosti a dovednosti lidí.
+Kolik toho distribuovat denně (objem)?
+Dodací lhůta a frekvence dodávek
+Velikost zákaznické objednávky
+Šířka doručovacích oken
+Doba obsloužení zákazníka
+Zpětná logistika (odvážíme od zákazníka něco?)
+Odkud vozíme (umístění zdrojů)?
+Kritéria se dělí do 6 skupin:
+Kvalifikační – podmínky, které musí lokalita splnit (vylučovací); bez splnění lokalita vypadává
+Rozhodovací – kvantitativní faktory s přiřazenou váhou; lokality se bodují a srovnávají
+Škála hodnocení: Silná = 1, Částečná = 2, Špatná = 3 (nižší skóre = lepší lokalita).Vizuální nástroj zobrazující koncentraci prodejů v geografickém prostoru – pomáhá identifikovat těžiště (gravity) poptávky a optimálně umístit DC. Rovnoměrné vs. nerovnoměrné rozdělení prodejů po území vede k různým řešením.Hodnocení logistické výkonnosti zemí vydávané World Bank. Měří 6 dimenzí:LPI skóre 1–5; vyšší = lepší. Příklady: Singapur 4,3 (#1), Finsko 4,2 (#2), ČR 3,3 (#43).Při výběru logistického objektu je třeba znát parametry trhu:
+Délka kontraktu: 3–5, 5–7 nebo 7–10 let
+Vacancy rate – míra neobsazenosti (ČR ~4 %); nízká hodnota = málo volných prostor → vyšší nájemné
+Průměrné nájemné: 5,25–6,50 EUR/m²/měsíc (ČR, 2023)
+Servisní poplatek: ~0,95 EUR/m²/měsíc
+Jaké jsou kroky SC designu (výběr lokality DC)?
+?
+Definování logistických služeb (co splnit?)
+Gravity analýza – rozložení prodejů (kam vozíme?)
+Definice kritérií – kvalifikační + rozhodovací
+Sběr dat / distribuční model (hodnoty pro lokality)
+Studie proveditelnosti (je to reálné?)
+Výběr finálního řešení
+Jaký je rozdíl mezi kvalifikačními a rozhodovacími kritérii?
+?
+Kvalifikační – podmínky, které lokalita musí splnit (vylučovací); bez splnění lokalita vypadává
+Rozhodovací – kvantitativní faktory s váhou; lokality se bodují (váhová matice) a srovnávajíJaké jsou 6 skupin kritérií výběru logistického objektu?
+?
+Náklady (cena pozemku, práce, dopravy)
+Makro prostředí (politika, regulace, průmyslové zóny)
+Pracovní trh (dostupnost, kvalifikace, mobilita)
+Infrastruktura (dopravní obory, telekomunikace, přístup k přístavům)
+Prostředí (geografie, záplavy, kongesce)
+Trh (vzdálenost k zákazníkům/dodavatelům, LT)
+Co je heat mapa v logistice? ;; Vizuální zobrazení koncentrace prodejů na mapě – ukazuje těžiště (gravity) poptávky pro optimální umístění DCCo je studie proveditelnosti v kontextu výběru DC? ;; Zhodnocení navržené lokality z obchodního a praktického hlediska před finálním rozhodnutímCo to je LPI a kdo ho vydává? ;; Logistics Performance Index – hodnocení logistické výkonnosti zemí; vydává World Bank; škála 1–5; měří Customs, Infrastructure, International Shipments, Logistics Competence, Timeliness, Tracking &amp; TracingJak funguje váhová matice lokalit? ;; Každý faktor má váhu; každá lokalita dostane hodnocení (1=silná, 2=částečná, 3=špatná); výsledek = Váha × Hodnota; nižší celkové skóre = lepší lokalitaJaké jsou typické parametry trhu průmyslových nemovitostí? ;; Délka kontraktu 3–10 let; vacancy rate ~4 % (ČR); nájemné 5,25–6,50 EUR/m²; servis ~0,95 EUR/m²]]></description><link>logistická-strategie-scm.html</link><guid isPermaLink="false">Logistická strategie SCM.md</guid><pubDate>Fri, 22 May 2026 18:32:53 GMT</pubDate></item><item><title><![CDATA[P_ SCM - Lean a VSM]]></title><description><![CDATA[<a href=".?query=tag:přehledováPoznámka" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#přehledováPoznámka">#přehledováPoznámka</a> <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a>Přehled nástrojů štíhlé logistiky – Lean filozofie, VSM, procesní analýza a měření výkonnosti procesů.
+<br><a data-href="Lean a VSM" href="lean-a-vsm.html" class="internal-link" target="_self" rel="noopener nofollow">Lean a VSM</a> – Lean filozofie (Muda/Mura/Muri, 8 druhů plýtvání, Lean cyklus), VOC/VOP/CTQ, SIPOC, procesní mapa, špagetový diagram, sběr dat (Gauge R&amp;R, regulační diagramy, Capability index Cp/Cpc), VSM kroky a parametry (C/T, L/T, Takt, PCE, OEE), štíhlé nástroje (Supermarket, Kanban, Pacemaker, Leveling)
+]]></description><link>p_-scm-lean-a-vsm.html</link><guid isPermaLink="false">P_ SCM - Lean a VSM.md</guid><pubDate>Fri, 22 May 2026 18:28:44 GMT</pubDate></item><item><title><![CDATA[Lean a VSM]]></title><description><![CDATA[Tagy: <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Lean a VSM" href="p_-scm-lean-a-vsm.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Lean a VSM</a>Lean (štíhlá logistika) je filozofie neustálého zlepšování zaměřená na eliminaci plýtvání a tvorbu hodnoty pro zákazníka. VSM (Value Stream Mapping) je klíčovým nástrojem pro vizualizaci a analýzu procesů.Tři typy problémů v procesech:
+Muda – plýtvání (nehodnotné aktivity)
+Mura – nerovnoměrnost (kolísání zatížení procesu)
+Muri – přetížení (přetěžování lidí nebo strojů nad jejich kapacitu) Určete hodnotu pro zákazníka – co zákazník skutečně chce (VOC)
+Zmapujte tok hodnot – VSM současného stavu
+Zajistěte plynulý tok – eliminace přerušení a čekání
+Implementujte systém tahu – výroba/zásobování jen na základě skutečné poptávky (pull)
+Usilujte o dokonalost – kaizen, neustálé zlepšování
+Požadavky zákazníka – co zákazník očekává od dodavatele/procesu.
+VOG (Voice of Government) – regulatorní požadavky
+VOB (Voice of Business) – interní obchodní požadavky
+Konkrétní, měřitelné parametry, které jsou pro zákazníka klíčové (přeloženo z VOC do měřitelné metriky). Příklad: „dodávka včas a kompletně, 0 chybných dílů, štítky na správném místě."Výkonnost samotného procesu – co proces skutečně produkuje (vs. co zákazník chce).VOC × VOP – porovnání zákaznických požadavků s výkonností procesu odhalí mezery ke zlepšení.Nástroj pro popis procesu na vysoké úrovni:
+| Složka | Obsah |
+|--------|-------|
+| S – Supplier | Kdo dodává vstupy |
+| I – Input | Vstupy do procesu |
+| P – Process | Hlavní procesní kroky |
+| O – Output | Výstupy procesu |
+| C – Customer | Kdo výstupy přijímá |
+Procesní mapa – podrobný diagram kroků procesu
+Swim lanes – vizualizace zodpovědností mezi odděleními/rolemi
+RACI – matice zodpovědností (Responsible, Accountable, Consulted, Informed)
+Vizualizace fyzického pohybu materiálu nebo pracovníků v prostoru. Odhaluje zbytečný transport a pohyb.kde:
+n = velikost vzorku
+∆ = akceptovatelná chybovost měření
+p = očekávaná chybovost procesu
+Ověřuje, zda měřicí systém je dostatečně přesný:
+Opakovatelnost – stejný měřič, stejné podmínky → stejný výsledek
+Reprodukovatelnost – různí měřiči → stejný výsledek
+Přijatelné: G &lt; 10 % (variabilita měřidla / celková variabilita) Přirozená variabilita – součást procesu, bez zásahu (common cause)
+Speciální variabilita – způsobená zvláštní příčinou, nutný zásah (special cause)
+Sledují výkonnost procesu v čase:
+UCL (Upper Control Limit) = Průměr + n×SD
+LCL (Lower Control Limit) = Průměr − n×SD
+Bod mimo UCL/LCL = speciální variabilita → nutný zásah
+Typicky se používá 3SD (99,7 % hodnot v pásmu)
+Měří, zda je variabilita procesu v toleranci zákazníka:
+Cp ≥ 1 → proces je způsobilý (variabilita se vejde do toleranční hranice)
+Cp &lt; 1 → zákazník nedostane co požaduje Použití, když je proces vycentrován mimo střed tolerančního pásma (off-center)
+Cpc &lt; 1 → zákazník nedostává výstupy konzistentně
+VSM je nástroj pro vizualizaci celého toku hodnot od dodavatele k zákazníkovi – materiálového i informačního.
+Identifikace zákazníka a jeho poptávky
+Zakreslení všech procesních kroků
+Získání procesních dat
+Zaznamenání stavu zásob
+Zakreslení toku materiálu a toku informací
+Kalkulace celkových časů (VA time, L/T)
+Matice procesní kroky × produkty/SKU – zobrazuje, jakými kroky prochází každý produkt.Měří celkové využití výrobního zařízení:
+OEE = 85 % je považováno za world-class.
+Co to je Lean / štíhlá logistika? ;; Filozofie eliminace plýtvání a tvorby hodnoty pro zákazníka; cíl: odstranit vše, co nepřidává hodnotuVyjmenuj 8 druhů plýtvání (TIMWOODS)
+?
+Transport – zbytečné přesuny
+Inventory – nadměrné zásoby
+Motion – zbytečný pohyb pracovníků
+Waiting – čekání
+Overproduction – výroba víc než je poptávka
+Overprocessing – zbytečné operace
+Defects – zmetky a opravy
+Skills – nevyužité schopnosti lidíJaké jsou 3 typy problémů v Lean? ;; Muda (plýtvání), Mura (nerovnoměrnost), Muri (přetížení)Popiš 5 kroků Lean cyklu
+?
+Určete hodnotu pro zákazníka (VOC)
+Zmapujte tok hodnot (VSM)
+Zajistěte plynulý tok (eliminace přerušení)
+Implementujte systém tahu (pull)
+Usilujte o dokonalost (kaizen)
+Co to je SIPOC? ;; Supplier – Input – Process – Output – Customer; nástroj pro popis procesu na vysoké úrovniCo to je CTQ? ;; Critical to Quality – měřitelný parametr klíčový pro zákazníka (přeložení VOC do metriky)Jaký je rozdíl mezi VOC a VOP? ;; VOC = Voice of Customer (co zákazník chce); VOP = Voice of Process (co proces skutečně produkuje); jejich srovnání odhaluje mezeryCo to je špagetový diagram? ;; Vizualizace fyzického pohybu materiálu nebo lidí v prostoru; odhaluje zbytečný transportCo to je Gauge R&amp;R a kdy je přijatelný? ;; Ověření přesnosti měřicího systému (opakovatelnost + reprodukovatelnost); přijatelný pokud G &lt; 10 %Jaký je rozdíl mezi přirozenou a speciální variabilitou? ;; Přirozená – součást procesu, bez zásahu; speciální – způsobená zvláštní příčinou, nutný zásahCo to je Capability index Cp? ;; Cp = Tolerance / (6×SD); Cp ≥ 1 → proces způsobilý; Cp &lt; 1 → zákazník nedostane co požadujeCo to je VSM? ;; Value Stream Mapping – vizualizace celého toku hodnot (materiálového i informačního) od dodavatele k zákazníkoviCo to je Takt time? ;; Dostupný čas / poptávka; říká, jak rychle musíme vyrábět, aby byl splněn zákaznický požadavekCo to je PCE v VSM? ;; Process Cycle Efficiency = VACT / L/T; podíl hodnotného času na celkovém lead timeCo to je OEE a jak se počítá?
+?
+Overall Equipment Effectiveness
+OEE = Dostupnost × Výkonnost × Kvalita
+Dostupnost = (plán. čas − poruchy − přestavby) / plán. čas
+Výkonnost = skutečné výkony / normativní výkony
+Kvalita = (výkony − zmetky) / výkonyCo to je Pacemaker v VSM? ;; Jeden klíčový bod v procesu, který řídí tempo celého hodnotového tokuCo to je Supermarket v Lean? ;; Řízený mezisklad s definovaným množstvím sloužící jako pull buffer mezi procesy s různým taktem]]></description><link>lean-a-vsm.html</link><guid isPermaLink="false">Lean a VSM.md</guid><pubDate>Fri, 22 May 2026 18:28:36 GMT</pubDate></item><item><title><![CDATA[P_ SCM - Plánování a zásoby]]></title><description><![CDATA[<a href=".?query=tag:přehledováPoznámka" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#přehledováPoznámka">#přehledováPoznámka</a> <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a>Přehled procesů plánování v SCM – demand planning, S&amp;OP, materiálové řízení a správa zásob.
+<br><a data-href="Demand planning" href="demand-planning.html" class="internal-link" target="_self" rel="noopener nofollow">Demand planning</a> – S&amp;OP, typy forecastů, forecast accuracy, role demand plannera a business plannera, sell-in/sell-out/stock-in-trade
+<br><a data-href="Materiálové řízení" href="materiálové-řízení.html" class="internal-link" target="_self" rel="noopener nofollow">Materiálové řízení</a> – pyramida plánů (business plán → výrobní plán → MPS → MRP), kusovník (BOM), ABC/XYZ/HML analýzy, druhy zásob, MPS detail (ATP, PAB), Push/Pull kombinace, postup materiálového plánování
+<br><a data-href="Zásobování SCM" href="zásobování-scm.html" class="internal-link" target="_self" rel="noopener nofollow">Zásobování SCM</a> – ROP, EOQ (Campův vzorec), pojistná zásoba (vzorce + koeficienty K), systémy zásobování A/B, kanban, způsoby zásobování (VMI, JIT, JIS, Milk Run, Cross-docking)
+]]></description><link>p_-scm-plánování-a-zásoby.html</link><guid isPermaLink="false">P_ SCM - Plánování a zásoby.md</guid><pubDate>Fri, 22 May 2026 18:21:16 GMT</pubDate></item><item><title><![CDATA[Zásobování SCM]]></title><description><![CDATA[Tagy: <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Plánování a zásoby" href="p_-scm-plánování-a-zásoby.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Plánování a zásoby</a><br>Zásobování (replenishment) zajišťuje doplňování zásob ve správný čas a správném množství. Navazuje na materiálové plánování popsané v <a data-href="Materiálové řízení" href="materiálové-řízení.html" class="internal-link" target="_self" rel="noopener nofollow">Materiálové řízení</a>.
+Pokrytí variability poptávky (nejistota trhu)
+Kompenzace nespolehlivosti dodavatelů (variabilní lead time)
+Ekonomika objednávání (nižší cena při větším množství)
+Sezónnost poptávky nebo výroby
+Spekulace nebo strategické zajištění
+ROP říká, při jaké úrovni zásoby je třeba vydat novou objednávku, aby zásoba neklesla pod nulu před příchodem dodávky.Základní vzorec:ROP = d × t_d + K × σ × √t_dkde:
+d – průměrná denní spotřeba
+t_d – dodací lhůta (ve dnech)
+K – koeficient service level (viz pojistná zásoba)
+σ – směrodatná odchylka denní poptávky
+Optimální velikost objednávky minimalizující součet objednacích nákladů a nákladů držení.kde:
+C_o – objednací náklady (na jednu objednávku)
+D – roční poptávka (v jednotkách)
+T – náklady držení jako % z hodnoty zásoby (např. 0,25 = 25 %)
+C_c – pořizovací cena jedné jednotky Při EOQ jsou objednací náklady = nákladům držení (minimum celkových nákladů).
+Pojistná zásoba kryje variabilitu poptávky nebo dodacích lhůt.1. Variabilita poptávky (stabilní LT):
+SS = K × σ_d × √t_dkde σ_d = směrodatná odchylka denní poptávky2. Variabilita LT (stabilní poptávka):
+SS = K × d × σ_LTkde σ_LT = směrodatná odchylka lead time3. Obě variability:
+SS = K × √(t_d × σ_d² + d² × σ_LT²)4. Zjednodušený vzorec (průměrný přístup):
+SS = K × σ_kombinovanáKanban je pull systém řízení toku materiálu – výroba nebo zásobování se spouští teprve tehdy, když je spotřebován předchozí kontejner.
+Výrobní kanban (Production kanban) – signál pro výrobu nové dávky; karty obíhají uvnitř výroby
+Distribuční (odběrný) kanban (Withdrawal kanban) – signál pro přesun materiálu z předchozí operace nebo skladu Počet kanban karet = velikost zásoby ve výrobě
+Kanban standardně funguje s pevnými kontejnery (standardní množství)
+Vychází z principu JIT – minimalizace rozpracované výroby (WIP)
+Dodavatel sám sleduje stav zásob zákazníka a rozhoduje, kdy a kolik doplnit. Zákazník poskytuje přístup k datům o zásobách. Snižuje administrativní zátěž zákazníka.Materiál dorazí přesně ve chvíli, kdy je potřeba – minimální zásoby. Vyžaduje spolehlivé a přesné dodávky. Vhodné pro AX produkty (vysoká spotřeba, stabilní poptávka).Rozšíření JIT – materiál dorazí nejen včas, ale i ve správném pořadí odpovídajícím výrobní sekvenci. Typické pro automotive.Pravidelné okružní svozy – jedno vozidlo sbírá materiál od více dodavatelů podle pevné trasy a harmonogramu. Snižuje dopravní náklady a zjednodušuje logistiku.Zboží z příchozích zásilek se konsoliduje a přerozděluje přímo na odchozí zásilky bez uskladnění. Minimalizuje čas na skladě, vhodné pro čerstvé zboží nebo FMCG s předvídatelnou poptávkou.Pull-based zásobování spouštěné spotřebou.Co to je ROP a jak se vypočítá? ;; Re-order Point – bod přiobjednání; ROP = d × t_d + K × σ × √t_d (průměrná spotřeba × LT + pojistná zásoba)Jaký je rozdíl mezi systémem A a B zásobování?
+?
+Systém A (Q-systém, kontinuální) – sledování každý den; objednávka při dosažení ROP; fixní množství Q*
+Systém B (P-systém, periodický) – kontrola v pevných intervalech; variabilní množství (doplnění na cílovou úroveň)Co to je EOQ a jak se počítá? ;; Ekonomické objednací množství; Q* = √(2 × C_o × D / (T × C_c)); minimum součtu objednacích nákladů a nákladů drženíJaké jsou hodnoty koeficientu K pro service level?
+?
+K = 1,00 → 84,1 %
+K = 1,65 → 95,0 %
+K = 2,00 → 97,7 %
+K = 3,00 → 99,9 %Jak se počítá pojistná zásoba při variabilitě poptávky? ;; SS = K × σ_d × √t_d (K = koeficient SL, σ_d = odchylka denní poptávky, t_d = LT)Co to je VMI? ;; Vendor Managed Inventory – dodavatel sám řídí zásoby zákazníka na základě přístupu k jeho datůmCo to je JIS a čím se liší od JIT? ;; Just in Sequence – materiál dorazí včas i ve správném pořadí dle výrobní sekvence; používá se v automotiveCo to je Milk Run? ;; Pravidelný okružní svoz od více dodavatelů jedním vozidlem po pevné trase; snižuje dopravní nákladyJaké jsou důvody pro udržování zásob?
+?
+Variabilita poptávky
+Nespolehlivost dodavatelů (variabilní LT)
+Ekonomika objednávání (množstevní slevy)
+Sezónnost
+Spekulace nebo strategické zajištěníCo to je kanban? ;; Pull systém zásobování/výroby – nová výroba nebo dodávka se spouští až spotřebou předchozí dávky (kontejneru)Jaký je rozdíl mezi výrobním a distribučním kanbanem? ;; Výrobní kanban – signál pro výrobu nové dávky uvnitř výroby; distribuční (odběrný) kanban – signál pro přesun materiálu z předchozí operace nebo skladu]]></description><link>zásobování-scm.html</link><guid isPermaLink="false">Zásobování SCM.md</guid><pubDate>Fri, 22 May 2026 18:21:07 GMT</pubDate></item><item><title><![CDATA[Materiálové řízení]]></title><description><![CDATA[Tagy: <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Plánování a zásoby" href="p_-scm-plánování-a-zásoby.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Plánování a zásoby</a><br>Materiálové řízení zajišťuje, aby byl materiál na správném místě, ve správném množství a ve správný čas. Je klíčovou součástí fáze SOURCE v <a data-href="Základy SCM" href="základy-scm.html" class="internal-link" target="_self" rel="noopener nofollow">Základy SCM</a>.
+„Materiálové řízení koordinuje a organizuje tok materiálu za účelem splnění požadavků zákazníků při maximalizaci využití podnikových zdrojů."
+Plánování v SCM probíhá na čtyřech hierarchických úrovních s různými časovými horizonty:
+Horizont: 3–5 let; Interval: roky
+Obsah: Obrat, prodeje výrobkových řad, výrobní kapacity, logistika
+Plánuje se na úrovni výrobkových řad (ne jednotlivých SKU) Horizont: 1 rok; Interval: týdny / měsíce
+Obsah: Objem výroby konkrétních SKU, zásoby Horizont: měsíc / kvartál; Interval: den / směny
+Obsah: Detailní plán výroby a zásob na úrovni SKU Rozpad výrobního plánu na jednotlivé komponenty
+Zohledňuje lead time – naplánuje nákup tak, aby materiál dorazil právě včas pro výrobu
+Vychází z kusovníku (BOM)
+Seznam všech součástek a komponent potřebných k výrobě jednoho produktu. Obsahuje ID a popis každého materiálu.
+Cílem je optimalizace a snížení zásob – peníze uvězněné v materiálu snižují likviditu firmy
+Hodnota zásob je klíčovým ukazatelem; bývá stanoven limit (případně rozdělený podle ABC analýzy)
+Vychází z Paretova zákona (80/20): malá část položek tvoří velkou část spotřeby.Postup výpočtu ABC:
+Historická spotřeba → průměrné množství
+Výpočet % podílu každé položky
+Seřazení položek sestupně
+Rozdělení do skupin dle % hranic
+Hodnotí variabilitu poptávky pomocí variačního koeficientu (standardní odchylka / průměr):Postup: historická spotřeba → průměr → % podíl → standardní odchylka → variační koeficient → skupiny
+H (High margin) – vysokomarž. produkty → zaměření na responsiveness
+M (Medium margin) – průměrné
+L (Low margin) – nízkomarž. produkty → zaměření na efektivitu (lean)
+Kombinací ABC × XYZ nebo ABC × HML lze produkty segmentovat přesněji a nastavit individuální logistické strategie (úrovně zásob, frekvenci objednávání atd.).MPS pracuje na úrovni SKU a řeší nejen co vyrobit, ale i kdy a kolik.
+PAB (Projected Available Balance) – předpokládaná zásoba na konci období:
+PAB = PAB_předchozí + MPS − poptávka
+ATP (Available to Promise) – kolik lze slíbit novým zákazníkům (nevázáno potvrzenou objednávkou):
+ATP = OH + MPS − potvrzené objednávky (do dalšího MPS)
+OH (On Hand) – aktuální fyzická zásoba na začátku plánování
+OO (On Order) – objednáno, ale ještě nedodáno
+CT2R (Cycle Time to Replenish) – dodací lhůta; parametr říkající, jak daleko dopředu musíme plánovat
+Jak daleko dopředu plánovat zásoby závisí na kumulativním lead time – součtu všech dílčích lead timů v řetězci (nákup materiálu + výroba + distribuce). Čím delší kumulativní lead time, tím delší plánovací horizont je nezbytný.
+Cílem je nalézt optimální rovnováhu: snížení objednacích nákladů (velké objednávky) vs. snížení nákladů držení (malé zásoby). Forecast → predikce prodejů per SKU
+Potřeba SKU → kolik hotových výrobků vyrobit (MPS)
+BOM rozpad → z MPS + kusovníku se vypočítá hrubá potřeba komponent
+Hrubá potřeba – kolik komponent celkem potřebujeme
+Čistá potřeba = Hrubá potřeba − Zásoby OH − OO
+Plánovaná objednávka – na základě čisté potřeby a lead time
+BOM položky mohou být povinné (vždy součástí výrobku) nebo volitelné (varianty produktu).Popiš pyramidu plánů v materiálovém řízení
+?
+Business plán (3–5 let) – výrobkové řady, kapacity
+Výrobní plán (1 rok, týdny/měsíce) – konkrétní SKU, zásoby
+MPS (měsíc/kvartál, den/směny) – detailní plán výroby na úrovni SKU
+MRP – rozpad na komponenty podle lead time a kusovníku
+Co to je MRP? ;; Material Requirements Planning – plán potřeby materiálu; rozpad výroby na komponenty s ohledem na lead time a kusovníkCo to je MPS? ;; Master Production Schedule – rozvrh výrobního plánu; horizont měsíc/kvartál, interval den/směny, úroveň SKUCo to je kusovník (BOM)? ;; Bill of Materials – seznam všech komponent potřebných k výrobě jednoho produktuProč je důležité řídit zásoby? ;; Peníze uvězněné v materiálu snižují likviditu; cílem je optimalizace a snížení zásobCo je ABC analýza zásob? ;; Rozdělení produktů/materiálů dle objemu spotřeby: A (5–20 % položek = 60–80 % spotřeby), B, C – vychází z Paretova zákonaCo je XYZ analýza zásob? ;; Klasifikace podle stability poptávky (variační koeficient): X = stabilní (&lt;20 %), Y = střední (20–100 %), Z = nepravidelná (&gt;100 %)Co je HML analýza? ;; Klasifikace podle marže: H (high), M (medium), L (low) – ovlivňuje volbu logistické strategie (H → responsiveness, L → efficiency)Jak se kombinují ABC a XYZ analýzy? ;; Kombinací vznikají segmenty (např. AX = vysoká spotřeba + stabilní poptávka → ideální pro JIT); každý segment dostane jinou logistickou strategiiCo to je PAB v MPS? ;; Projected Available Balance – předpokládaná zásoba na konci období; PAB = PAB_předchozí + MPS − poptávkaCo to je ATP v MPS? ;; Available to Promise – kolik lze slíbit novým zákazníkům; ATP = OH + MPS − potvrzené objednávky (do dalšího MPS)Co to je CT2R? ;; Cycle Time to Replenish – dodací lhůta; určuje, jak daleko dopředu musíme plánovatProč závisí horizont plánování na kumulativním lead time? ;; Kumulativní LT = součet nákup + výroba + distribuce; musíme plánovat alespoň tak daleko dopředu, než trvá celý řetězecJaké jsou 3 kombinace Push/Pull v MPS?
+?
+Push/Push – vše plánováno dopředu (stabilní poptávka, dlouhý LT)
+Push/Pull – materiál Push, výroba spouštěna zákaznickou objednávkou
+Pull/Pull – vše spouštěno zákaznickou objednávkou (krátký LT, vysoká variabilita)Vyjmenuj typy zásob
+?
+On Hand – fyzicky na skladě
+Běžná – pokrývá poptávku mezi dodávkami
+Pojistná – buffer pro variabilitu
+Pro předzásobení – na sezónu nebo plánovaný výpadek
+On Order – objednáno, nedodáno
+Dopravní (pipeline) – v přepravě
+Spekulační – nákup za příznivou cenu
+Strategické – krizová zásoba
+Hedge – zajištění rizik
+MRO – provozní spotřební materiál
+Mrtvá – neprodejnáJaké jsou 4 typy nákladů zásob? ;; Pořizovací (cena), objednací (administrativa, transport), náklady držení (skladování, kapitál), náklady vyčerpání (ztracené tržby, backorder)Popiš postup materiálového plánování
+?
+Forecast → predikce prodejů
+Potřeba SKU → MPS
+BOM rozpad → hrubá potřeba komponent
+Čistá potřeba = Hrubá − OH − OO
+Plánovaná objednávka dle čisté potřeby a lead time
+Jaké jsou úrovně kusovníku (BOM)?
+?
+Level 0 – hotový výrobek
+Level 1 – přímé komponenty
+Level 2 – dílčí komponenty subsestavy
+Level 3 – suroviny a nakupované díly]]></description><link>materiálové-řízení.html</link><guid isPermaLink="false">Materiálové řízení.md</guid><pubDate>Fri, 22 May 2026 18:20:15 GMT</pubDate></item><item><title><![CDATA[SCM Strategie]]></title><description><![CDATA[Tagy: <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Základy a procesy" href="p_-scm-základy-a-procesy.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Základy a procesy</a><br>SCM strategie definuje, jak firma řídí svůj dodavatelský řetězec – výběr partnerů, lokalit skladů/závodů a nastavení klíčových procesů. Navazuje na základní podprocesy popsané v <a data-href="Základy SCM" href="základy-scm.html" class="internal-link" target="_self" rel="noopener nofollow">Základy SCM</a>.SC strategie vychází z obchodní strategie a definuje 5 složek, které společně generují logistické služby vedoucí k zisku:
+SC partneři – výběr dodavatelů a logistických partnerů
+SC lokace – umístění skladů, továren, DC
+SC procesy – PLAN → SOURCE → MAKE → DELIVER
+SC technologie – IT systémy, automatizace
+SC znalosti a lidé – kompetence a řízení lidských zdrojů
+Volba strategie závisí na charakteru produktu:Strategie zásobování závisí na dvou dimenzích:
+Outsourcing vs. insourcing – co si firma dělá sama, co svěřuje partnerům
+Vertikální integrace – jak moc firma kontroluje různé úrovně SC
+Globalizace vs. lokalizace – kde se vyrábí/skladuje
+Centralizace vs. decentralizace – jedno centrální DC nebo místní sklady
+Kooperace s konkurencí – sdílení logistických aktiv (sklady, doprava)
+Čím více firma globalizuje, tím:
+Rostou: náklady na transport
+Klesají: náklady na výrobu (využití levnějších trhů), zásoby (centralizace), náklady na material
+Čím více lokalizuje, tím kratší lead time, ale vyšší výrobní náklady.
+SC partneři: Výběr dodavatelů a logistických partnerů
+SC lokalita: Umístění skladů, výrobních závodů a distribučních center
+SC procesy: PLAN → SOURCE → MAKE → DELIVER
+Čas od objednávky do dodání. Typicky se měří v inbound logistice – čas od objednání zásob pro výrobu do jejich přijetí na sklad.Outsourcing logistických operací třetí straně – zajišťuje dopravu, skladování a distribuci.Nadstavba nad 3PL. Poskytovatel pomáhá vybrat a monitorovat 3PL partnery, podporuje tendry a hodnotí jejich výkon. Sám logistiku neprovozuje.Jeden dominantní inbound poskytovatel logistiky. Nevýhoda: absence konkurenčního prostředí → proto je výhodnější mít více 3PL partnerů.Metoda distribuce přes HUBy – zboží se sveze z více zdrojů do hubu, kde se konsoliduje, a odtud pokračuje optimalizovanou trasou na dlouhé vzdálenosti. Výrazně snižuje přepravní náklady.On Time In Full – klíčové KPI pro měření kvality logistických služeb:
+On Time: dodání v dohodnutém termínu
+In Full: dodání v plném objednaném množství
+Customer Order Decoupling Point (CODP) – bod, od kterého jsou procesy spouštěny reálnou zákaznickou objednávkou (CO). Před tímto bodem probíhají procesy podle plánu (forecastu).Čím dříve v procesu je CODP, tím delší je dodací lhůta pro zákazníka, ale nižší riziko neprodejných zásob.Logistika přímo ovlivňuje ROI (Return on Investment):ROI = Zisk / Vázaný kapitálSCM plánování probíhá ve třech časových horizontech:Co to je lead time? ;; Čas od objednávky do dodání; typicky měřen v inbound logistice (od objednání materiálu po přijetí)Co to je 4PL a čím se liší od 3PL? ;; 4PL neprovozuje logistiku sám – pomáhá vybrat a monitorovat 3PL partnery a podporuje tendryCo to je LLP a proč je nevýhodný? ;; Lead Logistics Provider – jeden inbound dodavatel; nevýhoda je chybějící konkurenční prostředíCo to je cross docking? ;; Distribuce přes HUBy – konsolidace zboží z více zdrojů a optimalizovaná přeprava na dlouhé vzdálenostiCo to je OTIF? ;; On Time In Full – KPI kvality logistiky; doručení v čas (on time) a v plném množství (in full)Jaké procesy tvoří SC strategii?
+?
+PLAN → SOURCE → MAKE → DELIVERCo to je CODP?
+?
+Customer Order Decoupling Point – bod, od kterého jsou procesy spouštěny zákaznickou objednávkou; před tímto bodem probíhají podle forecastuJaké jsou typy spouštění procesů podle CODP?
+?
+Distribute to order – spouštěna pouze expedice
+Make to order – spouštěna výroba a expedice
+Source to order – spouštěno zásobování, výroba a expedice
+Engineer to order – spouštěno vše od vývoje výrobkuJak logistika ovlivňuje ROI?
+?
+ROI = Zisk / Vázaný kapitál
+Logistické služby → zvyšují prodeje
+Efektivita logistiky → snižuje náklady
+Lead time → ovlivňuje hotovost (cash flow)
+Přesnost faktur → ovlivňuje pohledávky
+Řízení zásob → snižuje vázaný kapitál
+Využití aktiv → snižuje fixní aktivaJaké jsou 3 časové horizonty plánování v SCM? ;; Dlouhodobé (strategie, výběr dodavatelů), střednědobé (hlavní výrobní plán, plánování distribuce), krátkodobé (objednávání, výroba, expedice)Jaký je rozdíl mezi Efficient a Responsive strategií SCM?
+?
+Efficient – vysoký objem, nízká volatilita poptávky; zaměřena na minimalizaci nákladů
+Responsive – nízký objem, vysoká volatilita; zaměřena na rychlost a dostupnost
+Hybrid – kombinace pro středové produktyCo to je PUSH strategie a kdy se používá? ;; Výroba/zásobování probíhá dopředu podle plánu (forecastu); vhodné při nízké variabilitě poptávky a dlouhé dodací lhůtěCo to je PULL strategie? ;; Zásobování se spouští až na základě skutečné poptávky; vhodné při krátké dodací lhůtě a nízké variabilitěJaké jsou 4 typy globální strategie SCM?
+?
+No international – jen domácí trh
+Global – vysoká integrace, nízká lokální odezva; centralizované plánování
+Multidomestic – nízká integrace, vysoká lokální odezva; lokální dceřiné společnosti
+Transnational – vysoká integrace i lokální odezva; nejsložitějšíJaký je dopad globalizace na náklady SC?
+?
+Globalizace: transport náklady rostou, výrobní náklady klesají, zásoby klesají
+Lokalizace: transport náklady klesají, výrobní náklady rostou, zásoby rostou]]></description><link>scm-strategie.html</link><guid isPermaLink="false">SCM Strategie.md</guid><pubDate>Fri, 22 May 2026 18:12:20 GMT</pubDate></item><item><title><![CDATA[Logistické služby SCM]]></title><description><![CDATA[Tagy: <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Základy a procesy" href="p_-scm-základy-a-procesy.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Základy a procesy</a>Logistické služby jsou to, co zákazník odebírá ze supply chainu. Jejich nastavení vychází z obchodní strategie firmy a přímo ovlivňuje výnosy i náklady.Zákazník vnímá hodnotu jako poměr přínosů a nákladů:
+Vnímané přínosy: funkcionality, výkon a technické parametry, dostupnost, podpora pro zákazníka
+Celkové náklady: cena pořízení, náklady školení, provozní náklady, náklady údržby, náklady na technickou podporu, náklady řízení, náklady na likvidaci
+Klíčové je, že zákazník nevnímá jen cenu, ale celkové náklady vlastnictví (TCO).Logistické služby se dělí do tří fází podle vztahu k transakci:
+Délka dodací lhůty
+Variantnost balení a dopravních prostředků
+MOQ (Minimum Order Quantity) – minimální objednávkové množství
+MOV (Minimum Order Value) – minimální hodnota objednávky
+INCOTERMS parity
+Digitalizované dokumenty
+Typy odvolávání
+Řešení reklamací Včasnost dodávky
+Úplnost dodávky
+Bezchybnost dokumentace
+Backorder lead time
+Poničené obaly / produkty
+Kvalita komunikace
+OTIF (On Time In Full) je základní KPI kvality logistických služeb. Úplná verze zahrnuje tři složky:
+On Time – doručeno v dohodnutém termínu
+In Full – doručeno v plném objednaném množství
+Error Free – dodáno bez chyb (dokumentace, poškození)
+Výkon v logistice se měří jako vážené skóre KPI:Produkty/zákazníky prioritizujeme kombinací ziskovosti a důležitosti pro zákazníka:
+Priorita = Pořadí ziskovosti × Hodnocení důležitosti
+Čím nižší výsledek, tím vyšší priorita
+Hodnocení důležitosti (1 = nejkritičtější):
+1 – nedostupnost znamená ztrátu tržeb
+2 – max. 1 den nedostupnosti akceptován
+3 – nedostupnost více dní akceptována
+Náklady SCM se měří ve vztahu k výkonu nebo nákladové základně:
+SCM náklady / jednotku
+SCM náklady / COGS
+Náklady nákupu, výroby
+Náklady na skladování / jednotku
+Dopravní náklady / jednotku
+Dopravní náklady / distribuční náklady
+COGS (Cost of Goods Sold) zahrnuje veškeré přímé náklady na dodání produktu zákazníkovi:
+náklady na pořízení zboží/materiálu, přepravné, skladovné, přímé mzdové náklady, manipulační náklady, výrobní náklady, nepřímé mzdové náklady.Struktura P&amp;L:
+Výnosy − COGS = Hrubá marže
+Hrubá marže − Režie = EBITDA
+EBITDA − Amortizace = EBIT
+EBIT − Úroky − Daně = Čistá marže
+Co to je OTIF a jak se počítá?
+?
+On Time In Full – KPI kvality dodávek
+OTIF = (On-Time dodáno / potvrzené obj.) × (In-Full dodáno / potvrzené obj.) × (Error-Free dodáno / potvrzené obj.)Jaké jsou 3 fáze logistických služeb?
+?
+Předtransakční – před objednávkou (dostupnost, vzorky, snadnost objednání)
+Transakční – při dodání (včasnost, úplnost, bezchybnost dokumentace)
+Post-transakční – po dodání (reklamace, vratky, náhradní díly)Co to je MOQ a MOV? ;; MOQ = Minimum Order Quantity (min. objednávkové množství); MOV = Minimum Order Value (min. hodnota objednávky)Co to je Days of supply? ;; Stock On Hand / denní prodeje – kolik dní zásoby vydržíCo to je Cash to Cash? ;; Doba obratu zásob + doba obratu pohledávek − doba obratu závazků – měří délku cash flow cykluCo to je Inventory turnover? ;; COGS / průměrné zásoby – měří rychlost obratu zásobCo to je Fill rate? ;; Dodané položky / objednané položky × 100Co je Supply chain cycle time? ;; Lead time zásobování + lead time výroby + lead time kompletace zakázekCo tvoří COGS v SCM?
+?
+Náklady na pořízení zboží/materiálu/surovin
+Přepravné a skladovné
+Přímé mzdové náklady
+Manipulační a výrobní náklady
+Nepřímé mzdové nákladyJak se prioritizují produkty v SCM? ;; Priorita = Pořadí ziskovosti × Hodnocení důležitosti pro zákazníka; nižší číslo = vyšší priorita]]></description><link>logistické-služby-scm.html</link><guid isPermaLink="false">Logistické služby SCM.md</guid><pubDate>Fri, 22 May 2026 18:11:33 GMT</pubDate></item><item><title><![CDATA[Demand planning]]></title><description><![CDATA[Tagy: <a href=".?query=tag:scm" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#scm">#scm</a><br>
+<a data-href="P_ SCM - Plánování a zásoby" href="p_-scm-plánování-a-zásoby.html" class="internal-link" target="_self" rel="noopener nofollow">P_ SCM - Plánování a zásoby</a><br>Demand planning je proces předpovídání budoucí poptávky zákazníků za účelem optimalizace zásob a dodávek. Navazuje na základní podprocesy popsané v <a data-href="Základy SCM" href="základy-scm.html" class="internal-link" target="_self" rel="noopener nofollow">Základy SCM</a>.D&amp;S Integration – integrace poptávky a nabídkyProces slaďující poptávku a nabídku; používají ho velké firmy s mnoha pobočkami a výrobky. Cíle:
+Optimalizace toku zboží
+Zvýšení efektivity fungování společnosti Sběr dat – historická data o prodejích, prognózy do budoucna
+Předpověď poptávky – forecasty prodejů po měsících per SKU
+Plán výroby – kapacity přizpůsobené očekávané poptávce
+Meeting – sladění s obchodním týmem, identifikace a řešení gapů
+Lokální pobočky mají vlastní supply chain a lokální sklad, ze kterého zásobují zákazníky. Továrny zásobují sklady – komunikace probíhá:
+Napřímo – pobočka ↔ továrna
+Nepřímo přes SPH – Supply Planning Hub (centrální plánovači, kteří komunikují s továrnami i zákazníky)
+Business planner má zkreslený pohled – jeho forecasty odrážejí prodejní cíle, ne nutně reálná data.
+Baseline forecast – standardní předpověď prodejů za normálních podmínek
+Promo forecast – předpověď při propagačních akcích
+Launch forecast – předpověď při uvádění nového produktu na trh Normal – standardní produkty prodávané za peníze
+FOC (Free of Charge) / vzorky – produkty rozdávané zdarma
+Hero produkty – klíčové produkty s nejvyšším obratem
+KPI hodnotící přesnost předpovědi:
+Vzorec: delta / skutečnost = accuracy (škála 0–100)
+Počítá se pro každou SKU zvlášť, výsledkem je průměr
+Forecast se klouzavě aktualizuje každý měsíc
+M-3 forecast accuracy – porovnání reality s plánem vytvořeným 3 měsíce zpět
+M-1 forecast accuracy – porovnání reality s plánem vytvořeným 1 měsíc zpětSrovnání forecastu v peněžní hodnotě vs. předchozí rok.
+Sell-in – co jsme prodali našim přímým zákazníkům (B2B)
+Sell-out – prodej od zákazníků ke spotřebitelům; zjišťuje se přes agentury (~70 % trhu); sleduje se v čase
+Stock-in-trade – aktuální stav zásob v distribuci (u zákazníků)
+Konkrétní výrobní dávka produktu. Lze ji sledovat – zda je ve výrobě, přepravě nebo na skladě.Součást ERP systémů. Využívá statistické modely a historická sell-in data očištěná o sezónnost (po SKU, měsíčně).Na časové ose od zahájení plánování po dodání zákaznické objednávky (CO) se informace postupně zpřesňují:V každé fázi probíhají jiné plánovací aktivity:
+Objednávání materiálu – probíhá daleko dopředu, vychází primárně z forecastu
+Plánování materiálu – kombinuje forecast a CO
+Plánování výroby – blíže realitě, vychází z kombinace
+Samotná výroba – spouštěna podle potvrzených CO nebo plánu
+Plánování a realizace logistiky – těsně před dodáním CO
+Po finalizaci forecastu supply planner objednává zboží od továrny nebo přes SPH podle demand plánu.Popiš S&amp;OP proces, co to je a k čemu to je?
+?
+sales and operation planning
+pro výrobní firmy
+proces slouží ke sladění nabídky a poptávky - co zákazníci budou chtít, co my zvládneme vyrobit a jak vyřešit rozdílJaké jsou fáze S&amp;OP?
+?
+Sběr dat
+Předpověď poptávky (forecast)
+Plán výroby
+Meeting – sladění s obchodem, řešení gapů
+Jaký je rozdíl mezi demand plannerem a business plannerem?
+?
+Demand planner – člen SCM, vychází z reality, optimalizuje zásoby
+Business planner – člen Sales, forecasty zkreslené business cíli a KPIJaké jsou typy forecastů? ;; Baseline (standardní), promo (akce), launch (nový produkt)Co to je forecast accuracy? ;; KPI přesnosti forecastu; delta/skutečnost = accuracy (0–100); počítá se per SKUCo je M-3 forecast accuracy? ;; Porovnání reality s forecastem vytvořeným před 3 měsíciCo to je šarže? ;; Konkrétní výrobní dávka produktu; lze ji sledovat ve výrobě i přepravěCo to je stock-in-trade? ;; Aktuální stav zásob v distribuci (u zákazníků)Co to je sell-out a jak se zjišťuje? ;; Prodej od zákazníků ke spotřebitelům; zjišťuje se přes agentury (cca 70 % trhu)Co je forecast valorizace? ;; Srovnání forecastu v peněžní hodnotě vs. předchozí rokJak se mění základ plánování v čase (milníky)?
+?
+Daleko před dodáním: čistý forecast (odhad)
+Blíže: kombinace forecastu a potvrzených CO
+Těsně před dodáním: potvrzená CO = realitaCo to je SPH? ;; Supply Planning Hub – centrální plánovači komunikující s továrnami a zákazníky místo přímého kontaktu pobočky]]></description><link>demand-planning.html</link><guid isPermaLink="false">Demand planning.md</guid><pubDate>Fri, 22 May 2026 18:07:59 GMT</pubDate></item><item><title><![CDATA[logistická_strategie]]></title><link>zdroje/scm/logistická_strategie.html</link><guid isPermaLink="false">Zdroje/scm/logistická_strategie.txt</guid><pubDate>Fri, 22 May 2026 17:43:52 GMT</pubDate></item><item><title><![CDATA[materiálové_řízení]]></title><link>zdroje/scm/materiálové_řízení.html</link><guid isPermaLink="false">Zdroje/scm/materiálové_řízení.txt</guid><pubDate>Fri, 22 May 2026 17:42:37 GMT</pubDate></item><item><title><![CDATA[strategie_SCM]]></title><link>zdroje/scm/strategie_scm.html</link><guid isPermaLink="false">Zdroje/scm/strategie_SCM.txt</guid><pubDate>Fri, 22 May 2026 17:42:13 GMT</pubDate></item><item><title><![CDATA[demand_planning_výpisky]]></title><link>zdroje/scm/demand_planning_výpisky.html</link><guid isPermaLink="false">Zdroje/scm/demand_planning_výpisky.txt</guid><pubDate>Fri, 22 May 2026 17:41:34 GMT</pubDate></item><item><title><![CDATA[4_Lean a VSM]]></title><link>zdroje/scm/4_lean-a-vsm.html</link><guid isPermaLink="false">Zdroje/scm/4_Lean a VSM.pdf</guid><pubDate>Fri, 22 May 2026 17:29:23 GMT</pubDate></item><item><title><![CDATA[logistika]]></title><description><![CDATA[Tagy: <a href=".?query=tag:logistika" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#logistika">#logistika</a>rozdíl mezi supply chain a demand chain ;; supply chain je od dodavatele k zákazníkovi a demand chain je od zákazníka k dodavateli6 pravidel logistiky, co se musí správně dodržet? ;; místo, čas, množství, kvalita, cena, správný adresátna jaké subsystémy je možné logistiku dekomponovat? (teoretické dělení)
+?
+statický - dopravní infrastruktura
+mobilní - dopravní prostředky
+řídící - pracovníci, signalizační zařízení (návěstidla, služby řízení letového provozu)praktické dělení (subsystémy) logistiky a co to představuje
+?
+technická základna - dopravní cesty (hrany grafu), logistická centra, gateways, terminály (vrcholy grafu), přepravní prostředky, dopravní prosttředy, prostředky při přenos dat atp.
+lidé; firmy
+technologie
+vědní aparátprvky logistiky - rozdělení
+?
+aktivní - dopravní prostředky, IT
+aktivní prvky zajišťují pohyb pasivních prvků
+pasivní - zboží, obalové materiály, kontejneryjaké jsou různé pozice logistických manažerů a náplň jejich práce
+?
+logistický manažer - operativní řizení lidí v oblasti dopravy a skladování
+manažer distribuce - operativa, řízení distribuce
+projektový manažer - více strategická role, integrace logistických řetězců atp.jaké jsou tři vědní přístupy k řešení problémů?
+?
+empiricko-intuitivní - založený na zkušenostech a intuici, težko se prokazuje správnost řešení
+algoritmický - založený na matematických metodách, systémové přemýšlení o problému, přesnost, objektivnost, transparentnost výsledku
+heuristický - využívání heuristických metod s definovaným algoritmem, využívá matematický základ, ale cílem není najít optimum, nýbrž suboptimum, přesnost lze zvýšit pomocí modelování (simulování)Jaké můžeme vybrat metody pro řešení logistického problému za jistoty, tedy když víme, co řešíme a máme data
+?
+operační výzkum - použití výpočetní techniky a matematiky pro výpočty a tvorbu matematických modelů, které umožňují rozhodování ve složitých ekonomických otázkách, součástí toho je lineární programování, teorie grafů atd.Jaké můžeme vybrat metody pro řešení logistického problému za jistoty, tedy když nevíme, s čím máme co dočinění
+?
+metody tvořivého myšlení - brainstorming atp.Jaké můžeme v logistice dostat certifikace / možnosti vzdělání?
+?
+vzdělání buď vysokoškolské, nebo MBA
+certifikují společnosti ELA a FIATA
+ELA vytvořila evropský systém certifikace logistických odborníků ECBL, v ČR toto zajišťuje ČLA - česká logistická asociace
+ELA má mezinárodně uznávané certifikáty na úrovních junior a seniorJaké známe logistické technologie a konkrétní příklady? Co se logistickou technologií myslí
+?
+je to soubor metod a prostředků, které firma využívá pro uskutečnění přepravy (vstupuje tam nějaké know-how, které ta firma musí mít, to je součástí každé logistické technologie)
+klasické - tvorba manipulačních skupin (sdružování) a intermodální přeprava
+telematické - sledování, co se kde nachází a v jakém je to stavu (automatické načtení zboží po průjezdu bránou, vzdálená datová komunikace kamionu s centrálou, EDI - posílání dodacích listů elektronicky)
+virtuální - simulace, grafická vizualizace (např. simulace skladu)
+komplexní - např. kanban (způsob JIT dodávání do výroby)Jaké dva subsystémy má infrastruktura?
+?
+uzlový subsystém - konkrétní místa - např. distribuční sklad, železniční stanice, přístav, cross-dock
+liniový subsystém - dopravní cesty - železnice, silniceinfrastruktura vs. suprastruktura a projekty PPP
+?
+infrastruktura je typycky vlastněná státem, pokud je vlastněna soukromými subjekty, je to suprastruktura
+PPP jsou projekty, na kterých spolupracuje veřejný a soukromý sektorJaké máme řády přepravních prostředků?
+?
+je to podle hmotnosti a způsobu manipulace
+0&nbsp;- lahev
+1&nbsp;- max 15kg&nbsp;- krabice
+2&nbsp;- max 1000 kg&nbsp;- palety
+3&nbsp;- kontejnery (ISO) ULD (unit load containery) letadlové cargoJaké znáte manipulační zařízení, co to je a kde se vyskytují?
+?
+jsou v překládacích a skladovacích uzlech
+vysokozdvižné vozíky
+rudly
+čelní překladače
+portálové jeřáby
+RTG - na kolech
+RMG - na kolejích
+STS - ship-to-shore - přemisťování kontejnerů na kontejnerové lodě
+také můžou být v dopravních prostředcích, např. hydraulické čelo (výtah na náklaďáku), hydraulické rameno, rampy na plavidlech, válečkové dráhy v letadlechJak rozdělujeme přípojná vozidla (i podle užitné hmotnosti) a jakým písmenem se označují?
+?
+písmeno O
+dělí se na návěsy (připojují se za tahač, nemá přední nápravu) a přívěsy (připojují se za vozidlo, mají i přední nápravu)
+podle užitné hmotnosti:
+O1 do 0,75t
+O2 do 3,5t
+O3 do 10t
+O4 nad 10tJak se dělí nákladní železniční vozy a příklady? Jakým subjektem je toto rozdělení určeno?
+?
+určeno UIC - mezinárodní železniční unií
+podle konstrukce - tzv. řady, řady jsou označené kombinací velkého písmena a jednoho nebo více malých písmen
+velká písmena - od E (A-D jsou osobní vozy)
+E, F - otevřené vozy, suché hromadné substráty
+L -&nbsp; vlak na auta
+S - intermodální přeprava - kontejnerové vagony - pouze podvozek, nakládá se na to kontejner
+T - s otevíratelnou střechou
+U - práškové, volně ložené zboží
+Z - cisterny
+G, H - pevná střecha
+Malá písmena:
+s - rychlost
+ss do 120
+s do 100
+bez s - méně než 100
+a - počet náprav - čtyř-nápravový vůz (bez a je to 2 nápravový)
+f - vhodný pro převoz do Velké Británie
+n - vysoká únosnost
+d - vybaven gravitačním vyprazdňovánímJaké rozlišujeme dopravní prostředky ve vodní dopravě?
+?
+pro vnitrozemskou vodní dopravu:
+motorové nákladní lodě
+remorkéry + nákladní čluny (remorkér za sebou táhne samostatný člun s nákladem)
+námořní nákladní lodě:
+kontejnerové lodě - pro suché náklady (všeobecný náklad)
+tankery - pro kapalné náklady (ropa, LPG)Co víte o nákladních letounech? Typové značení? Typy motorů?
+?
+anglicky freighter
+v typovém označení je to F
+proudové a turbovrtulové motoryJaké známe typy palet podle konstrukce?
+?
+prostá
+sloupková
+ohradová
+stříňová
+nádržkováJak se dělí kontejnery podle toho, kde se používají?
+?
+námořní deep sea (ISO kontejnery)
+vnitrozemské short sea (po Evropě) - wood kontejnery, rock kontejnery, pallet-wide kontejnery
+letecké kontejnery ULDJaké známe základní typy ISO kontejnerů podle toho, co převáží?
+?
+dry van - standardní
+reefer - temperovaný
+tank kontejner - ocelová cisterna zasazena do rámu pro ISO kontejner, pro kapaliny a plyny
+bulk - pro suché hromacné zboží
+flat rack / open top - bez bočních stěn nebo bez střechyJak rozlišujeme kontejnery podle jejich délky? Co to je TEU? Jaká je šířka a výška kontejnerů?
+?
+písmena A-E - A je nejkratší
+TEU = twenty-feet equvalent unit - tímto se počítá kapacita lodi - kolik TEU se do ní vejde; 1 TEU je kontejner C = 20 stop dlouhý
+všechny kontejnery mají šířku 8 stop
+standardní výška je 8 stop 6 palců; high cube mají 9 stop 6 palců (přesně o jednu stopu (cca 30cm) více)Jak dělíme hmotnost kontejneru?
+?
+tara - hmotnost vlastního kontejneru
+netto - hmotnost nákladu
+brutto - tara + nettoCo to jsou RFC a k čemu jsou dobré? Které města u nás a ve světě jsou na některém z koridorů?
+?
+rail freight corridors
+zjednodušují železniční nákladní dopravu, dopravce nebo operátor, který chce vypravit vlak z Hamburku do Prahy nemusí žádat o přidělení traťové kapacity zvlášť jednotlivé správce železnic, tzv. One-Stop Shop - stačí jedna žádost a centrální místo mu vyřídí průjezd všemi státy
+existuje několik takových koridorů, ČR protínají 4 z nich
+Prahu protíná RFC-7, který vede z Německa na Balkán; také výchozí bod pro RFC-9
+Ostrava leží na RFC-5 (od Baltu do Rakouska a Itálie)
+Brno - RFC-7
+Děčín - hlavní vstupní brána pro vlaky na koridoru RFC-7Jaké jsou třídy tratí?
+?
+A-E - E je pro nejtěžší náklad - 25 tun na nápravu - pouze nějaké důlní tratě, není jich mnohoJaké známe typy letových tratí (tratě ve vzduchu) - v pořadí v jaké je letadlo využije?
+?
+SID - standard instrument departure - Postup/trasa, po které letadlo stoupá po vzletu (takeoff)
+AIRWAY - dopravní koridor (dráha v oblacích)
+STAR - standard terminal arrival route - Příletová trať z AIRWAY na letištěJaké má letiště různé plochy, které využívají letadla?
+?
+RWY - runway
+TWY - pojezdové dráhy
+APRON - parkoviště pro letadlaJak jsou značeny třídy vodních cest? Které z nich jsou mezinárodního významu?
+?
+římskými číslicemi
+nejvyšší je VII
+IV a vyšší jsou cesty mezinárodního významudůležité evropské kanály? A u nás v ČR?
+?
+MLK - (mittellandkanal) středoněmecký kanál - protíná Německo na severu od západu k východu a spojuje Rýn, Vezeru a Labe
+rýn&nbsp;mohan&nbsp;dunaj&nbsp;průplav - Kanál v blízkosti Norimberku, který spojuje řeky Mohan a Dunaj – umožňuje tak plavbu ze Severního moře do Černého moře
+Kýlský&nbsp;průplav - zkratka mezi baltským a severním mořem
+německý postranní kanál
+kanál spojující Labe a VltavuDůležité evropské řeky
+?
+nejdůležitější je Rýn, teče od švýcarských hranic do Rotterdamu a do Severního moře
+Dunaj - Vídeň, Bratislava, Budapešť a vlévá se do Černého moře
+Seina - důležitá řeka ve Francii, protéká PařížíNámořní průlivy
+?
+Gibraltarský - Atlantský oceán a Středozemní moře
+Lamanšský průliv - Odděluje Anglii od Francie
+Bospor a Dardanely - Turecké průlivy, cesta ven z Černého moře do Středozemního mořeNámořní průplavy
+?
+Suez – u Egypta
+Panama – Panama (střední Amerika) - spojuje Tichý a Atlantský oceánJak jsou označeny RWY na letištích?
+?
+podle azymutů - desetina stupně od severu
+dráha směrem přímo na sever má 36, přímo na jih 18
+pokud jsou na letišti rovnoběžné dráhy, pak se dají rozlišit na L, C, RJak kategorizujeme sklady?
+?
+A - alespoň 10 metrů vysoké, temperované
+B - nestandardní výška, nestandardní podlaha
+C - jen halaJaké se používají technologie a způsoby skladování ve skladech?
+?
+skladování v bloku - palety jsou na sobě; vhodné, pokud máme hodně stejných palet
+paletový regál - palety jsou v regálech
+pojízdný regál - několik regálových řas za sebou, ty, které jsou u uličky se prohazují; typické u mraženého zboží
+drive-in shuttle regály
+spádový regál - stejné výrobky za sebou v regálu
+konzolový regál - pro dlouhé věci, jako jsou tyčejaký je rozdíl v pojmech multimodální, intermodální a kombinovaná přeprava?
+?
+multimodální - použití více oborů přepravy
+intermodální - použití více oborů přepravy a použití jedné standardizované přepravní jednotky (intermodal loading unit - ILU) napříč těmi obory
+kombinovaná - jako intermodální, ale většina přepravy musí být provedena jinak než po silniciCo to je BIBO loď?
+?
+nakládka volně loženého zboží, vykládka už v nějaké manipulační jednotce, třeba v pytlích (typicky to tak je se solí)Co to je AVI LOG?
+?
+kontejner se zkosenými stranamiKategorizace nákladních vozidel podle jejich maximální přípustné hmotnosti
+?
+N1 do 3,5t - dodávky
+N2 do 12t - nákladní auta
+N3 nad 12t - tahač a přívěsOznačení lokomotiv podle typu pohonu
+?
+1 - stejnosměrný
+2 - střídavý
+3 - více-systémová lokomotiva
+7 - motorová lokomotivaJaké známe různé typy nákladních lodí v námořní dopravě podle způsobu manipulace s nákladem a typu převáženého nákladu?
+?
+podle způsobu manipulace:
+Ro-Ro - roll on roll of - auta, co má kola nebo pásy
+Lo-Lo - lift on lift of
+Flo-flo - float in - float out
+podle toho, co převážejí:
+PCC - pure car carrier (osobní auta)
+PCTC - pure car truck carrier (nákladní auta)
+con-ro - hybrid - container a roll on - na palubu kontejnery, pod palubu auta
+kontejnerové lodě
+break bulk carrier - pro kusové zboží - již se moc nepoužívajíVysvětli parametry nákladních lodí DWT, NT a GT
+?
+DWT - dead weight tonage - hmotnost nákladu + hmotnost paliva v lodi + hmotnost čisté vody pro posádku
+NT - net tonage - objem nákladních prostor lodi
+GT - gross tonage - celkový objem všech prostor lodiCo to je geared vessel?
+?
+loď s jeřábemCo to je OSV v vnitrozemské vodní dopravě
+?
+off-shore support vessel - převáží náklad z námořských přístavů do vnitrozemíJak velké kontejnery se vejdou do podpalubí kontejnerové lodi?
+?
+20, 40, i high-cube verze
+kontejnerové lodě mají vodicí lišty a tak se tam typicky dají převážet pouze 1 TEU a 2 TEU (FEU) kontejnery, high-cube jsou jen vyšší verze, takže to nečiní problém při stackování na sebeCo je v drážní dopravě myšleno speciální dráhou?
+?
+dráha pro zajištění dopravní obslužnosti obce - metrošířka výměnné nástavby a její výhody
+?
+2,5 metru
+oproti klasickému návěsu umí stát sama o sobě a jednoduše se nasazuje na tahač, tedy tahač může okamžitě odjet s naloženou nástavbou a tím se eliminují prostoje
+výměnné nástavby samy o sobě nemají nápravy, proto při přepravě musí být umístěn na přívěsové soupravě nebo na tahači, co má odpovídající šasíCo to je konvertovaný freighter a jak ho poznáme?
+?
+je to nákladní letadlo konvertované z osobního letadla
+lze ho poznat, podle toho, že má okna, které jsou ale zevnitř skryta
+jinak podle označení, např. B 757SF (Special freighter) nebo B 757 BCF (Boeing converted freighter)Jaké jsou maximální povolené rozměry nákladních vozidel samostatných, s návěsem a přívěsovou soustavou?
+?
+návěsová souprava max 18,75 metru dlouhá
+kamion max 16,5 metru
+samostatné nákladní auto 12 metrů
+maximální délka návěsu: 13,6
+maximální šířka návěsu 2,55 metru (chladírenské vozy max 2,6)
+max výška je 4 metryMaximální hmotnost nákladních vozidel a maximální užitná hmotnost nákladu
+?
+v čr je maximální cesková hmotnost nákladního auta 48 tun, ale pouze na 5 nebo více nápravách (tedy platí pro tahač s návěsem, protože návěs má většinou 3 nápravy)
+jinak je to max 40 tun
+maximální užitná hmotnost nákladu je 26 tunJaké máme toky v logistice?
+?
+tok zboží
+tok informací
+tok financíPro přepravu nadgabaritního zboží byste použili:
+?
+vozy typu UaCo to je MTW, MTTW a MDW v letecké dopravě?
+?
+MTW - maximum departure weight
+MTTW - maximum taxing weight
+MDW - maximum departure weightCo lze považovat za ILU (intermodální přepravní jednotku)?
+?
+kontejner
+výměnná nástavba
+návěsJaké známe kategorie pozemních komunikací? Čím jsou charakteristické a kdo je vlastník?
+?
+dálnice - bez úrovňových křížení - stát
+silnice - pro dopravu mezi městy/vesnicemi - pro 1. třídu kraj; 2. a 3. třída obce s rozšířenou působností
+místní komunikace - pro dopravu uvnitř města/vesnice - obec
+účelové komunikace - pro spojení nemovitostí pro potřeby vlastníků nebo ke spojení soukromého pozemku s jinou komunikací - soukromý vlastník: fyzická nebo právnická osobaJaké jsou třídy silnic?
+?
+třída - dálková doprava
+třída - mezi okresy
+spojení obcí Jak se označují mezinárodní silniční tahy a kolik jich vede přes ČR?
+?
+např. E49, E442
+přes ČR jich vede 13Jak klasifikujeme (rozlišujeme) vnitrozemské vodní cesty podle toho, kdo na nich může plout?
+?
+splavné (přirozeně splavné x splavněné) x nesplavné
+sledované (dopravně významné x účelové) x nesledované
+sledované se rozdělují do zón (1-4) podle výšky vln
+využívané x využitelnéOd jakých bodů je pro vodní nákladní dopravu použitelné Labe a Vltava?
+?
+Labe - od Chvaletic po Hřensko
+Vltava - od Třebenice po soutok s LabemCo to je FIR a FL v letecké dopravě? Jaké prostory jsou v rámci FIR? Jaké prostory jsou definované ve vztahu k letišti?
+?
+FIR - flight information region; Česko má FIR Praha; některé státy mají více FIR
+FL - flight level; např. FL 660 znamená let ve výšce 66 000 stop, děleno třemi to dává 22 000 metrů
+V rámci FIR jsou dílčí oblasti (CTA - control area)
+ve vztahu k letišti jsou definovány tyto prostory:
+CTR - control zone - řízený okrsek - u řízených letišť
+TMA - terminal control area - koncová řízená oblast - u řízených letišť
+ATZ - aerodrome traffic zone - letištní provozní zóna - u neřízených letišťJak se podle ICAO rozděluje vzdušný prostor?
+?
+do tříd písmeny A-G; ve FIR Praha máme C, D, E, GJaké služby nabízí služba řízení letového provozu a Přibližovací služba řízení letového provozu?
+?
+Služba řízení letového provozu:
+letištní řídící věž - povoluje vzlety, přistání, pojíždění a vstup letadel na RWY (může zastávat také ground a nebo delivery)
+služba ground - určení a sdělení, které TWY použít na a z RWY
+služba delivery - uděluje povolení k letu
+Přibližovací služba:
+approach arrival - navádí letadla na přiblížení, potom je předá na TWR
+approach departure - na velkých letištích přebírá povolování některých odletů od TWRJaké jsou tři složky letových provozních služeb?
+?
+služby řízení letového provozu
+letová informační služba
+pohotovostní službaCo to je návěs interlink a přívěs typu dolly?
+?
+interlink - návěs, ze který lze připojit přívěs
+dolly - přívěs, který umožňuje nasadit na něj návěs (dolly se připojuje za vozidla, která nejsou tahač návěsů)Co to je 2WIN a jaké já výška poschodí? Co to je SOMI?
+?
+dvoupodlažní návěs; cca 1,8 metru
+SOMI je speciální typ dvoupodlažního přípojného vozidla, dvoupodlažní pouze ve středové částiCo to je EMS a ETT?
+?
+Europian modular system - jsou to delší přívěsové soustavy
+délka 25,25 metru, 51 ložných palet (3 TEU)
+ETT jsou soupravy používané ve Švédsku, které mají kapacitu 4 stohy dřeva; délka je 30 metrůJaké jsou historické vývojové fáze logistiky?
+?
+fáze - homogenní poptávka (všechni chtěli to stejné) - logistika se řešila až se výrobek vyrobil
+fáze - snaha logisticky lépe naplánovat i inbound logistiku - vzniká magický trojúholník (levný, kvalitní, rychlý); vznikají logistické oddělení, logistika je vnímaná, jako samostatný obor
+fáze - integrace - nákup, výroba a prodej fungují jako jeden tým, předávají si informace a plánují; vzniká koncept SCM
+fáze - digitalizace, telematika, simulace; magický čtyřúhelník (přidala se individualizace)
+]]></description><link>logistika.html</link><guid isPermaLink="false">logistika.md</guid><pubDate>Sun, 17 May 2026 08:27:44 GMT</pubDate></item><item><title><![CDATA[7_Supply chain design]]></title><link>zdroje/scm/7_supply-chain-design.html</link><guid isPermaLink="false">Zdroje/scm/7_Supply chain design.pdf</guid><pubDate>Tue, 21 Apr 2026 12:15:23 GMT</pubDate></item><item><title><![CDATA[3_Materiálové řízení]]></title><link>zdroje/scm/3_materiálové-řízení.html</link><guid isPermaLink="false">Zdroje/scm/3_Materiálové řízení.pdf</guid><pubDate>Tue, 10 Mar 2026 13:34:55 GMT</pubDate></item><item><title><![CDATA[2_Logistické služby]]></title><link>zdroje/scm/2_logistické-služby.html</link><guid isPermaLink="false">Zdroje/scm/2_Logistické služby.pdf</guid><pubDate>Wed, 04 Mar 2026 08:48:00 GMT</pubDate></item><item><title><![CDATA[1_Úvod do SCM]]></title><link>zdroje/scm/1_úvod-do-scm.html</link><guid isPermaLink="false">Zdroje/scm/1_Úvod do SCM.pdf</guid><pubDate>Tue, 17 Feb 2026 11:52:40 GMT</pubDate></item><item><title><![CDATA[INCOTERMS]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz_test" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz_test">#mpz_test</a>Dodací doložky (neboli parity) INCOTERMS jsou nedílnou součástí kupní smlouvy. Slouží pro zahrnutí přepravních a logistických služeb v kupní smlouvě. Definují přechod rizik (odpovědnost) za převážené zboží, přechod nákladů mezi odesilatelem a příjemcem (subjekty kupní smlouvy).INCOTERMS neřeší přechod vlastnictví zboží.INCOTERMS tímto definuje hranice dodavatelského řetězce.INCOTERMS jsou součástí kupní smlouvy a určují, kdo má povinnost uzavřít přepravní smlouvu. Výběr konkrétního typu dodací doložky INCOTERMS určuje, jakým způsobem dojde k předání zboží od odesilatele příjemci (prostřednictvím dopravce). Tedy, co se očekává od prodávajícího a kupujícího, kdo zařizuje a platí za přepravu, kdo má zboží kam dovézt.Co definuje INCOTERMS a kde se uplatňuje ;; je to doložka do kupní smlouvy (musí tam povinně být), definuje přechod odpovědnosti za převážené zbožíU jakých INCOTERMS je freight collect? Co to je?
 ?
 Freight collect znamená, že přepravné není zahrnuto v&nbsp;ceně zboží a hradí jej kupující (příjemce)
 FCA – free carrier – prodávající pouze doručí dopravci zboží na domluvené místo, od té chvíle platí dopravu kupující
@@ -802,16 +1592,7 @@ už&nbsp;nedostávali dotace, museli si na sebe vydělat sami
 dopravce se sídlem v EU může létat odkudkoli kamkoli
 padly bariéry pro vstup do odvětví
 deregulace proběhla na ekonomické stránce
-po technické stránce velmi regulovaná]]></description><link>deregulace-letecké-dopravy.html</link><guid isPermaLink="false">Deregulace letecké dopravy.md</guid><pubDate>Mon, 11 May 2026 13:30:16 GMT</pubDate></item><item><title><![CDATA[index]]></title><description><![CDATA[Kopie mého Obsidian vaultu s poznámkami z vedlejšky logistiky.Základní témata:
-<a data-href="P_ Zasílatelství" href="p_-zasílatelství.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Zasílatelství</a><br>
-<a data-href="P_ Legislativa a smlouvy v logistice" href="p_-legislativa-a-smlouvy-v-logistice.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Legislativa a smlouvy v logistice</a><br>
-<a data-href="Zpoplatnění dopravní infrastruktury" href="zpoplatnění-dopravní-infrastruktury.html" class="internal-link" target="_self" rel="noopener nofollow">Zpoplatnění dopravní infrastruktury</a>Silniční doprava<br>
-<a data-href="P_ Nákladní silniční doprava" href="p_-nákladní-silniční-doprava.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Nákladní silniční doprava</a><br>
-<a data-href="P_ Osobní autobusová doprava" href="p_-osobní-autobusová-doprava.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Osobní autobusová doprava</a>Železniční doprava<br>
-<a data-href="P_ Železniční přeprava" href="p_-železniční-přeprava.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Železniční přeprava</a><br>
-<a data-href="P_ Subjekty v železniční dopravě" href="p_-subjekty-v-železniční-dopravě.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Subjekty v železniční dopravě</a>Letecká doprava<br>
-<a data-href="P_ Letecká osobní doprava" href="p_-letecká-osobní-doprava.html" class="internal-link" target="_self" rel="noopener nofollow">P_ Letecká osobní doprava</a>Námořní:<br>
-<a data-href="Námořní nákladní doprava" href="námořní-nákladní-doprava.html" class="internal-link" target="_self" rel="noopener nofollow">Námořní nákladní doprava</a><br><a data-href="logistika" href="logistika.html" class="internal-link" target="_self" rel="noopener nofollow">logistika</a>]]></description><link>index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Sun, 10 May 2026 07:36:39 GMT</pubDate></item><item><title><![CDATA[Limity odpovědnosti dopravce]]></title><description><![CDATA[bře 04, 2026
+po technické stránce velmi regulovaná]]></description><link>deregulace-letecké-dopravy.html</link><guid isPermaLink="false">Deregulace letecké dopravy.md</guid><pubDate>Mon, 11 May 2026 13:30:16 GMT</pubDate></item><item><title><![CDATA[Limity odpovědnosti dopravce]]></title><description><![CDATA[bře 04, 2026
 Spojení:Odpovědnost dopravce za přepravovanou podléhá pevně stanoveným limitům odpovědnosti, které jsou definovány v <a data-tooltip-position="top" aria-label="Mezinárodní přepravní úmluvy" data-href="Mezinárodní přepravní úmluvy" href="mezinárodní-přepravní-úmluvy.html" class="internal-link" target="_self" rel="noopener nofollow">mnohostranných přepravních úmluvách</a>. Logikou limitů je kompromis mezi zájmy dopravců a přepravců (zákazníků) a snaha o rozložení rizik.<br>Limity se udávají ve speciální měnové jednotkce <a data-href="SDR" href="sdr.html" class="internal-link" target="_self" rel="noopener nofollow">SDR</a>.Limity platí pouze, pokud ke poškození nebo zničení nákladu dojde neúmyslně.V případě poškození nebo znišení přepravovaného nákladu se výše odškodnění odesilateli počítá následovně:
 Příklad: zničení nákladu za 10 milionů SDR = 30 Kč zjistíme kurz SDR z jakékoli banky hrubá hmotnost nákladu koeficient kolik SDR na 1 kg nákladu je maximální odpovědnost Ztráta nebo poškození zásilky: Odškodnění se vypočítává paušální částkou za každý chybějící/poškozený kilogram hrubé hmotnosti zásilky, případně pevnou částkou za přepravní kus či jednotku. Zpoždění (pozdní dodání): Zde je náhrada škody obvykle vázána na výši dovozného (přepravného), respektive na jeho určitý násobek. Prolomení limitů: Dopravce ztrácí právo krýt se tímto limitem a musí hradit plnou výši škody v případě, že škodu způsobil úmyslně nebo z hrubé nedbalosti. Zvýšení ručení: Pokud chce odesílatel krýt vyšší hodnotu zboží nad daný limit, má možnost u dopravce výslovně deklarovat v přepravní smlouvě vyšší hodnotu zásilky (či tzv. zvláštní zájem na dodání), což je obvykle spojeno s příplatkem k přepravnému. Pokud to neudělá, musí si zásilku individuálně připojistit. Jednotlivé dopravní obory mají limity nastaveny odlišně na základě specifik dané dopravy:1. Letecká doprava (Montrealská úmluva) Letecká doprava je velmi specifická, protože aktuální Montrealská úmluva z roku 1999 zakotvuje absolutní odpovědnost dopravce.
 Limit pro zničení, ztrátu nebo poškození je 22 SDR/ZPČ za 1 kg hrubé hmotnosti.
@@ -836,315 +1617,7 @@ vysvětli smluvní vztahy v zasilatelství, kdo to je smluvní, provádějící 
 ?
 smluvní dopravce může být jen jeden, má smlouvu s Příkazcem/Odesilatelem
 pokud smluvni dopravce nemůže uskutečnit přepravu, může pověřit Provádějícího dopravce, který se stane skutečným dopravcem a převeze to zboží
-pokud část dopravy provádí jiný dopravce, je tzv. dalším dopravcem; toho je možné uvést v nákladním listu CMR nebo jeho vnitrostátní obdobě; je to stále jedna přepravní smlouva]]></description><link>subjekty-na-přepravním-trhu.html</link><guid isPermaLink="false">Subjekty na přepravním trhu.md</guid><pubDate>Fri, 08 May 2026 09:21:16 GMT</pubDate></item><item><title><![CDATA[logistika]]></title><description><![CDATA[Tagy: <a href=".?query=tag:logistika" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#logistika">#logistika</a>rozdíl mezi supply chain a demand chain ;; supply chain je od dodavatele k zákazníkovi a demand chain je od zákazníka k dodavateli6 pravidel logistiky, co se musí správně dodržet? ;; místo, čas, množství, kvalita, cena, správný adresátna jaké subsystémy je možné logistiku dekomponovat? (teoretické dělení)
-?
-statický - dopravní infrastruktura
-mobilní - dopravní prostředky
-řídící - pracovníci, signalizační zařízení (návěstidla, služby řízení letového provozu)praktické dělení (subsystémy) logistiky a co to představuje
-?
-technická základna - dopravní cesty (hrany grafu), logistická centra, gateways, terminály (vrcholy grafu), přepravní prostředky, dopravní prosttředy, prostředky při přenos dat atp.
-lidé; firmy
-technologie
-vědní aparátprvky logistiky - rozdělení
-?
-aktivní - dopravní prostředky, IT
-aktivní prvky zajišťují pohyb pasivních prvků
-pasivní - zboží, obalové materiály, kontejneryjaké jsou různé pozice logistických manažerů a náplň jejich práce
-?
-logistický manažer - operativní řizení lidí v oblasti dopravy a skladování
-manažer distribuce - operativa, řízení distribuce
-projektový manažer - více strategická role, integrace logistických řetězců atp.jaké jsou tři vědní přístupy k řešení problémů?
-?
-empiricko-intuitivní - založený na zkušenostech a intuici, težko se prokazuje správnost řešení
-algoritmický - založený na matematických metodách, systémové přemýšlení o problému, přesnost, objektivnost, transparentnost výsledku
-heuristický - využívání heuristických metod s definovaným algoritmem, využívá matematický základ, ale cílem není najít optimum, nýbrž suboptimum, přesnost lze zvýšit pomocí modelování (simulování)Jaké můžeme vybrat metody pro řešení logistického problému za jistoty, tedy když víme, co řešíme a máme data
-?
-operační výzkum - použití výpočetní techniky a matematiky pro výpočty a tvorbu matematických modelů, které umožňují rozhodování ve složitých ekonomických otázkách, součástí toho je lineární programování, teorie grafů atd.Jaké můžeme vybrat metody pro řešení logistického problému za jistoty, tedy když nevíme, s čím máme co dočinění
-?
-metody tvořivého myšlení - brainstorming atp.Jaké můžeme v logistice dostat certifikace / možnosti vzdělání?
-?
-vzdělání buď vysokoškolské, nebo MBA
-certifikují společnosti ELA a FIATA
-ELA vytvořila evropský systém certifikace logistických odborníků ECBL, v ČR toto zajišťuje ČLA - česká logistická asociace
-ELA má mezinárodně uznávané certifikáty na úrovních junior a seniorJaké známe logistické technologie a konkrétní příklady? Co se logistickou technologií myslí
-?
-je to soubor metod a prostředků, které firma využívá pro uskutečnění přepravy (vstupuje tam nějaké know-how, které ta firma musí mít, to je součástí každé logistické technologie)
-klasické - tvorba manipulačních skupin (sdružování) a intermodální přeprava
-telematické - sledování, co se kde nachází a v jakém je to stavu (automatické načtení zboží po průjezdu bránou, vzdálená datová komunikace kamionu s centrálou, EDI - posílání dodacích listů elektronicky)
-virtuální - simulace, grafická vizualizace (např. simulace skladu)
-komplexní - např. kanban (způsob JIT dodávání do výroby)Jaké dva subsystémy má infrastruktura?
-?
-uzlový subsystém - konkrétní místa - např. distribuční sklad, železniční stanice, přístav, cross-dock
-liniový subsystém - dopravní cesty - železnice, silniceinfrastruktura vs. suprastruktura a projekty PPP
-?
-infrastruktura je typycky vlastněná státem, pokud je vlastněna soukromými subjekty, je to suprastruktura
-PPP jsou projekty, na kterých spolupracuje veřejný a soukromý sektorJaké máme řády přepravních prostředků?
-?
-je to podle hmotnosti a způsobu manipulace
-0&nbsp;- lahev
-1&nbsp;- max 15kg&nbsp;- krabice
-2&nbsp;- max 1000 kg&nbsp;- palety
-3&nbsp;- kontejnery (ISO) ULD (unit load containery) letadlové cargoJaké znáte manipulační zařízení, co to je a kde se vyskytují?
-?
-jsou v překládacích a skladovacích uzlech
-vysokozdvižné vozíky
-rudly
-čelní překladače
-portálové jeřáby
-RTG - na kolech
-RMG - na kolejích
-STS - ship-to-shore - přemisťování kontejnerů na kontejnerové lodě
-také můžou být v dopravních prostředcích, např. hydraulické čelo (výtah na náklaďáku), hydraulické rameno, rampy na plavidlech, válečkové dráhy v letadlechJak rozdělujeme přípojná vozidla (i podle užitné hmotnosti) a jakým písmenem se označují?
-?
-písmeno O
-dělí se na návěsy (připojují se za tahač, nemá přední nápravu) a přívěsy (připojují se za vozidlo, mají i přední nápravu)
-podle užitné hmotnosti:
-O1 do 0,75t
-O2 do 3,5t
-O3 do 10t
-O4 nad 10tJak se dělí nákladní železniční vozy a příklady? Jakým subjektem je toto rozdělení určeno?
-?
-určeno UIC - mezinárodní železniční unií
-podle konstrukce - tzv. řady, řady jsou označené kombinací velkého písmena a jednoho nebo více malých písmen
-velká písmena - od E (A-D jsou osobní vozy)
-E, F - otevřené vozy, suché hromadné substráty
-L -&nbsp; vlak na auta
-S - intermodální přeprava - kontejnerové vagony - pouze podvozek, nakládá se na to kontejner
-T - s otevíratelnou střechou
-U - práškové, volně ložené zboží
-Z - cisterny
-G, H - pevná střecha
-Malá písmena:
-s - rychlost
-ss do 120
-s do 100
-bez s - méně než 100
-a - počet náprav - čtyř-nápravový vůz (bez a je to 2 nápravový)
-f - vhodný pro převoz do Velké Británie
-n - vysoká únosnost
-d - vybaven gravitačním vyprazdňovánímJaké rozlišujeme dopravní prostředky ve vodní dopravě?
-?
-pro vnitrozemskou vodní dopravu:
-motorové nákladní lodě
-remorkéry + nákladní čluny (remorkér za sebou táhne samostatný člun s nákladem)
-námořní nákladní lodě:
-kontejnerové lodě - pro suché náklady (všeobecný náklad)
-tankery - pro kapalné náklady (ropa, LPG)Co víte o nákladních letounech? Typové značení? Typy motorů?
-?
-anglicky freighter
-v typovém označení je to F
-proudové a turbovrtulové motoryJaké známe typy palet podle konstrukce?
-?
-prostá
-sloupková
-ohradová
-stříňová
-nádržkováJak se dělí kontejnery podle toho, kde se používají?
-?
-námořní deep sea (ISO kontejnery)
-vnitrozemské short sea (po Evropě) - wood kontejnery, rock kontejnery, pallet-wide kontejnery
-letecké kontejnery ULDJaké známe základní typy ISO kontejnerů podle toho, co převáží?
-?
-dry van - standardní
-reefer - temperovaný
-tank kontejner - ocelová cisterna zasazena do rámu pro ISO kontejner, pro kapaliny a plyny
-bulk - pro suché hromacné zboží
-flat rack / open top - bez bočních stěn nebo bez střechyJak rozlišujeme kontejnery podle jejich délky? Co to je TEU? Jaká je šířka a výška kontejnerů?
-?
-písmena A-E - A je nejkratší
-TEU = twenty-feet equvalent unit - tímto se počítá kapacita lodi - kolik TEU se do ní vejde; 1 TEU je kontejner C = 20 stop dlouhý
-všechny kontejnery mají šířku 8 stop
-standardní výška je 8 stop 6 palců; high cube mají 9 stop 6 palců (přesně o jednu stopu (cca 30cm) více)Jak dělíme hmotnost kontejneru?
-?
-tara - hmotnost vlastního kontejneru
-netto - hmotnost nákladu
-brutto - tara + nettoCo to jsou RFC a k čemu jsou dobré? Které města u nás a ve světě jsou na některém z koridorů?
-?
-rail freight corridors
-zjednodušují železniční nákladní dopravu, dopravce nebo operátor, který chce vypravit vlak z Hamburku do Prahy nemusí žádat o přidělení traťové kapacity zvlášť jednotlivé správce železnic, tzv. One-Stop Shop - stačí jedna žádost a centrální místo mu vyřídí průjezd všemi státy
-existuje několik takových koridorů, ČR protínají 4 z nich
-Prahu protíná RFC-7, který vede z Německa na Balkán; také výchozí bod pro RFC-9
-Ostrava leží na RFC-5 (od Baltu do Rakouska a Itálie)
-Brno - RFC-7
-Děčín - hlavní vstupní brána pro vlaky na koridoru RFC-7Jaké jsou třídy tratí?
-?
-A-E - E je pro nejtěžší náklad - 25 tun na nápravu - pouze nějaké důlní tratě, není jich mnohoJaké známe typy letových tratí (tratě ve vzduchu) - v pořadí v jaké je letadlo využije?
-?
-SID - standard instrument departure - Postup/trasa, po které letadlo stoupá po vzletu (takeoff)
-AIRWAY - dopravní koridor (dráha v oblacích)
-STAR - standard terminal arrival route - Příletová trať z AIRWAY na letištěJaké má letiště různé plochy, které využívají letadla?
-?
-RWY - runway
-TWY - pojezdové dráhy
-APRON - parkoviště pro letadlaJak jsou značeny třídy vodních cest? Které z nich jsou mezinárodního významu?
-?
-římskými číslicemi
-nejvyšší je VII
-IV a vyšší jsou cesty mezinárodního významudůležité evropské kanály? A u nás v ČR?
-?
-MLK - (mittellandkanal) středoněmecký kanál - protíná Německo na severu od západu k východu a spojuje Rýn, Vezeru a Labe
-rýn&nbsp;mohan&nbsp;dunaj&nbsp;průplav - Kanál v blízkosti Norimberku, který spojuje řeky Mohan a Dunaj – umožňuje tak plavbu ze Severního moře do Černého moře
-Kýlský&nbsp;průplav - zkratka mezi baltským a severním mořem
-německý postranní kanál
-kanál spojující Labe a VltavuDůležité evropské řeky
-?
-nejdůležitější je Rýn, teče od švýcarských hranic do Rotterdamu a do Severního moře
-Dunaj - Vídeň, Bratislava, Budapešť a vlévá se do Černého moře
-Seina - důležitá řeka ve Francii, protéká PařížíNámořní průlivy
-?
-Gibraltarský - Atlantský oceán a Středozemní moře
-Lamanšský průliv - Odděluje Anglii od Francie
-Bospor a Dardanely - Turecké průlivy, cesta ven z Černého moře do Středozemního mořeNámořní průplavy
-?
-Suez – u Egypta
-Panama – Panama (střední Amerika) - spojuje Tichý a Atlantský oceánJak jsou označeny RWY na letištích?
-?
-podle azymutů - desetina stupně od severu
-dráha směrem přímo na sever má 36, přímo na jih 18
-pokud jsou na letišti rovnoběžné dráhy, pak se dají rozlišit na L, C, RJak kategorizujeme sklady?
-?
-A - alespoň 10 metrů vysoké, temperované
-B - nestandardní výška, nestandardní podlaha
-C - jen halaJaké se používají technologie a způsoby skladování ve skladech?
-?
-skladování v bloku - palety jsou na sobě; vhodné, pokud máme hodně stejných palet
-paletový regál - palety jsou v regálech
-pojízdný regál - několik regálových řas za sebou, ty, které jsou u uličky se prohazují; typické u mraženého zboží
-drive-in shuttle regály
-spádový regál - stejné výrobky za sebou v regálu
-konzolový regál - pro dlouhé věci, jako jsou tyčejaký je rozdíl v pojmech multimodální, intermodální a kombinovaná přeprava?
-?
-multimodální - použití více oborů přepravy
-intermodální - použití více oborů přepravy a použití jedné standardizované přepravní jednotky (intermodal loading unit - ILU) napříč těmi obory
-kombinovaná - jako intermodální, ale většina přepravy musí být provedena jinak než po silniciCo to je BIBO loď?
-?
-nakládka volně loženého zboží, vykládka už v nějaké manipulační jednotce, třeba v pytlích (typicky to tak je se solí)Co to je AVI LOG?
-?
-kontejner se zkosenými stranamiKategorizace nákladních vozidel podle jejich maximální přípustné hmotnosti
-?
-N1 do 3,5t - dodávky
-N2 do 12t - nákladní auta
-N3 nad 12t - tahač a přívěsOznačení lokomotiv podle typu pohonu
-?
-1 - stejnosměrný
-2 - střídavý
-3 - více-systémová lokomotiva
-7 - motorová lokomotivaJaké známe různé typy nákladních lodí v námořní dopravě podle způsobu manipulace s nákladem a typu převáženého nákladu?
-?
-podle způsobu manipulace:
-Ro-Ro - roll on roll of - auta, co má kola nebo pásy
-Lo-Lo - lift on lift of
-Flo-flo - float in - float out
-podle toho, co převážejí:
-PCC - pure car carrier (osobní auta)
-PCTC - pure car truck carrier (nákladní auta)
-con-ro - hybrid - container a roll on - na palubu kontejnery, pod palubu auta
-kontejnerové lodě
-break bulk carrier - pro kusové zboží - již se moc nepoužívajíVysvětli parametry nákladních lodí DWT, NT a GT
-?
-DWT - dead weight tonage - hmotnost nákladu + hmotnost paliva v lodi + hmotnost čisté vody pro posádku
-NT - net tonage - objem nákladních prostor lodi
-GT - gross tonage - celkový objem všech prostor lodiCo to je geared vessel?
-?
-loď s jeřábemCo to je OSV v vnitrozemské vodní dopravě
-?
-off-shore support vessel - převáží náklad z námořských přístavů do vnitrozemíJak velké kontejnery se vejdou do podpalubí kontejnerové lodi?
-?
-20, 40, i high-cube verze
-kontejnerové lodě mají vodicí lišty a tak se tam typicky dají převážet pouze 1 TEU a 2 TEU (FEU) kontejnery, high-cube jsou jen vyšší verze, takže to nečiní problém při stackování na sebeCo je v drážní dopravě myšleno speciální dráhou?
-?
-dráha pro zajištění dopravní obslužnosti obce - metrošířka výměnné nástavby a její výhody
-?
-2,5 metru
-oproti klasickému návěsu umí stát sama o sobě a jednoduše se nasazuje na tahač, tedy tahač může okamžitě odjet s naloženou nástavbou a tím se eliminují prostoje
-výměnné nástavby samy o sobě nemají nápravy, proto při přepravě musí být umístěn na přívěsové soupravě nebo na tahači, co má odpovídající šasíCo to je konvertovaný freighter a jak ho poznáme?
-?
-je to nákladní letadlo konvertované z osobního letadla
-lze ho poznat, podle toho, že má okna, které jsou ale zevnitř skryta
-jinak podle označení, např. B 757SF (Special freighter) nebo B 757 BCF (Boeing converted freighter)Jaké jsou maximální povolené rozměry nákladních vozidel samostatných, s návěsem a přívěsovou soustavou?
-?
-návěsová souprava max 18,75 metru dlouhá
-kamion max 16,5 metru
-samostatné nákladní auto 12 metrů
-maximální délka návěsu: 13,6
-maximální šířka návěsu 2,55 metru (chladírenské vozy max 2,6)
-max výška je 4 metryMaximální hmotnost nákladních vozidel a maximální užitná hmotnost nákladu
-?
-v čr je maximální cesková hmotnost nákladního auta 48 tun, ale pouze na 5 nebo více nápravách (tedy platí pro tahač s návěsem, protože návěs má většinou 3 nápravy)
-jinak je to max 40 tun
-maximální užitná hmotnost nákladu je 26 tunJaké máme toky v logistice?
-?
-tok zboží
-tok informací
-tok financíPro přepravu nadgabaritního zboží byste použili:
-?
-vozy typu UaCo to je MTW, MTTW a MDW v letecké dopravě?
-?
-MTW - maximum departure weight
-MTTW - maximum taxing weight
-MDW - maximum departure weightCo lze považovat za ILU (intermodální přepravní jednotku)?
-?
-kontejner
-výměnná nástavba
-návěsJaké známe kategorie pozemních komunikací? Čím jsou charakteristické a kdo je vlastník?
-?
-dálnice - bez úrovňových křížení - stát
-silnice - pro dopravu mezi městy/vesnicemi - pro 1. třídu kraj; 2. a 3. třída obce s rozšířenou působností
-místní komunikace - pro dopravu uvnitř města/vesnice - obec
-účelové komunikace - pro spojení nemovitostí pro potřeby vlastníků nebo ke spojení soukromého pozemku s jinou komunikací - soukromý vlastník: fyzická nebo právnická osobaJaké jsou třídy silnic?
-?
-třída - dálková doprava
-třída - mezi okresy
-spojení obcí Jak se označují mezinárodní silniční tahy a kolik jich vede přes ČR?
-?
-např. E49, E442
-přes ČR jich vede 13Jak klasifikujeme (rozlišujeme) vnitrozemské vodní cesty podle toho, kdo na nich může plout?
-?
-splavné (přirozeně splavné x splavněné) x nesplavné
-sledované (dopravně významné x účelové) x nesledované
-sledované se rozdělují do zón (1-4) podle výšky vln
-využívané x využitelnéOd jakých bodů je pro vodní nákladní dopravu použitelné Labe a Vltava?
-?
-Labe - od Chvaletic po Hřensko
-Vltava - od Třebenice po soutok s LabemCo to je FIR a FL v letecké dopravě? Jaké prostory jsou v rámci FIR? Jaké prostory jsou definované ve vztahu k letišti?
-?
-FIR - flight information region; Česko má FIR Praha; některé státy mají více FIR
-FL - flight level; např. FL 660 znamená let ve výšce 66 000 stop, děleno třemi to dává 22 000 metrů
-V rámci FIR jsou dílčí oblasti (CTA - control area)
-ve vztahu k letišti jsou definovány tyto prostory:
-CTR - control zone - řízený okrsek - u řízených letišť
-TMA - terminal control area - koncová řízená oblast - u řízených letišť
-ATZ - aerodrome traffic zone - letištní provozní zóna - u neřízených letišťJak se podle ICAO rozděluje vzdušný prostor?
-?
-do tříd písmeny A-G; ve FIR Praha máme C, D, E, GJaké služby nabízí služba řízení letového provozu a Přibližovací služba řízení letového provozu?
-?
-Služba řízení letového provozu:
-letištní řídící věž - povoluje vzlety, přistání, pojíždění a vstup letadel na RWY (může zastávat také ground a nebo delivery)
-služba ground - určení a sdělení, které TWY použít na a z RWY
-služba delivery - uděluje povolení k letu
-Přibližovací služba:
-approach arrival - navádí letadla na přiblížení, potom je předá na TWR
-approach departure - na velkých letištích přebírá povolování některých odletů od TWRJaké jsou tři složky letových provozních služeb?
-?
-služby řízení letového provozu
-letová informační služba
-pohotovostní službaCo to je návěs interlink a přívěs typu dolly?
-?
-interlink - návěs, ze který lze připojit přívěs
-dolly - přívěs, který umožňuje nasadit na něj návěs (dolly se připojuje za vozidla, která nejsou tahač návěsů)Co to je 2WIN a jaké já výška poschodí? Co to je SOMI?
-?
-dvoupodlažní návěs; cca 1,8 metru
-SOMI je speciální typ dvoupodlažního přípojného vozidla, dvoupodlažní pouze ve středové částiCo to je EMS a ETT?
-?
-Europian modular system - jsou to delší přívěsové soustavy
-délka 25,25 metru, 51 ložných palet (3 TEU)
-ETT jsou soupravy používané ve Švédsku, které mají kapacitu 4 stohy dřeva; délka je 30 metrůJaké jsou historické vývojové fáze logistiky?
-?
-fáze - homogenní poptávka (všechni chtěli to stejné) - logistika se řešila až se výrobek vyrobil
-fáze - snaha logisticky lépe naplánovat i inbound logistiku - vzniká magický trojúholník (levný, kvalitní, rychlý); vznikají logistické oddělení, logistika je vnímaná, jako samostatný obor
-fáze - integrace - nákup, výroba a prodej fungují jako jeden tým, předávají si informace a plánují; vzniká koncept SCM
-fáze - digitalizace, telematika, simulace; magický čtyřúhelník (přidala se individualizace)
-]]></description><link>logistika.html</link><guid isPermaLink="false">logistika.md</guid><pubDate>Thu, 07 May 2026 13:14:12 GMT</pubDate></item><item><title><![CDATA[Rozměry a specifikace nákladních vozidel]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz">#mpz</a>
+pokud část dopravy provádí jiný dopravce, je tzv. dalším dopravcem; toho je možné uvést v nákladním listu CMR nebo jeho vnitrostátní obdobě; je to stále jedna přepravní smlouva]]></description><link>subjekty-na-přepravním-trhu.html</link><guid isPermaLink="false">Subjekty na přepravním trhu.md</guid><pubDate>Fri, 08 May 2026 09:21:16 GMT</pubDate></item><item><title><![CDATA[Rozměry a specifikace nákladních vozidel]]></title><description><![CDATA[Tagy: <a href=".?query=tag:mpz" class="tag is-unresolved" target="_self" rel="noopener nofollow" data-href="#mpz">#mpz</a>
 Maximální celková délka: 16,5 metru (pro nákladní auto s návěsem). Maximální celková délka nákladního auta: 12 metrů.
 Maximální celková délka soupravy: 18,75 metru Maximální délka návěsu: 13,6 metru.
 Maximální šířka návěsu: 2,55 metru. mrazáky jsou 2,6 metru Maximální výška: Pro zboží v návěsu: 2,7 metry (v low-deck 3 metry)
